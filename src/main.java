@@ -9,12 +9,11 @@ public class main {
 
         boolean modeDev             = false;
         boolean gameBoucle          = true;
-        boolean partieCBoucle       = true;
         boolean menuBoucle          = true;
         boolean challengerBoucle    = false;
         boolean defenseurBoucle     = false;
         boolean duelBoucle          = false;
-
+        
         int nbEssaies               = 5;
         int longueurCombinaison     = 4;
 
@@ -69,7 +68,7 @@ public class main {
                             longueurCombinaison = 5;
                         }
                         else if (choixDiff == 4) {
-                            System.out.println("Choisissez la longueur de la combinaison.");
+                            System.out.println("Choisissez la longueur de la combinaison :");
                             int userLongueurCombi = sc.nextInt();
                             longueurCombinaison = userLongueurCombi;
                         }
@@ -97,8 +96,10 @@ public class main {
                                 Arrays.toString(tableauCombinaisonChallenger));
                     }
 
-
-
+                    for (int pI = 0; pI <= nbEssaies; pI++) {
+                        System.out.println("Veuillez rentrer " + longueurCombinaison + " chiffres :" );
+                        //int userEssaie[] = sc.nextInt();
+                    }
 
                 }
             }
