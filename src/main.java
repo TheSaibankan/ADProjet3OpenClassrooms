@@ -14,6 +14,7 @@ public class main {
         boolean defenseurBoucle     = false;
         boolean duelBoucle          = false;
 
+        int nbEssaies               = 5;
         int longueurCombinaison     = 4;
 
         System.out.println("Bienvenue dans le module de recherche d'une combinaison à X chiffres.");
@@ -21,6 +22,7 @@ public class main {
         while (gameBoucle){
 
             while (menuBoucle) {
+
                 System.out.println("Veuillez sélectionner un mode de jeu :\n1 - Challenger  2 - Défenseur  3 - Duel");
 
                 int reponseMode = sc.nextInt();
@@ -29,17 +31,14 @@ public class main {
                     menuBoucle          = false;
                     challengerBoucle    =  true;
                 }
-
                 else if (reponseMode == 2) {
                     menuBoucle          = false;
                     defenseurBoucle     = true;
                 }
-
                 else if (reponseMode == 3) {
                     menuBoucle          = false;
                     duelBoucle          = true;
                 }
-
                 else {menuBoucle = true;}
 
                 while (challengerBoucle) {
@@ -58,30 +57,38 @@ public class main {
                             System.out.println("Vous avez choisi le mode facile.");
                             longueurCombinaison = 3;
                         }
-
                         else if (choixDiff == 2) {
                             System.out.println("Vous avez choisi le mode normal.");
                             longueurCombinaison = 4;
                         }
-
                         else if (choixDiff == 3) {
                             System.out.println("Vous avez choisi le mode difficile.");
                             longueurCombinaison = 5;
                         }
-
                         else if (choixDiff == 4) {
                             System.out.println("Choisissez la longueur de la combinaison.");
                             int userLongueurCombi = sc.nextInt();
                             longueurCombinaison = userLongueurCombi;
-
                         }
-
                         else {System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");}
                     }
-
                     else if (reponseDiff == 2) {continue;}
-
                     else{System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");}
+
+
+                    int[] tableauCombinaisonChallenger = new int[longueurCombinaison];
+
+                    //ajout des valeurs dans le tableau
+                    for (int i = 0; i <= longueurCombinaison; i++ ) {
+                        tableauCombinaisonChallenger[i] = random.nextInt(10);
+                    }
+
+                    //récupération de la combinaison sous forme de chaîne
+                    String chaineCombinaison = String.valueOf(tableauCombinaisonChallenger);
+
+
+
+
                 }
             }
 
