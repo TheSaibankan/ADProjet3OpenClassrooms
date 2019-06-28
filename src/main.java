@@ -1,14 +1,15 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class main {
     public static void main(String[] args) {
         Random random               = new Random();
         Scanner sc                  = new Scanner(System.in);
 
+        boolean modeDev             = false;
         boolean gameBoucle          = true;
+        boolean partieCBoucle       = true;
         boolean menuBoucle          = true;
         boolean challengerBoucle    = false;
         boolean defenseurBoucle     = false;
@@ -39,17 +40,19 @@ public class main {
                     menuBoucle          = false;
                     duelBoucle          = true;
                 }
-                else {menuBoucle = true;}
+                else menuBoucle = true;
 
                 while (challengerBoucle) {
 
                     System.out.println("Vous avez sélectionné le mode Challenger !");
-                    System.out.println("Par défaut, la combinaison contient 4 chiffres. Voulez-vous modifier la difficulté ?\n 1 - Oui  2 - Non");
+                    System.out.println("Par défaut, la combinaison contient 4 chiffres. " +
+                            "Voulez-vous modifier la difficulté ?\n 1 - Oui  2 - Non");
 
                     int reponseDiff = sc.nextInt();
 
                     if (reponseDiff == 1) {
-                        System.out.println("Choisissez la difficulté : 1 - Facile  2 - Normal  3 - Difficile  4 - Personnalisé");
+                        System.out.println("Choisissez la difficulté : 1 - Facile  2 - Normal  " +
+                                "3 - Difficile  4 - Personnalisé");
 
                         int choixDiff = sc.nextInt();
 
@@ -70,33 +73,35 @@ public class main {
                             int userLongueurCombi = sc.nextInt();
                             longueurCombinaison = userLongueurCombi;
                         }
-                        else {System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");}
+                        else System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
                     }
-                    else if (reponseDiff == 2) {continue;}
-                    else{System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");}
+                    else if (reponseDiff == 2) longueurCombinaison = 4;
+                    else System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
 
+                    System.out.println("Voulez-vous activer le mode développeur ? 1 - Oui  2 - Non");
+                    int reponseDev = sc.nextInt();
+                    if (reponseDev == 1) modeDev = true;
+                    else if (reponseDev == 2) modeDev = false;
+                    else System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
 
                     int[] tableauCombinaisonChallenger = new int[longueurCombinaison];
 
                     //ajout des valeurs dans le tableau
-                    for (int i = 0; i <= longueurCombinaison; i++ ) {
+                    for (int i = 0; i < tableauCombinaisonChallenger.length; i++ ) {
                         tableauCombinaisonChallenger[i] = random.nextInt(10);
                     }
 
-                    //récupération de la combinaison sous forme de chaîne
-                    String chaineCombinaison = String.valueOf(tableauCombinaisonChallenger);
+                    //affichage de la solution en mode dev
+                    if (modeDev) {
+                        System.out.println("La combinaison est la suivante : " +
+                                Arrays.toString(tableauCombinaisonChallenger));
+                    }
 
 
 
 
                 }
             }
-
-
         }
-
-        //Mode Challenger
     }
-
-
 }
