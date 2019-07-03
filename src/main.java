@@ -29,15 +29,15 @@ public class main {
                 int reponseMode = sc.nextInt();
 
                 if (reponseMode == 1) {
-                    menuBoucle          = false;
+                    //menuBoucle          = false;
                     challengerBoucle    =  true;
                 }
                 else if (reponseMode == 2) {
-                    menuBoucle          = false;
+                    //menuBoucle          = false;
                     defenseurBoucle     = true;
                 }
                 else if (reponseMode == 3) {
-                    menuBoucle          = false;
+                   //menuBoucle          = false;
                     duelBoucle          = true;
                 }
                 else menuBoucle = true;
@@ -127,17 +127,21 @@ public class main {
                                 resultatUserCombinaison += "-";
                             }
                         }
+                        System.out.println(resultatUserCombinaison);
 
-                    if (resultatUserCombinaison == "===") {
+                    if (resultatUserCombinaison.equals("===") || resultatUserCombinaison.equals("====") ||
+                            resultatUserCombinaison.equals("=====")) {
                         System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
                                     "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 
                         int userInputEndGame = sc.nextInt();
 
                         if (userInputEndGame == 1) {
+                            pI = 99;
                             challengerBoucle = true;
                         }
                         else if (userInputEndGame == 2) {
+                            pI = 99;
                             challengerBoucle = false;
                             menuBoucle = true;
                         }
@@ -150,7 +154,7 @@ public class main {
                             menuBoucle = true;
                         }
                     }
-                        System.out.println(resultatUserCombinaison);
+
 
 
 
