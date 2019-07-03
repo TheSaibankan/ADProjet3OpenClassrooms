@@ -83,22 +83,23 @@ public class main {
                     else if (reponseDev == 2) modeDev = false;
                     else System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
 
-                    int[] tableauCombinaisonChallenger = new int[longueurCombinaison];
+                    String combinaisonChallenger = new String();
 
-                    //ajout des valeurs dans le tableau
-                    for (int i = 0; i < tableauCombinaisonChallenger.length; i++ ) {
-                        tableauCombinaisonChallenger[i] = random.nextInt(10);
-                    }
+                    //ajout des valeurs dans le string
+                    int chiffreCombi1 = random.nextInt(10);
+                    int chiffreCombi2 = random.nextInt(10);
+                    int chiffreCombi3 = random.nextInt(10);
+                    int chiffreCombi4 = random.nextInt(10);
+
+                    combinaisonChallenger = String.valueOf(chiffreCombi1 + chiffreCombi2 + chiffreCombi3 + chiffreCombi4);
 
                     //affichage de la solution en mode dev
                     if (modeDev) {
-                        System.out.println("La combinaison est la suivante : " +
-                                Arrays.toString(tableauCombinaisonChallenger));
+                        System.out.println("La combinaison est la suivante : " + combinaisonChallenger);
                     }
 
                     for (int pI = 0; pI <= nbEssaies; pI++) {
                         System.out.println("Veuillez rentrer " + longueurCombinaison + " chiffres :" );
-                        //int userEssaie[] = sc.nextInt();
                     }
 
                 }
