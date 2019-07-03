@@ -220,6 +220,7 @@ public class main {
                                     (indiceDef)) {
                                 resultatIACombinaison += "=";
                             }
+
                             else if (userCombinaisonDefenseur.charAt(indiceDef) < combinaisonDefenseur.charAt
                                     (indiceDef)) {
                                 resultatIACombinaison += "+";
@@ -228,15 +229,52 @@ public class main {
                                 int nouvelleValeur = valeurRécup + random.nextInt(10 - valeurRécup);
                                 char nouvelleValeurChar = Character.forDigit(nouvelleValeur, 10);
 
+                                char[] ch = combinaisonDefenseur.toCharArray();
+                                ch[indiceDef] = nouvelleValeurChar;
+                                combinaisonDefenseur = ch.toString();
 
                             }
                             else if (userCombinaisonDefenseur.charAt(indiceDef) > combinaisonDefenseur.charAt
                                     (indiceDef)) {
                                 resultatIACombinaison += "-";
-                            }
+                                int valeurRécup2 = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+                                int nouvelleValeur2 = random.nextInt(valeurRécup2);
+                                char nouvelleValeurChar = Character.forDigit(nouvelleValeur2, 10);
 
+                                char[] ch2 = combinaisonDefenseur.toCharArray();
+                                ch2[indiceDef] = nouvelleValeurChar;
+                                combinaisonDefenseur = ch2.toString();
+                            }
                         }
 
+                        System.out.println(combinaisonDefenseur);
+                        System.out.println(resultatIACombinaison);
+
+                        if (resultatIACombinaison.equals("===") || resultatIACombinaison.equals("====") ||
+                                resultatIACombinaison.equals("=====")) {
+                            System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
+                                    "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+
+                            int userInputEndGame = sc.nextInt();
+
+                            if (userInputEndGame == 1) {
+                                pI = 99;
+                                challengerBoucle = true;
+                            }
+                            else if (userInputEndGame == 2) {
+                                pI = 99;
+                                challengerBoucle = false;
+                                menuBoucle = true;
+                            }
+                            else if (userInputEndGame == 3) {
+                                System.exit(0);
+                            }
+                            else {
+                                System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+                                challengerBoucle = false;
+                                menuBoucle = true;
+                            }
+                        }
                     }
                 }
             }
