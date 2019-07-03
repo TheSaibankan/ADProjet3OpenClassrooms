@@ -16,6 +16,8 @@ public class main {
         int nbEssaies               = 5;
         int longueurCombinaison     = 4;
 
+
+
         System.out.println("Bienvenue dans le module de recherche d'une combinaison à X chiffres.");
 
         while (gameBoucle){
@@ -50,7 +52,7 @@ public class main {
 
                     if (reponseDiff == 1) {
                         System.out.println("Choisissez la difficulté : 1 - Facile  2 - Normal  " +
-                                "3 - Difficile  4 - Personnalisé");
+                                "3 - Difficile");
 
                         int choixDiff = sc.nextInt();
 
@@ -66,11 +68,6 @@ public class main {
                             System.out.println("Vous avez choisi le mode difficile.");
                             longueurCombinaison = 5;
                         }
-                        else if (choixDiff == 4) {
-                            System.out.println("Choisissez la longueur de la combinaison :");
-                            int userLongueurCombi = sc.nextInt();
-                            longueurCombinaison = userLongueurCombi;
-                        }
                         else System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
                     }
                     else if (reponseDiff == 2) longueurCombinaison = 4;
@@ -82,15 +79,27 @@ public class main {
                     else if (reponseDev == 2) modeDev = false;
                     else System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
 
-                    String combinaisonChallenger = new String();
+                    String combinaisonChallenger = "";
 
                     //ajout des valeurs dans le string
                     int chiffreCombi1 = random.nextInt(10);
                     int chiffreCombi2 = random.nextInt(10);
                     int chiffreCombi3 = random.nextInt(10);
                     int chiffreCombi4 = random.nextInt(10);
+                    int chiffreCombi5 = random.nextInt(10);
 
-                    combinaisonChallenger = String.valueOf(chiffreCombi1 + chiffreCombi2 + chiffreCombi3 + chiffreCombi4);
+                    if (longueurCombinaison == 3) {
+                        combinaisonChallenger = String.valueOf(chiffreCombi1) + chiffreCombi2 + chiffreCombi3;
+                    }
+                    else if (longueurCombinaison == 4) {
+                        combinaisonChallenger = String.valueOf(chiffreCombi1) + chiffreCombi2 +
+                                chiffreCombi3 + chiffreCombi4;
+                    }
+                    else if (longueurCombinaison == 5) {
+                        combinaisonChallenger = String.valueOf(chiffreCombi1) + chiffreCombi2 +
+                                chiffreCombi3 + chiffreCombi4 + chiffreCombi5;
+                    }
+
 
                     //affichage de la solution en mode dev
                     if (modeDev) {
@@ -98,40 +107,51 @@ public class main {
                     }
 
                     for (int pI = 0; pI <= nbEssaies; pI++) {
+                        String resultatUserCombinaison = "";
                         System.out.println("Veuillez rentrer " + longueurCombinaison + " chiffres :" );
+                        if (pI == 0) {
+                            sc.nextLine();
+                        }
                         String userCombinaison = sc.nextLine();
 
-                        if (userCombinaison.length() != longueurCombinaison) {
-                            pI--;
-                            System.out.println("Vous n'avez pas rentré une combinaison à 4 chiffres.");
-                        }
 
-                        else {
-                            //affichage du menu de fin si victoire
-                            if (userCombinaison == combinaisonChallenger) {
-                                System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
-                                        "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+                        for(int indice = 0; indice < longueurCombinaison; indice++) {
 
-                                int userInputEndGame = sc.nextInt();
-
-                                if (userInputEndGame == 1) {
-                                    challengerBoucle = true;
-                                }
-                                else if (userInputEndGame == 2) {
-                                    challengerBoucle = false;
-                                    menuBoucle = true;
-                                }
-                                else if (userInputEndGame == 3) {
-                                    System.exit(0);
-                                }
-                                else {
-                                    System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                                    challengerBoucle = false;
-                                    menuBoucle = true;
-                                }
+                            if (userCombinaison.charAt(indice) == combinaisonChallenger.charAt(indice)) {
+                                resultatUserCombinaison += "=";
                             }
-                            //String resultatUserCombinaison
+                            else if (userCombinaison.charAt(indice) < combinaisonChallenger.charAt(indice)) {
+                                resultatUserCombinaison += "+";
+                            }
+                            else if (userCombinaison.charAt(indice) > combinaisonChallenger.charAt(indice)) {
+                                resultatUserCombinaison += "-";
+                            }
                         }
+
+                    if (resultatUserCombinaison == "===") {
+                        System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
+                                    "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+
+                        int userInputEndGame = sc.nextInt();
+
+                        if (userInputEndGame == 1) {
+                            challengerBoucle = true;
+                        }
+                        else if (userInputEndGame == 2) {
+                            challengerBoucle = false;
+                            menuBoucle = true;
+                        }
+                        else if (userInputEndGame == 3) {
+                            System.exit(0);
+                        }
+                        else {
+                            System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+                            challengerBoucle = false;
+                            menuBoucle = true;
+                        }
+                    }
+                        System.out.println(resultatUserCombinaison);
+
 
 
 
@@ -144,3 +164,35 @@ public class main {
         }
     }
 }
+
+
+////affichage du menu de fin si victoire
+//                            if (userCombinaison == combinaisonChallenger) {
+//                                    System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
+//                                    "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+//
+//                                    int userInputEndGame = sc.nextInt();
+//
+//                                    if (userInputEndGame == 1) {
+//                                    challengerBoucle = true;
+//                                    }
+//                                    else if (userInputEndGame == 2) {
+//                                    challengerBoucle = false;
+//                                    menuBoucle = true;
+//                                    }
+//                                    else if (userInputEndGame == 3) {
+//                                    System.exit(0);
+//                                    }
+//                                    else {
+//                                    System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+//                                    challengerBoucle = false;
+//                                    menuBoucle = true;
+//                                    }
+//
+//                                    }
+
+//else if (userCombinaison.length() != longueurCombinaison && userCombinaison != "") {
+//        pI--;
+//        System.out.println("Vous n'avez pas rentré une " +
+//        "combinaison à "+ longueurCombinaison + " chiffres.");
+//        }
