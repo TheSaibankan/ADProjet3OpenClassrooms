@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -100,6 +99,44 @@ public class main {
 
                     for (int pI = 0; pI <= nbEssaies; pI++) {
                         System.out.println("Veuillez rentrer " + longueurCombinaison + " chiffres :" );
+                        String userCombinaison = sc.nextLine();
+
+                        if (userCombinaison.length() != longueurCombinaison) {
+                            pI--;
+                            System.out.println("Vous n'avez pas rentré une combinaison à 4 chiffres.");
+                        }
+
+                        else {
+                            //affichage du menu de fin si victoire
+                            if (userCombinaison == combinaisonChallenger) {
+                                System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
+                                        "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+
+                                int userInputEndGame = sc.nextInt();
+
+                                if (userInputEndGame == 1) {
+                                    challengerBoucle = true;
+                                }
+                                else if (userInputEndGame == 2) {
+                                    challengerBoucle = false;
+                                    menuBoucle = true;
+                                }
+                                else if (userInputEndGame == 3) {
+                                    System.exit(0);
+                                }
+                                else {
+                                    System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+                                    challengerBoucle = false;
+                                    menuBoucle = true;
+                                }
+                            }
+                            //String resultatUserCombinaison
+                        }
+
+
+
+
+
                     }
 
                 }
