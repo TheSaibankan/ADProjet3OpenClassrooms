@@ -6,21 +6,18 @@ public class main {
         Random random               = new Random();
         Scanner sc                  = new Scanner(System.in);
 
-        boolean modeDev             = false;
-        boolean gameBoucle          = true;
+        boolean modeDev;
         boolean menuBoucle          = true;
         boolean challengerBoucle    = false;
         boolean defenseurBoucle     = false;
         boolean duelBoucle          = false;
         
         int nbEssaies               = 10;
-        int longueurCombinaison     = 4;
+        int longueurCombinaison;
 
 
 
         System.out.println("Bienvenue dans le module de recherche d'une combinaison à X chiffres.");
-
-        while (gameBoucle){
 
             while (menuBoucle) {
 
@@ -169,13 +166,6 @@ public class main {
 
                 while (defenseurBoucle) {
 
-                    int chiffreUserDef1;
-                    int chiffreUserDef2;
-                    int chiffreUserDef3;
-                    int chiffreUserDef4;
-                    int chiffreUserDef5;
-
-
                     int longueurCombinaisonDef;
 
                     String combinaisonDefenseur = "";
@@ -187,35 +177,18 @@ public class main {
                     System.out.println("Vous avez sélectionné le mode Défenseur !");
                     System.out.println("Veuillez rentrer une combinaison de 3, 4 ou 5 chiffes :");
 
-                    for (int bugNL = 0; bugNL < 1; bugNL++) {
-                        sc.nextLine();
-                    }
 
+                    sc.nextLine();
                     String userCombinaisonDefenseur = sc.nextLine();
 
                     if (userCombinaisonDefenseur.length() == 3) {
                         longueurCombinaisonDef = 3;
-
-                        chiffreUserDef1 = Character.getNumericValue(userCombinaisonDefenseur.charAt(0));
-                        chiffreUserDef2 = Character.getNumericValue(userCombinaisonDefenseur.charAt(1));
-                        chiffreUserDef3 = Character.getNumericValue(userCombinaisonDefenseur.charAt(2));
                     }
                     else if (userCombinaisonDefenseur.length() == 4) {
                         longueurCombinaisonDef = 4;
-
-                        chiffreUserDef1 = Character.getNumericValue(userCombinaisonDefenseur.charAt(0));
-                        chiffreUserDef2 = Character.getNumericValue(userCombinaisonDefenseur.charAt(1));
-                        chiffreUserDef3 = Character.getNumericValue(userCombinaisonDefenseur.charAt(2));
-                        chiffreUserDef4 = Character.getNumericValue(userCombinaisonDefenseur.charAt(3));
                     }
                     else if (userCombinaisonDefenseur.length() == 5) {
                         longueurCombinaisonDef = 5;
-
-                        chiffreUserDef1 = Character.getNumericValue(userCombinaisonDefenseur.charAt(0));
-                        chiffreUserDef2 = Character.getNumericValue(userCombinaisonDefenseur.charAt(1));
-                        chiffreUserDef3 = Character.getNumericValue(userCombinaisonDefenseur.charAt(2));
-                        chiffreUserDef4 = Character.getNumericValue(userCombinaisonDefenseur.charAt(3));
-                        chiffreUserDef5 = Character.getNumericValue(userCombinaisonDefenseur.charAt(4));
                     }
                     else {
                         System.out.println("Une erreur est survenue. Votre combinaison est de " +
@@ -350,11 +323,30 @@ public class main {
                             }
                         }
                     }
+              System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
+                      "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+
+                    int userInputEndGame = sc.nextInt();
+
+                    if (userInputEndGame == 1) {
+                        defenseurBoucle = true;
+                    }
+                    else if (userInputEndGame == 2) {
+                        defenseurBoucle = false;
+                        menuBoucle = true;
+                    }
+                    else if (userInputEndGame == 3) {
+                        System.exit(0);
+                    }
+                    else {
+                        System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+                        defenseurBoucle = false;
+                        menuBoucle = true;
+                    }
                 }
             }
         }
     }
-}
 
 
 
