@@ -173,13 +173,34 @@ public class main {
                     String resultatIACombinaison = "";
                     String valeurTemp = "";
 
+                    boolean essaiesInfinie = false;
+
 
                     System.out.println("Vous avez sélectionné le mode Défenseur !");
+
+                    System.out.println("Voulez-vous activer le mode Essaies illimités ? 1 - Oui  2 - Non");
+                    int repEssaiesInfinie = sc.nextInt();
+
+                    if (repEssaiesInfinie == 1) {
+                        nbEssaies = 1500;
+                        essaiesInfinie = true;
+                    }
+                    else if (repEssaiesInfinie == 2) {
+                        nbEssaies = 10;
+                        essaiesInfinie = false;
+                    }
+                    else {
+                        System.out.println("Une erreur est survenue. Redémarrage du module Défenseur...");
+                        continue;
+                    }
+
                     System.out.println("Veuillez rentrer une combinaison de 3, 4 ou 5 chiffes :");
 
 
                     sc.nextLine();
                     String userCombinaisonDefenseur = sc.nextLine();
+
+
 
                     if (userCombinaisonDefenseur.length() == 3) {
                         longueurCombinaisonDef = 3;
@@ -196,7 +217,7 @@ public class main {
                         continue;
                     }
 
-                    for (int pIDef = 0; pIDef < nbEssaies; pIDef++) {
+                    for (int pIDef = 0; pIDef <= nbEssaies; pIDef++) {
                         if (pIDef == 0) {
                             int chiffreCombiDef1 = random.nextInt(10);
                             int chiffreCombiDef2 = random.nextInt(10);
@@ -296,19 +317,21 @@ public class main {
                             valeurTemp = combinaisonDefenseur2;
                             System.out.println(combinaisonDefenseur2);
 
-                            if (resultatIACombinaison.equals("===") || resultatIACombinaison.equals("====") ||
-                                    resultatIACombinaison.equals("=====")) {
+                            if (combinaisonDefenseur2.equals(userCombinaisonDefenseur)) {
                                 System.out.println("L'ordinateur a trouvé la solution !\n" +
                                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+                                if (essaiesInfinie == true) {
+                                    System.out.println("L'ordinateur a pris "+(pIDef+1)+" tours pour trouver la combinaison.");
+                                }
 
                                 int userInputEndGame = sc.nextInt();
 
                                 if (userInputEndGame == 1) {
-                                    pIDef = 99;
+                                    pIDef = 1501;
                                     defenseurBoucle = true;
                                 }
                                 else if (userInputEndGame == 2) {
-                                    pIDef = 99;
+                                    pIDef = 1501;
                                     defenseurBoucle = false;
                                     menuBoucle = true;
                                 }
@@ -321,34 +344,38 @@ public class main {
                                     menuBoucle = true;
                                 }
                             }
+                            else if (pIDef == nbEssaies){
+                                System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
+                                        "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+
+                                int userInputEndGame = sc.nextInt();
+
+                                if (userInputEndGame == 1) {
+                                    defenseurBoucle = true;
+                                } else if (userInputEndGame == 2) {
+                                    defenseurBoucle = false;
+                                    menuBoucle = true;
+                                } else if (userInputEndGame == 3) {
+                                    System.exit(0);
+                                } else {
+                                    System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+                                    defenseurBoucle = false;
+                                    menuBoucle = true;
+                                }
+
+                            }
                         }
-                    }
-              System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
-                      "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 
-                    int userInputEndGame = sc.nextInt();
+                    }
+                }
 
-                    if (userInputEndGame == 1) {
-                        defenseurBoucle = true;
-                    }
-                    else if (userInputEndGame == 2) {
-                        defenseurBoucle = false;
-                        menuBoucle = true;
-                    }
-                    else if (userInputEndGame == 3) {
-                        System.exit(0);
-                    }
-                    else {
-                        System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        defenseurBoucle = false;
-                        menuBoucle = true;
-                    }
+                while (duelBoucle) {
+                    System.out.println("Le mode Duel n'est pas disponible pour le moment.");
+                    duelBoucle = false;
                 }
             }
         }
     }
-
-
 
 
 

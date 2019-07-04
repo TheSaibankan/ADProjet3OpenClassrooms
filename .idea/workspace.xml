@@ -23,33 +23,15 @@
     <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestJavaProjet3.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3590">
-              <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
+            <state relative-caret-position="442">
+              <caret line="323" column="124" selection-start-line="323" selection-start-column="124" selection-end-line="323" selection-end-column="124" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="691" selection-start-line="691" selection-end-line="691" />
             </state>
           </provider>
         </entry>
@@ -98,7 +80,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562230620569</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="premier jet module defense">
+      <created>1562235326518</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562235326518</updated>
+    </task>
+    <task id="LOCAL-00014" summary="menu de sorti module défense">
+      <created>1562242966558</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562242966558</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -235,7 +232,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="0" y="0" width="1600" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.29562983" />
@@ -245,6 +242,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.32941177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
@@ -262,10 +260,40 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Run" order="8" sideWeight="0.49867725" weight="0.41323906" />
-      <window_info active="true" anchor="right" id="Debug" order="9" sideWeight="0.49867725" visible="true" weight="0.40167096" />
+      <window_info anchor="right" x="526" y="205" width="887" height="399" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.40359896" />
+      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" visible="true" weight="0.38" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29562983" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32941177" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.3281046" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.32970026" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3267974" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.33333334" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.40392157" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24871466" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3277635" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" x="190" y="125" width="744" height="399" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.40359896" />
+      <window_info active="true" anchor="right" id="Debug" order="9" sideWeight="0.49867725" visible="true" weight="0.38046274" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -320,16 +348,18 @@
     <MESSAGE value="début module défense" />
     <MESSAGE value="progression module defense" />
     <MESSAGE value="refonte du module defense + prise en compte des égaux et sup" />
-    <option name="LAST_COMMIT_MESSAGE" value="refonte du module defense + prise en compte des égaux et sup" />
+    <MESSAGE value="premier jet module defense" />
+    <MESSAGE value="menu de sorti module défense" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu de sorti module défense" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>225</line>
+          <line>319</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -396,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3590">
-          <caret line="318" column="37" selection-start-line="318" selection-start-column="37" selection-end-line="318" selection-end-column="37" />
+        <state relative-caret-position="442">
+          <caret line="323" column="124" selection-start-line="323" selection-start-column="124" selection-end-line="323" selection-end-column="124" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
