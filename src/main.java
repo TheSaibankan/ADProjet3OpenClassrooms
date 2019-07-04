@@ -54,16 +54,19 @@ public class main {
                         int choixDiff = sc.nextInt();
 
                         if (choixDiff == 1){
-                            System.out.println("Vous avez choisi le mode facile.");
+                            System.out.println("Vous avez choisi le mode facile. (3 chiffres, 10 essaies)");
                             longueurCombinaison = 3;
+                            nbEssaies = 10;
                         }
                         else if (choixDiff == 2) {
-                            System.out.println("Vous avez choisi le mode normal.");
+                            System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
                             longueurCombinaison = 4;
+                            nbEssaies = 7;
                         }
                         else if (choixDiff == 3) {
-                            System.out.println("Vous avez choisi le mode difficile.");
+                            System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
                             longueurCombinaison = 5;
+                            nbEssaies = 5;
                         }
                         else {
                             System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
@@ -71,7 +74,10 @@ public class main {
                         }
 
                     }
-                    else if (reponseDiff == 2) longueurCombinaison = 4;
+                    else if (reponseDiff == 2) {
+                        longueurCombinaison = 4;
+                        nbEssaies = 7;
+                    }
                     else {
                         System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
                         continue;
@@ -116,11 +122,18 @@ public class main {
                     for (int pI = 0; pI < nbEssaies; pI++) {
                         String resultatUserCombinaison = "";
                         System.out.println("Veuillez rentrer " + longueurCombinaison + " chiffres :" );
+
                         if (pI == 0) {
                             sc.nextLine(); // pourquoi première lecture est sautée ?
                         }
-                        String userCombinaison = sc.nextLine();
 
+                        String userCombinaison = sc.nextLine();
+                        if (userCombinaison.length() != longueurCombinaison) {
+                            System.out.println("Attention ! Vous avez saisi "+userCombinaison.length()+" chiffre(s) "+
+                                    "au lieu de "+longueurCombinaison+".");
+                            pI--;
+                            continue;
+                        }
 
                         for(int indice = 0; indice < longueurCombinaison; indice++) {
 
@@ -161,6 +174,30 @@ public class main {
                                 menuBoucle = true;
                             }
                         }
+                        else if (pI+1 == nbEssaies) {
+                            System.out.println("Perdu ! Vous n'avez pas trouvé la combinaison.\n" +
+                                    "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+
+                            int userInputEndGame = sc.nextInt();
+
+                            if (userInputEndGame == 1) {
+                                pI = 99;
+                                challengerBoucle = true;
+                            }
+                            else if (userInputEndGame == 2) {
+                                pI = 99;
+                                challengerBoucle = false;
+                                menuBoucle = true;
+                            }
+                            else if (userInputEndGame == 3) {
+                                System.exit(0);
+                            }
+                            else {
+                                System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+                                challengerBoucle = false;
+                                menuBoucle = true;
+                            }
+                        }
                     }
                 }
 
@@ -175,7 +212,6 @@ public class main {
 
                     boolean essaiesInfinie = false;
 
-
                     System.out.println("Vous avez sélectionné le mode Défenseur !");
 
                     System.out.println("Voulez-vous activer le mode Essaies illimités ? 1 - Oui  2 - Non");
@@ -185,6 +221,7 @@ public class main {
                         nbEssaies = 1500;
                         essaiesInfinie = true;
                     }
+
                     else if (repEssaiesInfinie == 2) {
                         nbEssaies = 10;
                         essaiesInfinie = false;
@@ -196,10 +233,8 @@ public class main {
 
                     System.out.println("Veuillez rentrer une combinaison de 3, 4 ou 5 chiffes :");
 
-
                     sc.nextLine();
                     String userCombinaisonDefenseur = sc.nextLine();
-
 
 
                     if (userCombinaisonDefenseur.length() == 3) {
@@ -213,7 +248,7 @@ public class main {
                     }
                     else {
                         System.out.println("Une erreur est survenue. Votre combinaison est de " +
-                                userCombinaisonDefenseur.length()+". Redémarrage du module Défenseur...");
+                                userCombinaisonDefenseur.length()+" chiffre(s). Redémarrage du module Défenseur...");
                         continue;
                     }
 
@@ -344,7 +379,7 @@ public class main {
                                     menuBoucle = true;
                                 }
                             }
-                            else if (pIDef == nbEssaies){
+                            else if (pIDef+1 == nbEssaies){
                                 System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
                                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 
