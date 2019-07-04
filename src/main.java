@@ -169,8 +169,19 @@ public class main {
 
                 while (defenseurBoucle) {
 
+                    int chiffreUserDef1;
+                    int chiffreUserDef2;
+                    int chiffreUserDef3;
+                    int chiffreUserDef4;
+                    int chiffreUserDef5;
+
+
                     int longueurCombinaisonDef;
+
                     String combinaisonDefenseur = "";
+                    String combinaisonDefenseur2 = "";
+                    String resultatIACombinaison = "";
+                    String valeurTemp = "";
 
 
                     System.out.println("Vous avez sélectionné le mode Défenseur !");
@@ -181,12 +192,27 @@ public class main {
 
                     if (userCombinaisonDefenseur.length() == 3) {
                         longueurCombinaisonDef = 3;
+
+                        chiffreUserDef1 = Character.getNumericValue(userCombinaisonDefenseur.charAt(0));
+                        chiffreUserDef2 = Character.getNumericValue(userCombinaisonDefenseur.charAt(1));
+                        chiffreUserDef3 = Character.getNumericValue(userCombinaisonDefenseur.charAt(2));
                     }
                     else if (userCombinaisonDefenseur.length() == 4) {
                         longueurCombinaisonDef = 4;
+
+                        chiffreUserDef1 = Character.getNumericValue(userCombinaisonDefenseur.charAt(0));
+                        chiffreUserDef2 = Character.getNumericValue(userCombinaisonDefenseur.charAt(1));
+                        chiffreUserDef3 = Character.getNumericValue(userCombinaisonDefenseur.charAt(2));
+                        chiffreUserDef4 = Character.getNumericValue(userCombinaisonDefenseur.charAt(3));
                     }
                     else if (userCombinaisonDefenseur.length() == 5) {
                         longueurCombinaisonDef = 5;
+
+                        chiffreUserDef1 = Character.getNumericValue(userCombinaisonDefenseur.charAt(0));
+                        chiffreUserDef2 = Character.getNumericValue(userCombinaisonDefenseur.charAt(1));
+                        chiffreUserDef3 = Character.getNumericValue(userCombinaisonDefenseur.charAt(2));
+                        chiffreUserDef4 = Character.getNumericValue(userCombinaisonDefenseur.charAt(3));
+                        chiffreUserDef5 = Character.getNumericValue(userCombinaisonDefenseur.charAt(4));
                     }
                     else {
                         System.out.println("Une erreur est survenue. Votre combinaison est de " +
@@ -194,85 +220,55 @@ public class main {
                         continue;
                     }
 
-                    int chiffreUser1 = random.nextInt(10);
-                    int chiffreUser2 = random.nextInt(10);
-                    int chiffreUser3 = random.nextInt(10);
-                    int chiffreUser4 = random.nextInt(10);
-                    int chiffreUser5 = random.nextInt(10);
+                    for (int pIDef = 0; pIDef < nbEssaies; pIDef++) {
+                        if (pIDef == 0) {
+                            int chiffreCombiDef1 = random.nextInt(10);
+                            int chiffreCombiDef2 = random.nextInt(10);
+                            int chiffreCombiDef3 = random.nextInt(10);
+                            int chiffreCombiDef4 = random.nextInt(10);
+                            int chiffreCombiDef5 = random.nextInt(10);
 
-                    String resultatIACombinaison = "";
-
-                    if (longueurCombinaisonDef == 3) {
-                        combinaisonDefenseur = String.valueOf(chiffreUser1) + chiffreUser2 + chiffreUser3;
-                    }
-                    else if (longueurCombinaisonDef == 4) {
-                        combinaisonDefenseur = String.valueOf(chiffreUser1) + chiffreUser2 + chiffreUser3 +
-                                chiffreUser4;
-                    }
-                    else if (longueurCombinaisonDef == 5) {
-                        combinaisonDefenseur = String.valueOf(chiffreUser1) + chiffreUser2 + chiffreUser3 +
-                                chiffreUser4 + chiffreUser5;
+                            if (longueurCombinaisonDef == 3) {
+                                combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 + chiffreCombiDef3;
+                            }
+                            else if (longueurCombinaisonDef == 4) {
+                                combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                                        chiffreCombiDef3 + chiffreCombiDef4;
+                            }
+                            else if (longueurCombinaisonDef == 5) {
+                                combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                                        chiffreCombiDef3 + chiffreCombiDef4 + chiffreCombiDef5;
+                            }
                         }
 
-                    for (int pI = 0; pI < nbEssaies; pI++) {
                         for (int indiceDef = 0; indiceDef < longueurCombinaisonDef; indiceDef++) {
-                            if (userCombinaisonDefenseur.charAt(indiceDef) == combinaisonDefenseur.charAt
-                                    (indiceDef)) {
-                                resultatIACombinaison += "=";
-                            }
+                            if (pIDef == 1) {
 
-                            else if (userCombinaisonDefenseur.charAt(indiceDef) < combinaisonDefenseur.charAt
-                                    (indiceDef)) {
-                                resultatIACombinaison += "+";
+                                if (userCombinaisonDefenseur.charAt(indiceDef) == combinaisonDefenseur.charAt
+                                (indiceDef)) {
 
-                                int valeurRécup = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
-                                int nouvelleValeur = valeurRécup + random.nextInt(10 - valeurRécup);
-                                char nouvelleValeurChar = Character.forDigit(nouvelleValeur, 10);
+                                    combinaisonDefenseur2 += combinaisonDefenseur.charAt(indiceDef);
+                                    valeurTemp = combinaisonDefenseur2;
+                                    resultatIACombinaison += "=";
 
-                                char[] ch = combinaisonDefenseur.toCharArray();
-                                ch[indiceDef] = nouvelleValeurChar;
-                                combinaisonDefenseur = ch.toString();
+                                }
 
-                            }
-                            else if (userCombinaisonDefenseur.charAt(indiceDef) > combinaisonDefenseur.charAt
-                                    (indiceDef)) {
-                                resultatIACombinaison += "-";
-                                int valeurRécup2 = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
-                                int nouvelleValeur2 = random.nextInt(valeurRécup2);
-                                char nouvelleValeurChar = Character.forDigit(nouvelleValeur2, 10);
+                                else if (userCombinaisonDefenseur.charAt(indiceDef) < combinaisonDefenseur.charAt
+                                (indiceDef)) {
 
-                                char[] ch2 = combinaisonDefenseur.toCharArray();
-                                ch2[indiceDef] = nouvelleValeurChar;
-                                combinaisonDefenseur = ch2.toString();
-                            }
-                        }
+                                    int min = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
 
-                        System.out.println(combinaisonDefenseur);
-                        System.out.println(resultatIACombinaison);
+                                    combinaisonDefenseur2 += Character.forDigit
+                                            ((random.nextInt(9-min+1)+min),10);
 
-                        if (resultatIACombinaison.equals("===") || resultatIACombinaison.equals("====") ||
-                                resultatIACombinaison.equals("=====")) {
-                            System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
-                                    "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+                                    resultatIACombinaison += "+";
+                                }
 
-                            int userInputEndGame = sc.nextInt();
+                                else if (userCombinaisonDefenseur.charAt(indiceDef) > combinaisonDefenseur.charAt
+                                (indiceDef)) {
+                                    resultatIACombinaison += "-";
 
-                            if (userInputEndGame == 1) {
-                                pI = 99;
-                                challengerBoucle = true;
-                            }
-                            else if (userInputEndGame == 2) {
-                                pI = 99;
-                                challengerBoucle = false;
-                                menuBoucle = true;
-                            }
-                            else if (userInputEndGame == 3) {
-                                System.exit(0);
-                            }
-                            else {
-                                System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                                challengerBoucle = false;
-                                menuBoucle = true;
+                                }
                             }
                         }
                     }
@@ -282,6 +278,72 @@ public class main {
     }
 }
 
+
+
+
+
+//for (int pI = 0; pI < nbEssaies; pI++) {
+//        for (int indiceDef = 0; indiceDef < longueurCombinaisonDef; indiceDef++) {
+//        if (userCombinaisonDefenseur.charAt(indiceDef) == combinaisonDefenseur.charAt
+//        (indiceDef)) {
+//        resultatIACombinaison += "=";
+//        }
+//
+//        else if (userCombinaisonDefenseur.charAt(indiceDef) < combinaisonDefenseur.charAt
+//        (indiceDef)) {
+//        resultatIACombinaison += "+";
+//
+//        int valeurRécup = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+//        int nouvelleValeur = valeurRécup + random.nextInt(10 - valeurRécup);
+//        char nouvelleValeurChar = Character.forDigit(nouvelleValeur, 10);
+//
+//        char[] ch = combinaisonDefenseur.toCharArray();
+//        ch[indiceDef] = nouvelleValeurChar;
+//        combinaisonDefenseur = ch.toString();
+//
+//        }
+//        else if (userCombinaisonDefenseur.charAt(indiceDef) > combinaisonDefenseur.charAt
+//        (indiceDef)) {
+//        resultatIACombinaison += "-";
+//        int valeurRécup2 = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+//        int nouvelleValeur2 = random.nextInt(valeurRécup2);
+//        char nouvelleValeurChar = Character.forDigit(nouvelleValeur2, 10);
+//
+//        char[] ch2 = combinaisonDefenseur.toCharArray();
+//        ch2[indiceDef] = nouvelleValeurChar;
+//        combinaisonDefenseur = ch2.toString();
+//        }
+//        }
+//
+//        System.out.println(combinaisonDefenseur);
+//        System.out.println(resultatIACombinaison);
+//
+//        if (resultatIACombinaison.equals("===") || resultatIACombinaison.equals("====") ||
+//        resultatIACombinaison.equals("=====")) {
+//        System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
+//        "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+//
+//        int userInputEndGame = sc.nextInt();
+//
+//        if (userInputEndGame == 1) {
+//        pI = 99;
+//        challengerBoucle = true;
+//        }
+//        else if (userInputEndGame == 2) {
+//        pI = 99;
+//        challengerBoucle = false;
+//        menuBoucle = true;
+//        }
+//        else if (userInputEndGame == 3) {
+//        System.exit(0);
+//        }
+//        else {
+//        System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+//        challengerBoucle = false;
+//        menuBoucle = true;
+//        }
+//        }
+//        }
 
 ////affichage du menu de fin si victoire
 //                            if (userCombinaison == combinaisonChallenger) {
