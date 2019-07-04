@@ -13,7 +13,7 @@ public class main {
         boolean defenseurBoucle     = false;
         boolean duelBoucle          = false;
         
-        int nbEssaies               = 5;
+        int nbEssaies               = 10;
         int longueurCombinaison     = 4;
 
 
@@ -187,7 +187,10 @@ public class main {
                     System.out.println("Vous avez sélectionné le mode Défenseur !");
                     System.out.println("Veuillez rentrer une combinaison de 3, 4 ou 5 chiffes :");
 
-                    sc.nextLine();
+                    for (int bugNL = 0; bugNL < 1; bugNL++) {
+                        sc.nextLine();
+                    }
+
                     String userCombinaisonDefenseur = sc.nextLine();
 
                     if (userCombinaisonDefenseur.length() == 3) {
@@ -229,7 +232,8 @@ public class main {
                             int chiffreCombiDef5 = random.nextInt(10);
 
                             if (longueurCombinaisonDef == 3) {
-                                combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 + chiffreCombiDef3;
+                                combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                                        chiffreCombiDef3;
                             }
                             else if (longueurCombinaisonDef == 4) {
                                 combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
@@ -239,35 +243,109 @@ public class main {
                                 combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
                                         chiffreCombiDef3 + chiffreCombiDef4 + chiffreCombiDef5;
                             }
+                            System.out.println(combinaisonDefenseur);
                         }
 
-                        for (int indiceDef = 0; indiceDef < longueurCombinaisonDef; indiceDef++) {
-                            if (pIDef == 1) {
+                        else if (pIDef > 0) {
 
-                                if (userCombinaisonDefenseur.charAt(indiceDef) == combinaisonDefenseur.charAt
-                                (indiceDef)) {
+                            combinaisonDefenseur2 = "";
+                            resultatIACombinaison = "";
 
-                                    combinaisonDefenseur2 += combinaisonDefenseur.charAt(indiceDef);
-                                    valeurTemp = combinaisonDefenseur2;
-                                    resultatIACombinaison += "=";
+                            for (int indiceDef = 0; indiceDef < longueurCombinaisonDef; indiceDef++) {
+
+                                if (pIDef == 1) {
+
+                                    if (userCombinaisonDefenseur.charAt(indiceDef) == combinaisonDefenseur.charAt
+                                            (indiceDef)) {
+
+                                        combinaisonDefenseur2 += combinaisonDefenseur.charAt(indiceDef);
+                                        resultatIACombinaison += "=";
+
+                                    }
+
+                                    else if (userCombinaisonDefenseur.charAt(indiceDef) > combinaisonDefenseur.charAt
+                                            (indiceDef)) {
+
+                                        int min = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+
+                                        combinaisonDefenseur2 += Character.forDigit
+                                                ((random.nextInt(9-min+1)+min),10);
+
+                                        resultatIACombinaison += "+";
+                                    }
+
+                                    else if (userCombinaisonDefenseur.charAt(indiceDef) < combinaisonDefenseur.charAt
+                                            (indiceDef)) {
+
+                                        int max = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+
+                                        combinaisonDefenseur2 += Character.forDigit(random.nextInt(max),10);
+
+                                        resultatIACombinaison += "-";
+
+                                    }
 
                                 }
 
-                                else if (userCombinaisonDefenseur.charAt(indiceDef) < combinaisonDefenseur.charAt
-                                (indiceDef)) {
+                                else if (pIDef > 1) {
+                                    if (userCombinaisonDefenseur.charAt(indiceDef) == valeurTemp.charAt
+                                            (indiceDef)) {
 
-                                    int min = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+                                        combinaisonDefenseur2 += valeurTemp.charAt(indiceDef);
+                                        resultatIACombinaison += "=";
 
-                                    combinaisonDefenseur2 += Character.forDigit
-                                            ((random.nextInt(9-min+1)+min),10);
+                                    }
 
-                                    resultatIACombinaison += "+";
+                                    else if (userCombinaisonDefenseur.charAt(indiceDef) > valeurTemp.charAt
+                                            (indiceDef)) {
+
+                                        int min = Character.getNumericValue(valeurTemp.charAt(indiceDef));
+
+                                        combinaisonDefenseur2 += Character.forDigit
+                                                ((random.nextInt(10-min+1)+min),10);
+
+                                        resultatIACombinaison += "+";
+                                    }
+
+                                    else if (userCombinaisonDefenseur.charAt(indiceDef) < valeurTemp.charAt
+                                            (indiceDef)) {
+
+                                        int max = Character.getNumericValue(valeurTemp.charAt(indiceDef));
+
+                                        combinaisonDefenseur2 += Character.forDigit(random.nextInt(max),10);
+
+                                        resultatIACombinaison += "-";
+
+                                    }
                                 }
+                            }
 
-                                else if (userCombinaisonDefenseur.charAt(indiceDef) > combinaisonDefenseur.charAt
-                                (indiceDef)) {
-                                    resultatIACombinaison += "-";
+                            valeurTemp = combinaisonDefenseur2;
+                            System.out.println(combinaisonDefenseur2);
 
+                            if (resultatIACombinaison.equals("===") || resultatIACombinaison.equals("====") ||
+                                    resultatIACombinaison.equals("=====")) {
+                                System.out.println("L'ordinateur a trouvé la solution !\n" +
+                                        "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+
+                                int userInputEndGame = sc.nextInt();
+
+                                if (userInputEndGame == 1) {
+                                    pIDef = 99;
+                                    defenseurBoucle = true;
+                                }
+                                else if (userInputEndGame == 2) {
+                                    pIDef = 99;
+                                    defenseurBoucle = false;
+                                    menuBoucle = true;
+                                }
+                                else if (userInputEndGame == 3) {
+                                    System.exit(0);
+                                }
+                                else {
+                                    System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+                                    defenseurBoucle = false;
+                                    menuBoucle = true;
                                 }
                             }
                         }
