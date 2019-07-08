@@ -413,7 +413,7 @@ public class main {
 
                     boolean essaiesInfinie = false;
 
-                    System.out.println("Paramétrage de la combinaison de l'IA...");
+                    System.out.println("Paramétrage du système Challenger...");
 
                     System.out.println("Par défaut, la combinaison de l'IA contient 4 chiffres. " +
                             "Voulez-vous modifier la difficulté ?\n 1 - Oui  2 - Non");
@@ -442,7 +442,7 @@ public class main {
                             nbEssaies = 5;
                         }
                         else {
-                            System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
+                            System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
                             continue;
                         }
 
@@ -452,7 +452,7 @@ public class main {
                         nbEssaies = 7;
                     }
                     else {
-                        System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
+                        System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
                         continue;
                     }
 
@@ -461,11 +461,11 @@ public class main {
                     if (reponseDev == 1) modeDev = true;
                     else if (reponseDev == 2) modeDev = false;
                     else {
-                        System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
+                        System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
                         continue;
                     }
 
-                    System.out.println("Vous avez sélectionné le mode Défenseur !");
+                    System.out.println("Paramétrage du système Défenseur...");
 
                     System.out.println("Voulez-vous activer le mode Essaies illimités ? 1 - Oui  2 - Non");
                     int repEssaiesInfinie = sc.nextInt();
@@ -480,7 +480,7 @@ public class main {
                         essaiesInfinie = false;
                     }
                     else {
-                        System.out.println("Une erreur est survenue. Redémarrage du module Défenseur...");
+                        System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
                         continue;
                     }
 
@@ -501,7 +501,7 @@ public class main {
                     }
                     else {
                         System.out.println("Une erreur est survenue. Votre combinaison est de " +
-                                userCombinaisonDefenseur.length()+" chiffre(s). Redémarrage du module Défenseur...");
+                                userCombinaisonDefenseur.length()+" chiffre(s). Redémarrage du module Duel...");
                         continue;
                     }
 
@@ -535,10 +535,6 @@ public class main {
                     for (int pI = 0; pI < nbEssaies; pI++) {
                         String resultatUserCombinaison = "";
                         System.out.println("Veuillez rentrer " + longueurCombinaison + " chiffres :" );
-
-                        if (pI == 0) {
-                            sc.nextLine(); // pourquoi première lecture est sautée ?
-                        }
 
                         String userCombinaison = sc.nextLine();
                         if (userCombinaison.length() != longueurCombinaison) {
@@ -622,9 +618,7 @@ public class main {
                                         resultatIACombinaison += "-";
 
                                     }
-
                                 }
-
                                 else if (pI > 1) {
                                     if (userCombinaisonDefenseur.charAt(indiceDef) == valeurTemp.charAt
                                             (indiceDef)) {
@@ -761,9 +755,8 @@ public class main {
                     }
                 }
             }
+        }
     }
-
-}
 
 
 //for (int pI = 0; pI < nbEssaies; pI++) {
