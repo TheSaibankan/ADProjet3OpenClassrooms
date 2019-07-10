@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="premier jet mode duel">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +27,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2976">
+            <state relative-caret-position="-2743">
               <caret line="619" column="37" selection-start-line="619" selection-start-column="37" selection-end-line="619" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -62,9 +62,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="width" value="1390" />
-    <option name="height" value="1756" />
+    <option name="x" value="200" />
+    <option name="y" value="107" />
+    <option name="width" value="1200" />
+    <option name="height" value="646" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -77,12 +78,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FrançaisIntelliJ/fr.dic" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/fr.dic" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -110,7 +111,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\adome\Desktop\FrançaisIntelliJ" CustomDictionaries="1" CustomDictionary0="C:\Users\adome\Desktop\FrançaisIntelliJ\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="2" Folder0="C:\Users\adome\Desktop\FrançaisIntelliJ" Folder1="C:\Users\adomergue\Desktop" CustomDictionaries="2" CustomDictionary0="C:\Users\adome\Desktop\FrançaisIntelliJ\fr.dic" CustomDictionary1="C:\Users\adomergue\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -128,6 +129,7 @@
       <workItem from="1562332670265" duration="3886000" />
       <workItem from="1562336802590" duration="194000" />
       <workItem from="1562582958429" duration="865000" />
+      <workItem from="1562741556923" duration="460000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -238,7 +240,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9345000" />
+    <option name="totallyTimeSpent" value="9805000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,7 +252,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15495087" />
@@ -281,7 +283,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" auto_hide="true" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" weight="0.77853364" />
+      <window_info anchor="right" auto_hide="true" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" weight="0.4048843" />
       <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.36583522" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
       <window_info anchor="right" id="Database" order="11" />
@@ -434,7 +436,7 @@
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2976">
+        <state relative-caret-position="-2743">
           <caret line="619" column="37" selection-start-line="619" selection-start-column="37" selection-end-line="619" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
