@@ -414,17 +414,17 @@ public class ModesDeJeu {
             int choixDiff = sc.nextInt();
 
             if (choixDiff == 1){
-                System.out.println("Vous avez choisi le mode facile. (3 chiffres, 10 essaies)");
+                System.out.println("Vous avez choisi le mode facile. (3 chiffres)");
                 longueurCombinaison = 3;
                 nbEssaies = 10;
             }
             else if (choixDiff == 2) {
-                System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
+                System.out.println("Vous avez choisi le mode normal. (4 chiffres)");
                 longueurCombinaison = 4;
                 nbEssaies = 7;
             }
             else if (choixDiff == 3) {
-                System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
+                System.out.println("Vous avez choisi le mode difficile. (5 chiffres)");
                 longueurCombinaison = 5;
                 nbEssaies = 5;
             }
@@ -581,17 +581,14 @@ public class ModesDeJeu {
 
                             combinaisonDefenseur2 += combinaisonDefenseur.charAt(indiceDef);
                             resultatIACombinaison += "=";
-
                         }
 
                         else if (userCombinaisonDefenseur.charAt(indiceDef) > combinaisonDefenseur.charAt
                                 (indiceDef)) {
 
                             int min = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
-
                             combinaisonDefenseur2 += Character.forDigit
                                     ((random.nextInt(9-min+1)+min),10);
-
                             resultatIACombinaison += "+";
                         }
 
@@ -651,11 +648,11 @@ public class ModesDeJeu {
 
                     if (userInputEndGame == 1) {
                         pI = 99;
-                        challengerBoucle = true;
+                        main.challengerBoucle = true;
                     }
                     else if (userInputEndGame == 2) {
                         pI = 99;
-                        challengerBoucle = false;
+                        main.challengerBoucle = false;
                         menuBoucle = true;
                     }
                     else if (userInputEndGame == 3) {
@@ -663,7 +660,7 @@ public class ModesDeJeu {
                     }
                     else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        challengerBoucle = false;
+                        main.challengerBoucle = false;
                         menuBoucle = true;
                     }
                 }
@@ -675,11 +672,11 @@ public class ModesDeJeu {
 
                     if (userInputEndGame == 1) {
                         pI = 99;
-                        challengerBoucle = true;
+                        main.challengerBoucle = true;
                     }
                     else if (userInputEndGame == 2) {
                         pI = 99;
-                        challengerBoucle = false;
+                        main.challengerBoucle = false;
                         menuBoucle = true;
                     }
                     else if (userInputEndGame == 3) {
@@ -687,7 +684,7 @@ public class ModesDeJeu {
                     }
                     else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        challengerBoucle = false;
+                        main.challengerBoucle = false;
                         menuBoucle = true;
                     }
                 }
@@ -695,7 +692,7 @@ public class ModesDeJeu {
                 if (combinaisonDefenseur2.equals(userCombinaisonDefenseur)) {
                     System.out.println("L'ordinateur a trouvé la solution !\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                    if (essaiesInfinie == true) {
+                    if (essaiesInfinie) {
                         System.out.println("L'ordinateur a pris "+(pI+1)+" tours pour trouver la combinaison.");
                     }
 
@@ -703,11 +700,11 @@ public class ModesDeJeu {
 
                     if (userInputEndGame == 1) {
                         pI = 1501;
-                        defenseurBoucle = true;
+                        main.defenseurBoucle = true;
                     }
                     else if (userInputEndGame == 2) {
                         pI = 1501;
-                        defenseurBoucle = false;
+                        main.defenseurBoucle = false;
                         menuBoucle = true;
                     }
                     else if (userInputEndGame == 3) {
@@ -715,7 +712,7 @@ public class ModesDeJeu {
                     }
                     else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        defenseurBoucle = false;
+                        main.defenseurBoucle = false;
                         menuBoucle = true;
                     }
                 }
@@ -726,15 +723,15 @@ public class ModesDeJeu {
                     int userInputEndGame = sc.nextInt();
 
                     if (userInputEndGame == 1) {
-                        defenseurBoucle = true;
+                        main.defenseurBoucle = true;
                     } else if (userInputEndGame == 2) {
-                        defenseurBoucle = false;
+                        main.defenseurBoucle = false;
                         menuBoucle = true;
                     } else if (userInputEndGame == 3) {
                         System.exit(0);
                     } else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        defenseurBoucle = false;
+                        main.defenseurBoucle = false;
                         menuBoucle = true;
                     }
                 }

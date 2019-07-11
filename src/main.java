@@ -7,7 +7,6 @@ public class main {
     static boolean duelBoucle = false;
 
     public static void main(String[] args) {
-        Random random               = new Random();
         Scanner sc                  = new Scanner(System.in);
 
         boolean modeDev;
@@ -37,11 +36,9 @@ public class main {
             while (challengerBoucle) {
                 ModesDeJeu.modeChallenger();
             }
-
             while (defenseurBoucle) {
                 ModesDeJeu.modeDefenseur();
             }
-
             while (duelBoucle) {
                 ModesDeJeu.modeDuel();
             }
