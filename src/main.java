@@ -2,18 +2,19 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class main {
+
+
     public static void main(String[] args) {
         Random random               = new Random();
         Scanner sc                  = new Scanner(System.in);
 
         boolean modeDev;
         boolean menuBoucle          = true;
-        boolean challengerBoucle    = false;
-        boolean defenseurBoucle     = false;
-        boolean duelBoucle          = false;
-        
         int nbEssaies               = 10;
         int longueurCombinaison;
+        boolean challengerBoucle = modesDeJeu.challengerBoucle;
+        boolean defenseurBoucle = modesDeJeu.defenseurBoucle;
+        boolean duelBoucle = modesDeJeu.duelBoucle;
 
 
 
