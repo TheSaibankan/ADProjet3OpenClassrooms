@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class ModesDeJeu {
+class ModesDeJeu {
 
     static int longueurCombinaison = 0;
     static int nbEssaies = 7;
@@ -14,7 +14,7 @@ public class ModesDeJeu {
 
     static boolean modeDev = false;
 
-    public static void modeChallenger() {
+    static void modeChallenger() {
 
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
@@ -49,6 +49,7 @@ public class ModesDeJeu {
             }
             else {
                 System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
+                return;
             }
 
         }
@@ -58,6 +59,7 @@ public class ModesDeJeu {
         }
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
+            return;
         }
 
         System.out.println("Voulez-vous activer le mode développeur ? 1 - Oui  2 - Non");
@@ -66,6 +68,7 @@ public class ModesDeJeu {
         else if (reponseDev == 2) modeDev = false;
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
+            return;
         }
 
         String combinaisonChallenger = "";
@@ -96,7 +99,7 @@ public class ModesDeJeu {
         }
 
         for (int pI = 0; pI < nbEssaies; pI++) {
-            String resultatUserCombinaison = "";
+            StringBuilder resultatUserCombinaison = new StringBuilder();
             System.out.println("Veuillez rentrer " + longueurCombinaison + " chiffres :" );
 
             if (pI == 0) {
@@ -107,26 +110,31 @@ public class ModesDeJeu {
             if (userCombinaison.length() != longueurCombinaison) {
                 System.out.println("Attention ! Vous avez saisi "+userCombinaison.length()+" chiffre(s) "+
                         "au lieu de "+longueurCombinaison+".");
-                pI--;
-                continue;
+
+                if (pI == 0) {
+                    continue;
+                }
+                else {
+                    pI--;
+                }
             }
 
             for(int indice = 0; indice < longueurCombinaison; indice++) {
 
                 if (userCombinaison.charAt(indice) == combinaisonChallenger.charAt(indice)) {
-                    resultatUserCombinaison += "=";
+                    resultatUserCombinaison.append("=");
                 }
                 else if (userCombinaison.charAt(indice) < combinaisonChallenger.charAt(indice)) {
-                    resultatUserCombinaison += "+";
+                    resultatUserCombinaison.append("+");
                 }
                 else if (userCombinaison.charAt(indice) > combinaisonChallenger.charAt(indice)) {
-                    resultatUserCombinaison += "-";
+                    resultatUserCombinaison.append("-");
                 }
             }
             System.out.println(resultatUserCombinaison);
 
-            if (resultatUserCombinaison.equals("===") || resultatUserCombinaison.equals("====") ||
-                    resultatUserCombinaison.equals("=====")) {
+            if (resultatUserCombinaison.toString().equals("===") || resultatUserCombinaison.toString().equals("====") ||
+                    resultatUserCombinaison.toString().equals("=====")) {
                 System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 
@@ -180,6 +188,7 @@ public class ModesDeJeu {
             }
         }
     }
+
     public static void modeDefenseur() {
 
         Scanner sc = new Scanner(System.in);
@@ -295,7 +304,6 @@ public class ModesDeJeu {
                             resultatIACombinaison += "-";
 
                         }
-
                     }
 
                     else if (pIDef > 1) {
@@ -330,6 +338,7 @@ public class ModesDeJeu {
                         }
                     }
                 }
+
                 valeurTemp = combinaisonDefenseur2;
                 System.out.println(combinaisonDefenseur2);
 
@@ -383,15 +392,12 @@ public class ModesDeJeu {
         }
     }
 
-
-
-
-
     public static void modeDuel() {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
         int longueurCombinaisonDef;
+        nbEssaies = 1500;
 
         String combinaisonDefenseur = "";
         String combinaisonDefenseur2 = "";
@@ -453,24 +459,6 @@ public class ModesDeJeu {
         }
 
         System.out.println("Paramétrage du système Défenseur...");
-
-        System.out.println("Voulez-vous activer le mode Essaies illimités ? 1 - Oui  2 - Non");
-        int repEssaiesInfinie = sc.nextInt();
-
-        if (repEssaiesInfinie == 1) {
-            nbEssaies = 1500;
-            essaiesInfinie = true;
-        }
-
-        else if (repEssaiesInfinie == 2) {
-            nbEssaies = 10;
-            essaiesInfinie = false;
-        }
-        else {
-            System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
-            return;
-        }
-
         System.out.println("Veuillez rentrer une combinaison de 3, 4 ou 5 chiffes :");
 
         sc.nextLine();

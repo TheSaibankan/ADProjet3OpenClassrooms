@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="modeChallenger premier jet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ModesDeJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModesDeJeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modesDeJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModesDeJeu.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="625" column="34" lean-forward="true" selection-start-line="625" selection-start-column="34" selection-end-line="625" selection-end-column="34" />
+            <state relative-caret-position="150">
+              <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,14 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-216">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -59,6 +55,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>erreur</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,8 +89,8 @@
         <option value="$PROJECT_DIR$/src/log4j.fxml" />
         <option value="$PROJECT_DIR$/src/log4j.xml" />
         <option value="$PROJECT_DIR$/src/modesDeJeu.java" />
-        <option value="$PROJECT_DIR$/src/ModesDeJeu.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
+        <option value="$PROJECT_DIR$/src/ModesDeJeu.java" />
       </list>
     </option>
   </component>
@@ -109,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,7 +131,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -143,7 +144,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,6 +193,7 @@
       <workItem from="1562741556923" duration="460000" />
       <workItem from="1562754617330" duration="7715000" />
       <workItem from="1562827376447" duration="8305000" />
+      <workItem from="1562914585753" duration="7408000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -323,7 +325,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25825000" />
+    <option name="totallyTimeSpent" value="37391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,9 +338,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31962866" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31940874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -354,7 +355,7 @@
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32970026" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.33088234" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3164006" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.35268506" />
+      <window_info anchor="bottom" x="961" y="64" width="575" height="312" id="Version Control" order="8" type="FLOATING" weight="0.37042683" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -366,7 +367,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.4048843" />
+      <window_info anchor="right" x="517" y="193" width="736" height="571" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.47214854" />
       <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.40102828" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
       <window_info anchor="right" id="Database" order="11" />
@@ -497,6 +498,18 @@
     <MESSAGE value="modeChallenger premier jet" />
     <option name="LAST_COMMIT_MESSAGE" value="modeChallenger premier jet" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ModesDeJeu.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -539,67 +552,21 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/modeChallenger.java">
+    <entry file="file://$PROJECT_DIR$/src/modeChallenger.java" />
+    <entry file="file://$PROJECT_DIR$/src/log4j.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/log4j.xml" />
+    <entry file="file://$PROJECT_DIR$/src/MainProg.java" />
+    <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-data-editor">
-        <state>
-          <format>
-            <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
-              <data>
-                <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator="&#9;" recordSeparator="&#10;">
-                  <quotation>
-                    <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                    <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                  </quotation>
-                </record-format>
-              </data>
-            </csv-format>
-          </format>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainProg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-216">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="625" column="34" lean-forward="true" selection-start-line="625" selection-start-column="34" selection-end-line="625" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class main {
@@ -7,9 +6,8 @@ public class main {
     static boolean duelBoucle = false;
 
     public static void main(String[] args) {
-        Scanner sc                  = new Scanner(System.in);
 
-        boolean modeDev;
+        Scanner sc                  = new Scanner(System.in);
         boolean menuBoucle          = true;
 
         System.out.println("Bienvenue dans le module de recherche d'une combinaison à X chiffres.");
@@ -21,15 +19,12 @@ public class main {
             int reponseMode = sc.nextInt();
 
             if (reponseMode == 1) {
-                //menuBoucle          = false;
                 challengerBoucle    =  true;
             }
             else if (reponseMode == 2) {
-                //menuBoucle          = false;
                 defenseurBoucle     = true;
             }
             else if (reponseMode == 3) {
-                //menuBoucle          = false;
                 duelBoucle          = true;
             }
 
