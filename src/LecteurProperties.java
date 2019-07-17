@@ -7,9 +7,13 @@ public class LecteurProperties {
         Properties properties = new Properties();
         properties.load(reader);
 
-        int recupParamNbEssaies = Integer.getInteger(properties.getProperty("paramNbEssaies"));
-        int recupParamLongueurCombinaison = Integer.getInteger(properties.getProperty("paramLongueurCombinaison"));
-        boolean recupParamModeDev = Boolean.parseBoolean(properties.getProperty("paramModeDev"));
+        String recupParamNbEssaies = properties.getProperty("paramNbEssaies");
+        String recupParamLongueurCombinaison = properties.getProperty("paramLongueurCombinaison");
+        String recupParamModeDev = properties.getProperty("paramModeDev");
+
+        ModesDeJeu.nbEssaies = Integer.parseInt(recupParamNbEssaies);
+        ModesDeJeu.longueurCombinaison = Integer.parseInt(recupParamLongueurCombinaison);
+        ModesDeJeu.modeDev = Boolean.parseBoolean(recupParamModeDev);
     }
 
     public static int getParamConfigNbEssaies() throws IOException {
@@ -17,7 +21,7 @@ public class LecteurProperties {
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Integer.getInteger(properties.getProperty("paramNbEssaies"));
+        return Integer.parseInt(properties.getProperty("paramNbEssaies"));
     }
 
     public static int getParamConfigLongueurCombinaison() throws IOException {
@@ -25,7 +29,7 @@ public class LecteurProperties {
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Integer.getInteger(properties.getProperty("paramLongueurCombinaison"));
+        return Integer.parseInt(properties.getProperty("paramLongueurCombinaison"));
     }
 
     public static boolean getParamConfigModeDev() throws IOException {

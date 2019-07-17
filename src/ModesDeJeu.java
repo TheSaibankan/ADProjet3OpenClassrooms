@@ -32,21 +32,24 @@ class ModesDeJeu {
 
             if (choixDiff == 1){
                 System.out.println("Vous avez choisi le mode facile. (3 chiffres, 10 essaies)");
-                longueurCombinaison = 3;
-                nbEssaies = 10;
                 LecteurProperties.setEasyChallenger();
+                longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
+                nbEssaies = LecteurProperties.getParamConfigNbEssaies();
+
             }
             else if (choixDiff == 2) {
                 System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
-                longueurCombinaison = 4;
-                nbEssaies = 7;
                 LecteurProperties.setMediumChallenger();
+                longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
+                nbEssaies = LecteurProperties.getParamConfigNbEssaies();
+
             }
             else if (choixDiff == 3) {
                 System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
-                longueurCombinaison = 5;
-                nbEssaies = 5;
                 LecteurProperties.setHardChallenger();
+                longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
+                nbEssaies = LecteurProperties.getParamConfigNbEssaies();
+
             }
             else {
                 System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
@@ -55,7 +58,8 @@ class ModesDeJeu {
 
         }
         else if (reponseDiff == 2) {
-            longueurCombinaison = 4;
+            LecteurProperties.setMediumChallenger();
+            longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
             nbEssaies = 7;
         }
         else {
