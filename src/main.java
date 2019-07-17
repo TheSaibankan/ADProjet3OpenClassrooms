@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class main {
@@ -5,7 +6,13 @@ public class main {
     static boolean defenseurBoucle = false;
     static boolean duelBoucle = false;
 
-    public static void main(String[] args) {
+    static int longueurCombinaison;
+    static int nbEssaies;
+
+    static boolean menuBoucle;
+    static boolean modeDev;
+
+    public static void main(String[] args) throws IOException {
 
         Scanner sc                  = new Scanner(System.in);
         boolean menuBoucle          = true;

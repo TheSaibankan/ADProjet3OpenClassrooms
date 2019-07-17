@@ -1,30 +1,28 @@
+import java.io.IOException;
+import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
 
 class ModesDeJeu {
 
-    static int longueurCombinaison = 0;
-    static int nbEssaies = 7;
+    static int longueurCombinaison;
+    static int nbEssaies;
 
     static boolean menuBoucle;
+    static boolean modeDev;
 
-    static boolean challengerBoucle = main.challengerBoucle;
-    static boolean defenseurBoucle = main.defenseurBoucle;
-    static boolean duelBoucle = main.duelBoucle;
-
-    static boolean modeDev = false;
-
-    static void modeChallenger() {
-
+    static void modeChallenger() throws IOException {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
+        Properties prop = new Properties();
+
+        LecteurProperties.getParamConfig();
 
         System.out.println("Vous avez sélectionné le mode Challenger !");
         System.out.println("Par défaut, la combinaison contient 4 chiffres. " +
                 "Voulez-vous modifier la difficulté ?\n 1 - Oui  2 - Non");
 
         int reponseDiff = sc.nextInt();
-
 
         if (reponseDiff == 1) {
             System.out.println("Choisissez la difficulté : 1 - Facile  2 - Normal  " +
@@ -36,16 +34,19 @@ class ModesDeJeu {
                 System.out.println("Vous avez choisi le mode facile. (3 chiffres, 10 essaies)");
                 longueurCombinaison = 3;
                 nbEssaies = 10;
+                LecteurProperties.setEasyChallenger();
             }
             else if (choixDiff == 2) {
                 System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
                 longueurCombinaison = 4;
                 nbEssaies = 7;
+                LecteurProperties.setMediumChallenger();
             }
             else if (choixDiff == 3) {
                 System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
                 longueurCombinaison = 5;
                 nbEssaies = 5;
+                LecteurProperties.setHardChallenger();
             }
             else {
                 System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
