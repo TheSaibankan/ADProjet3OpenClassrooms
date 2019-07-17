@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="premier jet mode duel">
+    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="modeChallenger premier jet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ModesDeJeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModesDeJeu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,13 +26,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.java">
+        <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2976">
-              <caret line="619" column="37" selection-start-line="619" selection-start-column="37" selection-end-line="619" selection-end-column="37" />
+            <state relative-caret-position="150">
+              <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -41,17 +51,46 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>erreur</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Projet3POO" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/modeChallenger.java" />
+        <option value="$PROJECT_DIR$/src/log4j.fxml" />
+        <option value="$PROJECT_DIR$/src/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/modesDeJeu.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
+        <option value="$PROJECT_DIR$/src/ModesDeJeu.java" />
       </list>
     </option>
   </component>
@@ -62,27 +101,50 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="width" value="1390" />
-    <option name="height" value="1756" />
+    <option name="x" value="793" />
+    <option name="width" value="814" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TestJavaProjet3Procedural" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJavaProjet3Procedural" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestJavaProjet3Procedural" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJavaProjet3Procedural" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestJavaProjet3Procedural" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FrançaisIntelliJ/fr.dic" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/fr.dic" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -110,7 +172,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\adome\Desktop\FrançaisIntelliJ" CustomDictionaries="1" CustomDictionary0="C:\Users\adome\Desktop\FrançaisIntelliJ\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="2" Folder0="C:\Users\adome\Desktop\FrançaisIntelliJ" Folder1="C:\Users\adomergue\Desktop" CustomDictionaries="2" CustomDictionary0="C:\Users\adome\Desktop\FrançaisIntelliJ\fr.dic" CustomDictionary1="C:\Users\adomergue\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -128,6 +190,10 @@
       <workItem from="1562332670265" duration="3886000" />
       <workItem from="1562336802590" duration="194000" />
       <workItem from="1562582958429" duration="865000" />
+      <workItem from="1562741556923" duration="460000" />
+      <workItem from="1562754617330" duration="7715000" />
+      <workItem from="1562827376447" duration="8305000" />
+      <workItem from="1562914585753" duration="7408000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -234,11 +300,32 @@
       <option name="project" value="LOCAL" />
       <updated>1562335877250</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="nettoyage + dernier commit avant DOO">
+      <created>1562754770527</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562754770527</updated>
+    </task>
+    <task id="LOCAL-00017" summary="class modesDeJeu créée">
+      <created>1562833339159</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562833339159</updated>
+    </task>
+    <task id="LOCAL-00018" summary="modeChallenger premier jet">
+      <created>1562834031370</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1562834031370</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9345000" />
+    <option name="totallyTimeSpent" value="37391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,10 +337,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15495087" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31940874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -262,14 +348,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="4" weight="0.3281046" />
+      <window_info anchor="bottom" id="TODO" order="4" weight="0.3280116" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32970026" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3267974" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.33333334" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3529412" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.33088234" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3164006" />
+      <window_info anchor="bottom" x="961" y="64" width="575" height="312" id="Version Control" order="8" type="FLOATING" weight="0.37042683" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -281,44 +367,58 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" auto_hide="true" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" weight="0.77853364" />
-      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.36583522" />
+      <window_info anchor="right" x="517" y="193" width="736" height="571" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.47214854" />
+      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.40102828" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
       <window_info anchor="right" id="Database" order="11" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29562983" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31962866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32941177" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.3281046" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.32970026" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3267974" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.33333334" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.40392157" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" weight="0.3280116" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32970026" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.33088234" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3164006" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.35268506" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24871466" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.3277635" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32728648" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" x="190" y="125" width="744" height="399" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.40359896" />
-      <window_info active="true" anchor="right" id="Debug" order="9" sideWeight="0.49867725" visible="true" weight="0.38046274" />
+      <window_info anchor="right" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.4048843" />
+      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" visible="true" weight="0.40102828" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
+      <window_info anchor="right" id="Database" order="11" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -331,6 +431,17 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Projet3POO" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
               </option>
               <option name="COLUMN_ORDER">
                 <list>
@@ -349,7 +460,13 @@
       <map>
         <entry key="Branch">
           <value>
-            <list />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Projet3POO" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
         <entry key="User">
@@ -376,16 +493,19 @@
     <MESSAGE value="premier jet module defense" />
     <MESSAGE value="menu de sorti module défense" />
     <MESSAGE value="premier jet mode duel" />
-    <option name="LAST_COMMIT_MESSAGE" value="premier jet mode duel" />
+    <MESSAGE value="nettoyage + dernier commit avant DOO" />
+    <MESSAGE value="class modesDeJeu créée" />
+    <MESSAGE value="modeChallenger premier jet" />
+    <option name="LAST_COMMIT_MESSAGE" value="modeChallenger premier jet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>534</line>
+          <url>file://$PROJECT_DIR$/src/ModesDeJeu.java</url>
+          <line>109</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -432,10 +552,21 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/modeChallenger.java" />
+    <entry file="file://$PROJECT_DIR$/src/log4j.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/log4j.xml" />
+    <entry file="file://$PROJECT_DIR$/src/MainProg.java" />
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2976">
-          <caret line="619" column="37" selection-start-line="619" selection-start-column="37" selection-end-line="619" selection-end-column="37" />
+        <state relative-caret-position="-216">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="475" column="9" lean-forward="true" selection-start-line="475" selection-start-column="9" selection-end-line="475" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -481,6 +612,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -497,7 +629,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
