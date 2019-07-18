@@ -16,6 +16,7 @@ class ModesDeJeu {
         Random random = new Random();
         Properties prop = new Properties();
 
+        LecteurProperties.setBasicParam();
         LecteurProperties.getParamConfig();
 
         System.out.println("Vous avez sélectionné le mode Challenger !");
@@ -55,12 +56,12 @@ class ModesDeJeu {
                 System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
                 return;
             }
-
         }
+
         else if (reponseDiff == 2) {
             LecteurProperties.setMediumChallenger();
             longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
-            nbEssaies = 7;
+            nbEssaies = LecteurProperties.getParamConfigNbEssaies();
         }
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
@@ -69,7 +70,10 @@ class ModesDeJeu {
 
         System.out.println("Voulez-vous activer le mode développeur ? 1 - Oui  2 - Non");
         int reponseDev = sc.nextInt();
-        if (reponseDev == 1) modeDev = true;
+        if (reponseDev == 1) {
+            LecteurProperties.setDevModeChallenger();
+            modeDev = LecteurProperties.getParamConfigModeDev();
+        }
         else if (reponseDev == 2) modeDev = false;
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");

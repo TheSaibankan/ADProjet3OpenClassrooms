@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class LecteurProperties {
-    public static void getParamConfig() throws IOException {
+    static void getParamConfig() throws IOException {
         FileReader reader = new FileReader("Param.properties");
         Properties properties = new Properties();
         properties.load(reader);
@@ -16,20 +16,22 @@ public class LecteurProperties {
         ModesDeJeu.modeDev = Boolean.parseBoolean(recupParamModeDev);
     }
 
-    public static int getParamConfigNbEssaies() throws IOException {
+    static int getParamConfigNbEssaies() throws IOException {
         FileReader reader = new FileReader("Param.properties");
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Integer.parseInt(properties.getProperty("paramNbEssaies"));
+        int paramNbEssaies = Integer.parseInt(properties.getProperty("paramNbEssaies"));
+        return paramNbEssaies;
     }
 
-    public static int getParamConfigLongueurCombinaison() throws IOException {
+    static int getParamConfigLongueurCombinaison() throws IOException {
         FileReader reader = new FileReader("Param.properties");
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Integer.parseInt(properties.getProperty("paramLongueurCombinaison"));
+        int paramLongueurCombinaison = Integer.parseInt(properties.getProperty("paramLongueurCombinaison"));
+        return paramLongueurCombinaison;
     }
 
     public static boolean getParamConfigModeDev() throws IOException {
@@ -37,36 +39,56 @@ public class LecteurProperties {
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Boolean.parseBoolean(properties.getProperty("paramModeDev"));
+        boolean paramModeDev = Boolean.parseBoolean(properties.getProperty("paramModeDev"));
+        return paramModeDev;
 
     }
 
-
-
-    public static void setEasyChallenger() throws IOException {
-        FileInputStream input = new FileInputStream("Param.properties");
+    static void setBasicParam() throws  IOException {
+        FileOutputStream outputStream = new FileOutputStream("Param.properties");
         Properties properties = new Properties();
-        properties.load(input);
-
-        properties.setProperty("paramNbEssaies", "10");
-        properties.setProperty("paramLongueurCombinaison", "3");
-    }
-    public static void setMediumChallenger() throws IOException {
-        FileInputStream input = new FileInputStream("Param.properties");
-        Properties properties = new Properties();
-        properties.load(input);
 
         properties.setProperty("paramNbEssaies", "7");
         properties.setProperty("paramLongueurCombinaison", "4");
-
+        properties.setProperty("paramModeDev", "false");
+        properties.store(outputStream, null);
     }
-    public static void setHardChallenger() throws IOException {
-        FileInputStream input = new FileInputStream("Param.properties");
+
+    static void setEasyChallenger() throws IOException {
+        FileOutputStream outputStream = new FileOutputStream("Param.properties");
         Properties properties = new Properties();
-        properties.load(input);
+
+        properties.setProperty("paramNbEssaies", "10");
+        properties.setProperty("paramLongueurCombinaison", "3");
+        properties.setProperty("paramModeDev", String.valueOf(ModesDeJeu.modeDev));
+        properties.store(outputStream, null);
+    }
+    static void setMediumChallenger() throws IOException {
+        FileOutputStream outputStream = new FileOutputStream("Param.properties");
+        Properties properties = new Properties();
+
+        properties.setProperty("paramNbEssaies", "7");
+        properties.setProperty("paramLongueurCombinaison", "4");
+        properties.setProperty("paramModeDev", String.valueOf(ModesDeJeu.modeDev));
+        properties.store(outputStream, null);
+    }
+    static void setHardChallenger() throws IOException {
+        FileOutputStream outputStream = new FileOutputStream("Param.properties");
+        Properties properties = new Properties();
 
         properties.setProperty("paramNbEssaies", "5");
         properties.setProperty("paramLongueurCombinaison", "5");
+        properties.setProperty("paramModeDev", String.valueOf(ModesDeJeu.modeDev));
+        properties.store(outputStream, null);
+    }
+    static void setDevModeChallenger() throws IOException {
+        FileOutputStream outputStream = new FileOutputStream("Param.properties");
+        Properties properties = new Properties();
+
+        properties.setProperty("paramNbEssaies", String.valueOf(ModesDeJeu.nbEssaies));
+        properties.setProperty("paramLongueurCombinaison", String.valueOf(ModesDeJeu.longueurCombinaison));
+        properties.setProperty("paramModeDev", "true");
+        properties.store(outputStream, null);
     }
 }
 

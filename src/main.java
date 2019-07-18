@@ -5,12 +5,7 @@ public class main {
     static boolean challengerBoucle = false;
     static boolean defenseurBoucle = false;
     static boolean duelBoucle = false;
-
-    static int longueurCombinaison;
-    static int nbEssaies;
-
     static boolean menuBoucle;
-    static boolean modeDev;
 
     public static void main(String[] args) throws IOException {
 
