@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,7 +11,6 @@ class ModesDeJeu {
     static void modeChallenger() throws IOException {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
-        Properties prop = new Properties();
 
         LecteurProperties.setBasicParam();
         LecteurProperties.getParamConfig();
@@ -196,7 +194,7 @@ class ModesDeJeu {
         }
     }
 
-    public static void modeDefenseur() {
+    static void modeDefenseur() throws IOException {
 
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
@@ -216,13 +214,15 @@ class ModesDeJeu {
         int repEssaiesInfinie = sc.nextInt();
 
         if (repEssaiesInfinie == 1) {
-            nbEssaies = 1500;
-            essaiesInfinie = true;
+            LecteurProperties.setEssaiesInfinieDefenseur();
+            nbEssaies = LecteurProperties.getParamConfigNbEssaies();
+            essaiesInfinie = LecteurProperties.getParamEssaiesInfinie();
         }
 
         else if (repEssaiesInfinie == 2) {
-            nbEssaies = 10;
-            essaiesInfinie = false;
+            LecteurProperties.setEssaiesInfinieDefenseurFalse();
+            nbEssaies = LecteurProperties.getParamConfigNbEssaies();
+            essaiesInfinie = LecteurProperties.getParamEssaiesInfinie();
         }
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Défenseur...");
@@ -352,7 +352,7 @@ class ModesDeJeu {
                 if (combinaisonDefenseur2.equals(userCombinaisonDefenseur)) {
                     System.out.println("L'ordinateur a trouvé la solution !\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                    if (essaiesInfinie == true) {
+                    if (essaiesInfinie) {
                         System.out.println("L'ordinateur a pris "+(pIDef+1)+" tours pour trouver la combinaison.");
                     }
 
@@ -399,7 +399,7 @@ class ModesDeJeu {
         }
     }
 
-    public static void modeDuel() {
+    public static void modeDuel() throws IOException {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
@@ -428,18 +428,21 @@ class ModesDeJeu {
 
             if (choixDiff == 1){
                 System.out.println("Vous avez choisi le mode facile. (3 chiffres)");
-                longueurCombinaison = 3;
-                nbEssaies = 10;
+                LecteurProperties.setEasyDuel();
+                longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
+                nbEssaies = LecteurProperties.getParamConfigNbEssaies();
             }
             else if (choixDiff == 2) {
                 System.out.println("Vous avez choisi le mode normal. (4 chiffres)");
-                longueurCombinaison = 4;
-                nbEssaies = 7;
+                LecteurProperties.setMediumDuel();
+                longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
+                nbEssaies = LecteurProperties.getParamConfigNbEssaies();
             }
             else if (choixDiff == 3) {
                 System.out.println("Vous avez choisi le mode difficile. (5 chiffres)");
-                longueurCombinaison = 5;
-                nbEssaies = 5;
+                LecteurProperties.setHardDuel();
+                longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
+                nbEssaies = LecteurProperties.getParamConfigNbEssaies();
             }
             else {
                 System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
@@ -448,8 +451,9 @@ class ModesDeJeu {
 
         }
         else if (reponseDiff == 2) {
-            longueurCombinaison = 4;
-            nbEssaies = 7;
+            LecteurProperties.setMediumDuel();
+            longueurCombinaison = LecteurProperties.getParamConfigLongueurCombinaison();
+            nbEssaies = LecteurProperties.getParamConfigNbEssaies();
         }
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
@@ -632,7 +636,7 @@ class ModesDeJeu {
                 }
 
                 valeurTemp = combinaisonDefenseur2;
-                System.out.println(combinaisonDefenseur2);
+                System.out.println("Proposition de l'IA : " + combinaisonDefenseur2);
 
                 if (resultatUserCombinaison.equals("===") || resultatUserCombinaison.equals("====") ||
                         resultatUserCombinaison.equals("=====")) {
