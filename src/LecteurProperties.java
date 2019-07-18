@@ -23,8 +23,7 @@ class LecteurProperties {
         Properties properties = new Properties();
         properties.load(reader);
 
-        int paramNbEssaies = Integer.parseInt(properties.getProperty("paramNbEssaies"));
-        return paramNbEssaies;
+        return Integer.parseInt(properties.getProperty("paramNbEssaies"));
     }
 
     static int getParamConfigLongueurCombinaison() throws IOException {
@@ -32,17 +31,15 @@ class LecteurProperties {
         Properties properties = new Properties();
         properties.load(reader);
 
-        int paramLongueurCombinaison = Integer.parseInt(properties.getProperty("paramLongueurCombinaison"));
-        return paramLongueurCombinaison;
+        return Integer.parseInt(properties.getProperty("paramLongueurCombinaison"));
     }
 
-    public static boolean getParamConfigModeDev() throws IOException {
+    static boolean getParamConfigModeDev() throws IOException {
         FileReader reader = new FileReader("Param.properties");
         Properties properties = new Properties();
         properties.load(reader);
 
-        boolean paramModeDev = Boolean.parseBoolean(properties.getProperty("paramModeDev"));
-        return paramModeDev;
+        return Boolean.parseBoolean(properties.getProperty("paramModeDev"));
     }
 
     static  boolean getParamEssaiesInfinie() throws IOException {
@@ -50,8 +47,7 @@ class LecteurProperties {
         Properties properties = new Properties();
         properties.load(reader);
 
-        boolean paramEssaiesInfinie = Boolean.parseBoolean(properties.getProperty("paramEssaiesInfinie"));
-        return  paramEssaiesInfinie;
+        return Boolean.parseBoolean(properties.getProperty("paramEssaiesInfinie"));
     }
 
     static void setBasicParam() throws  IOException {
