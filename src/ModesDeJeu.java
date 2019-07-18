@@ -7,8 +7,6 @@ class ModesDeJeu {
 
     static int longueurCombinaison;
     static int nbEssaies;
-
-    static boolean menuBoucle;
     static boolean modeDev;
 
     static void modeChallenger() throws IOException {
@@ -151,12 +149,12 @@ class ModesDeJeu {
 
                 if (userInputEndGame == 1) {
                     pI = 99;
-                    main.challengerBoucle = true;
+                    Main.challengerBoucle = true;
                 }
                 else if (userInputEndGame == 2) {
                     pI = 99;
-                    main.challengerBoucle = false;
-                    menuBoucle = true;
+                    Main.challengerBoucle = false;
+                    Main.menuBoucle = true;
                     return;
                 }
                 else if (userInputEndGame == 3) {
@@ -164,8 +162,8 @@ class ModesDeJeu {
                 }
                 else {
                     System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                    main.challengerBoucle = false;
-                    menuBoucle = true;
+                    Main.challengerBoucle = false;
+                    Main.menuBoucle = true;
                     return;
                 }
             }
@@ -177,12 +175,12 @@ class ModesDeJeu {
 
                 if (userInputEndGame == 1) {
                     pI = 99;
-                    main.challengerBoucle = true;
+                    Main.challengerBoucle = true;
                 }
                 else if (userInputEndGame == 2) {
                     pI = 99;
-                    main.challengerBoucle = false;
-                    menuBoucle = true;
+                    Main.challengerBoucle = false;
+                    Main.menuBoucle = true;
                     return;
                 }
                 else if (userInputEndGame == 3) {
@@ -190,8 +188,8 @@ class ModesDeJeu {
                 }
                 else {
                     System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                    main.challengerBoucle = false;
-                    menuBoucle = true;
+                    Main.challengerBoucle = false;
+                    Main.menuBoucle = true;
                     return;
                 }
             }
@@ -362,20 +360,20 @@ class ModesDeJeu {
 
                     if (userInputEndGame == 1) {
                         pIDef = 1501;
-                        main.defenseurBoucle = true;
+                        Main.defenseurBoucle = true;
                     }
                     else if (userInputEndGame == 2) {
                         pIDef = 1501;
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     }
                     else if (userInputEndGame == 3) {
                         System.exit(0);
                     }
                     else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     }
                 }
                 else if (pIDef+1 == nbEssaies){
@@ -385,16 +383,16 @@ class ModesDeJeu {
                     int userInputEndGame = sc.nextInt();
 
                     if (userInputEndGame == 1) {
-                        main.defenseurBoucle = true;
+                        Main.defenseurBoucle = true;
                     } else if (userInputEndGame == 2) {
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     } else if (userInputEndGame == 3) {
                         System.exit(0);
                     } else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     }
                 }
             }
@@ -645,20 +643,20 @@ class ModesDeJeu {
 
                     if (userInputEndGame == 1) {
                         pI = 99;
-                        main.challengerBoucle = true;
+                        Main.challengerBoucle = true;
                     }
                     else if (userInputEndGame == 2) {
                         pI = 99;
-                        main.challengerBoucle = false;
-                        menuBoucle = true;
+                        Main.challengerBoucle = false;
+                        Main.menuBoucle = true;
                     }
                     else if (userInputEndGame == 3) {
                         System.exit(0);
                     }
                     else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        main.challengerBoucle = false;
-                        menuBoucle = true;
+                        Main.challengerBoucle = false;
+                        Main.menuBoucle = true;
                     }
                 }
                 else if (pI+1 == nbEssaies) {
@@ -669,20 +667,20 @@ class ModesDeJeu {
 
                     if (userInputEndGame == 1) {
                         pI = 99;
-                        main.challengerBoucle = true;
+                        Main.challengerBoucle = true;
                     }
                     else if (userInputEndGame == 2) {
                         pI = 99;
-                        main.challengerBoucle = false;
-                        menuBoucle = true;
+                        Main.challengerBoucle = false;
+                        Main.menuBoucle = true;
                     }
                     else if (userInputEndGame == 3) {
                         System.exit(0);
                     }
                     else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        main.challengerBoucle = false;
-                        menuBoucle = true;
+                        Main.challengerBoucle = false;
+                        Main.menuBoucle = true;
                     }
                 }
 
@@ -697,20 +695,20 @@ class ModesDeJeu {
 
                     if (userInputEndGame == 1) {
                         pI = 1501;
-                        main.defenseurBoucle = true;
+                        Main.defenseurBoucle = true;
                     }
                     else if (userInputEndGame == 2) {
                         pI = 1501;
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     }
                     else if (userInputEndGame == 3) {
                         System.exit(0);
                     }
                     else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     }
                 }
                 else if (pI+1 == nbEssaies){
@@ -720,16 +718,16 @@ class ModesDeJeu {
                     int userInputEndGame = sc.nextInt();
 
                     if (userInputEndGame == 1) {
-                        main.defenseurBoucle = true;
+                        Main.defenseurBoucle = true;
                     } else if (userInputEndGame == 2) {
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     } else if (userInputEndGame == 3) {
                         System.exit(0);
                     } else {
                         System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        main.defenseurBoucle = false;
-                        menuBoucle = true;
+                        Main.defenseurBoucle = false;
+                        Main.menuBoucle = true;
                     }
                 }
             }

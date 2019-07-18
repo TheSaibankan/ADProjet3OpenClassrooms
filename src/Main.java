@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class main {
+public class Main {
     static boolean challengerBoucle = false;
     static boolean defenseurBoucle = false;
     static boolean duelBoucle = false;
