@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="ajouts Class Log">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJavaProjet3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestJavaProjet3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LecteurPropertiesLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LecteurPropertiesLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LecteurProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LecteurPropertiesLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ModesDeJeu.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,46 +32,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
+        <entry file="file://$PROJECT_DIR$/log4j.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15264">
-              <caret line="638" column="60" selection-start-line="638" selection-start-column="60" selection-end-line="638" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LecteurProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LecteurPropertiesLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="48">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/log4j.xml">
+        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/LecteurProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="-2064">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/ModesDeJeu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,6 +150,10 @@
         <option value="$PROJECT_DIR$/src/LecteurProperties.java" />
         <option value="$PROJECT_DIR$/src/LecteurPropertiesLog.java" />
         <option value="$PROJECT_DIR$/log4j.xml" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/LecteurProperties.java" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/ModesDeJeu.java" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/LecteurPropertiesLog.java" />
       </list>
     </option>
   </component>
@@ -159,47 +164,58 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-8" />
     <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="height" value="868" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjet3TestImport" type="462c0819:PsiDirectoryNode" />
+              <item name="TestJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJava" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjet3TestImport" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjet3TestImport" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjet3TestImport" type="462c0819:PsiDirectoryNode" />
+              <item name="TestJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjetJava3OC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TestJava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="TestJavaProjet3" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="TestJava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="TestJavaProjet3" type="616d4139:PackageViewModuleNode" />
+              <item name="com.antoineDomergue.ProjetJava3OC" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,8 +227,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/apache-log4j-2.12.0-bin" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apache-log4j-2.12.0-bin" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -230,7 +246,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.antoineDomergue.ProjetJava3OC.Main" />
+      <module name="TestJavaProjet3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.antoineDomergue.ProjetJava3OC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="TestJavaProjet3" />
@@ -247,6 +276,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.main" />
       </list>
@@ -279,6 +309,7 @@
       <workItem from="1563429872111" duration="13323000" />
       <workItem from="1563451999786" duration="1477000" />
       <workItem from="1563456651176" duration="2800000" />
+      <workItem from="1563898229320" duration="2020000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -452,7 +483,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72186000" />
+    <option name="totallyTimeSpent" value="74206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,10 +495,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.43899205" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2962963" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -482,7 +513,7 @@
       <window_info anchor="bottom" id="TODO" order="4" weight="0.3280116" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50064266" side_tool="true" weight="0.3280116" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4993573" weight="0.32946298" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.31059507" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.30952382" />
       <window_info anchor="bottom" x="962" y="64" width="575" height="312" id="Version Control" order="8" type="FLOATING" weight="0.37042683" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -649,53 +680,50 @@
     <entry file="file://$PROJECT_DIR$/src/LectureFichier.java" />
     <entry file="file://$PROJECT_DIR$/src/config.properties" />
     <entry file="file://$PROJECT_DIR$/src/properties" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="273" selection-start-line="273" selection-end-line="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="769" column="15" selection-start-line="769" selection-start-column="15" selection-end-line="769" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/io/File.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Object.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/io/FileInputStream.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/Integer.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.class" />
     <entry file="file://$PROJECT_DIR$/src/LecteurProperties.class" />
     <entry file="file://$PROJECT_DIR$/src/Param.properties" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/LecteurProperties.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/Main.class" />
+    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/ModesDeJeu.class" />
+    <entry file="file://$PROJECT_DIR$/log4l.xml" />
+    <entry file="file://$PROJECT_DIR$/src/LecteurPropertiesLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="264">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/LecteurProperties.class" />
-    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/Main.class" />
-    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/ModesDeJeu.class" />
+    <entry file="file://$PROJECT_DIR$/Param.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestJavaProjet3.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="797">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15264">
+        <state relative-caret-position="6528">
           <caret line="638" column="60" selection-start-line="638" selection-start-column="60" selection-end-line="638" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -713,33 +741,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log4l.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Param.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestJavaProjet3.iml">
+    <entry file="file://$PROJECT_DIR$/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LecteurPropertiesLog.java">
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/ModesDeJeu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/log4j.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="960">
+          <caret line="40" column="15" lean-forward="true" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/LecteurPropertiesLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/ProjetJava3OC/LecteurProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2064">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -800,6 +845,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
