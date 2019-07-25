@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="ajouts Class Log">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
+    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="modification des noms en anglais">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJavaProjet3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestJavaProjet3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LecteurPropertiesLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LecteurPropertiesLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Param.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LecteurProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LecteurPropertiesLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ModesDeJeu.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,54 +32,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15264">
-              <caret line="638" column="60" selection-start-line="638" selection-start-column="60" selection-end-line="638" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LecteurProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LecteurPropertiesLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PropertiesReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3070">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/log4j.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="24">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Param.properties">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -101,14 +92,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>erreur</find>
-      <find>properties</find>
-      <find>RecupNbEssaies</find>
-      <find>RecupLongueurCombinaison</find>
       <find>RecupModeDev</find>
       <find>main</find>
-      <find>menuBoucle</find>
       <find>+=</find>
+      <find>duelBoucle</find>
+      <find>reponseMode</find>
+      <find>recupParamNbEssaies</find>
+      <find>paramNbEssaies</find>
+      <find>recupParamLongueurCombinaison</find>
+      <find>paramLongueurCombinaison</find>
+      <find>paramCombinaisonLenght</find>
+      <find>paramCombinaisonLength</find>
+      <find>recupParamModeDev</find>
+      <find>longueurCombinaison</find>
+      <find>nbEssaies</find>
+      <find>defenseurBoucle</find>
+      <find>menuBoucle</find>
+      <find>chiffreCombi1</find>
+      <find>chiffreCombi2</find>
+      <find>chiffreCombi3</find>
+      <find>chiffreCombi4</find>
+      <find>chiffreCombi5</find>
+      <find>combinaisonChallenger</find>
+      <find>userCombinaisonDefenseur</find>
+      <find>challengerBoucle</find>
+      <find>modeDev</find>
+      <find>LecteurProperties</find>
+      <find>resultatUserCombinaison</find>
+      <find>valeurTemp</find>
+      <find>combinaisonDefenseur2</find>
+      <find>essaiesInfinie</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,13 +155,14 @@
         <option value="$PROJECT_DIR$/src/LectureFichier.java" />
         <option value="$PROJECT_DIR$/src/config.properties" />
         <option value="$PROJECT_DIR$/src/properties" />
-        <option value="$PROJECT_DIR$/Param.properties" />
         <option value="$PROJECT_DIR$/src/main.java" />
-        <option value="$PROJECT_DIR$/src/ModesDeJeu.java" />
         <option value="$PROJECT_DIR$/src/Param.properties" />
-        <option value="$PROJECT_DIR$/src/LecteurProperties.java" />
         <option value="$PROJECT_DIR$/src/LecteurPropertiesLog.java" />
         <option value="$PROJECT_DIR$/log4j.xml" />
+        <option value="$PROJECT_DIR$/Param.properties" />
+        <option value="$PROJECT_DIR$/src/LecteurProperties.java" />
+        <option value="$PROJECT_DIR$/src/ModesDeJeu.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -184,16 +198,7 @@
             <path>
               <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaProjet3TestImport" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaProjet3TestImport" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaProjet3TestImport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -211,7 +216,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/apache-log4j-2.12.0-bin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -278,7 +283,10 @@
       <workItem from="1563355509606" duration="14488000" />
       <workItem from="1563429872111" duration="13323000" />
       <workItem from="1563451999786" duration="1477000" />
-      <workItem from="1563456651176" duration="2800000" />
+      <workItem from="1563456651176" duration="2866000" />
+      <workItem from="1563516442699" duration="4721000" />
+      <workItem from="1564037400362" duration="20000" />
+      <workItem from="1564038214482" duration="4889000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -448,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563453416299</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="ajouts Class Log">
+      <created>1563459505144</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1563459505145</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72186000" />
+    <option name="totallyTimeSpent" value="81882000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +482,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.43899205" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16838047" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -482,7 +497,7 @@
       <window_info anchor="bottom" id="TODO" order="4" weight="0.3280116" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50064266" side_tool="true" weight="0.3280116" />
       <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.4993573" weight="0.32946298" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.31059507" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32510886" />
       <window_info anchor="bottom" x="962" y="64" width="575" height="312" id="Version Control" order="8" type="FLOATING" weight="0.37042683" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -495,7 +510,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" x="207" y="357" width="386" height="152" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.47214854" />
+      <window_info anchor="right" x="342" y="372" width="778" height="300" id="Run" order="8" sideWeight="0.49867725" type="FLOATING" weight="0.47214854" />
       <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.45051414" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
       <window_info anchor="right" id="Database" order="11" />
@@ -572,8 +587,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="gameBoucle" />
-    <MESSAGE value="Tableau + recup String" />
     <MESSAGE value="Sup recup string + affichage tableau en int + mode dev" />
     <MESSAGE value="user input" />
     <MESSAGE value="tableau to string" />
@@ -596,8 +609,10 @@
     <MESSAGE value="intégration totale et fonctionnelle Class Lecteur" />
     <MESSAGE value="simplifications Class Lecteur + créa Class Log" />
     <MESSAGE value="log4j.xml créa" />
+    <MESSAGE value="ajouts2 Class Log" />
     <MESSAGE value="ajouts Class Log" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajouts Class Log" />
+    <MESSAGE value="modification des noms en anglais" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification des noms en anglais" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -680,55 +695,12 @@
     <entry file="file://$PROJECT_DIR$/src/Main.class" />
     <entry file="file://$PROJECT_DIR$/src/LecteurProperties.class" />
     <entry file="file://$PROJECT_DIR$/src/Param.properties" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/LecteurProperties.class" />
     <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/Main.class" />
     <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/ModesDeJeu.class" />
-    <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15264">
-          <caret line="638" column="60" selection-start-line="638" selection-start-column="60" selection-end-line="638" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LecteurProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log4l.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Param.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestJavaProjet3.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/log4l.xml" />
     <entry file="file://$PROJECT_DIR$/src/LecteurPropertiesLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="240">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -738,8 +710,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="24">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestJavaProjet3.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/TestJavaProjet3/LecteurProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Param.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LecteurProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PropertiesReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3070">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModesDeJeu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
