@@ -4,10 +4,6 @@ import java.util.Scanner;
 
 class GameModes {
 
-    static int combinaisonLength;
-    static int nbTries;
-    static boolean devMode;
-
     static void challengerMode() throws IOException {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
@@ -19,9 +15,9 @@ class GameModes {
         System.out.println("Par défaut, la combinaison contient 4 chiffres. " +
                 "Voulez-vous modifier la difficulté ?\n 1 - Oui  2 - Non");
 
-        int reponseDiff = sc.nextInt();
+        int answerDiff = sc.nextInt();
 
-        if (reponseDiff == 1) {
+        if (answerDiff == 1) {
             System.out.println("Choisissez la difficulté : 1 - Facile  2 - Normal  " +
                     "3 - Difficile");
 
@@ -30,22 +26,22 @@ class GameModes {
             if (choixDiff == 1){
                 System.out.println("Vous avez choisi le mode facile. (3 chiffres, 10 essaies)");
                 PropertiesReader.setEasyChallenger();
-                combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-                nbTries = PropertiesReader.getParamConfigNbTries();
+                Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+                Main.nbTries = PropertiesReader.getParamConfigNbTries();
 
             }
             else if (choixDiff == 2) {
                 System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
                 PropertiesReader.setMediumChallenger();
-                combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-                nbTries = PropertiesReader.getParamConfigNbTries();
+                Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+                Main.nbTries = PropertiesReader.getParamConfigNbTries();
 
             }
             else if (choixDiff == 3) {
                 System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
                 PropertiesReader.setHardChallenger();
-                combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-                nbTries = PropertiesReader.getParamConfigNbTries();
+                Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+                Main.nbTries = PropertiesReader.getParamConfigNbTries();
 
             }
             else {
@@ -54,10 +50,10 @@ class GameModes {
             }
         }
 
-        else if (reponseDiff == 2) {
+        else if (answerDiff == 2) {
             PropertiesReader.setMediumChallenger();
-            combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-            nbTries = PropertiesReader.getParamConfigNbTries();
+            Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+            Main.nbTries = PropertiesReader.getParamConfigNbTries();
         }
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
@@ -65,12 +61,12 @@ class GameModes {
         }
 
         System.out.println("Voulez-vous activer le mode développeur ? 1 - Oui  2 - Non");
-        int reponseDev = sc.nextInt();
-        if (reponseDev == 1) {
+        int answerDev = sc.nextInt();
+        if (answerDev == 1) {
             PropertiesReader.setDevModeChallenger();
-            devMode = PropertiesReader.getParamConfigDevMode();
+            Main.devMode = PropertiesReader.getParamConfigDevMode();
         }
-        else if (reponseDev == 2) devMode = false;
+        else if (answerDev == 2) Main.devMode = false;
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
             return;
@@ -85,36 +81,36 @@ class GameModes {
         int digitCombi4 = random.nextInt(10);
         int digitCombi5 = random.nextInt(10);
 
-        if (combinaisonLength == 3) {
+        if (Main.combinationLength == 3) {
             combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 + digitCombi3;
         }
-        else if (combinaisonLength == 4) {
+        else if (Main.combinationLength == 4) {
             combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 +
                     digitCombi3 + digitCombi4;
         }
-        else if (combinaisonLength == 5) {
+        else if (Main.combinationLength == 5) {
             combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 +
                     digitCombi3 + digitCombi4 + digitCombi5;
         }
 
 
         //affichage de la solution en mode dev
-        if (devMode) {
+        if (Main.devMode) {
             System.out.println("La combinaison est la suivante : " + combinationChallenger);
         }
 
-        for (int pI = 0; pI < nbTries; pI++) {
+        for (int pI = 0; pI < Main.nbTries; pI++) {
             StringBuilder resultUserCombinaison = new StringBuilder();
-            System.out.println("Veuillez rentrer " + combinaisonLength + " chiffres :" );
+            System.out.println("Veuillez rentrer " + Main.combinationLength + " chiffres :" );
 
             if (pI == 0) {
                 sc.nextLine(); // pourquoi première lecture est sautée ?
             }
 
-            String userCombinaison = sc.nextLine();
-            if (userCombinaison.length() != combinaisonLength) {
-                System.out.println("Attention ! Vous avez saisi "+userCombinaison.length()+" chiffre(s) "+
-                        "au lieu de "+combinaisonLength+".");
+            String userCombination = sc.nextLine();
+            if (userCombination.length() != Main.combinationLength) {
+                System.out.println("Attention ! Vous avez saisi "+userCombination.length()+" chiffre(s) "+
+                        "au lieu de "+Main.combinationLength+".");
 
                 if (pI == 0) {
                     continue;
@@ -124,15 +120,15 @@ class GameModes {
                 }
             }
 
-            for(int indice = 0; indice < combinaisonLength; indice++) {
+            for(int indice = 0; indice < Main.combinationLength; indice++) {
 
-                if (userCombinaison.charAt(indice) == combinationChallenger.charAt(indice)) {
+                if (userCombination.charAt(indice) == combinationChallenger.charAt(indice)) {
                     resultUserCombinaison.append("=");
                 }
-                else if (userCombinaison.charAt(indice) < combinationChallenger.charAt(indice)) {
+                else if (userCombination.charAt(indice) < combinationChallenger.charAt(indice)) {
                     resultUserCombinaison.append("+");
                 }
-                else if (userCombinaison.charAt(indice) > combinationChallenger.charAt(indice)) {
+                else if (userCombination.charAt(indice) > combinationChallenger.charAt(indice)) {
                     resultUserCombinaison.append("-");
                 }
             }
@@ -165,7 +161,7 @@ class GameModes {
                     return;
                 }
             }
-            else if (pI+1 == nbTries) {
+            else if (pI+1 == Main.nbTries) {
                 System.out.println("Perdu ! Vous n'avez pas trouvé la combinaison.\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 
@@ -201,8 +197,8 @@ class GameModes {
 
         int combinaisonLengthDef;
 
-        String combinaisonDefenseur = "";
-        String combinationDefenseur2 = "";
+        String combinationDefender = "";
+        String combinationDefender2 = "";
         String resultatIACombinaison = "";
         String tempValue = "";
 
@@ -215,13 +211,13 @@ class GameModes {
 
         if (repEssaiesInfinie == 1) {
             PropertiesReader.setInfiniteTriesDefender();
-            nbTries = PropertiesReader.getParamConfigNbTries();
+            Main.nbTries = PropertiesReader.getParamConfigNbTries();
             infiniteTries = PropertiesReader.getParamInfiniteTries();
         }
 
         else if (repEssaiesInfinie == 2) {
             PropertiesReader.setInfiniteTriesDefenderFalse();
-            nbTries = PropertiesReader.getParamConfigNbTries();
+            Main.nbTries = PropertiesReader.getParamConfigNbTries();
             infiniteTries = PropertiesReader.getParamInfiniteTries();
         }
         else {
@@ -250,7 +246,7 @@ class GameModes {
             return;
         }
 
-        for (int pIDef = 0; pIDef <= nbTries; pIDef++) {
+        for (int pIDef = 0; pIDef <= Main.nbTries; pIDef++) {
             if (pIDef == 0) {
                 int chiffreCombiDef1 = random.nextInt(10);
                 int chiffreCombiDef2 = random.nextInt(10);
@@ -259,54 +255,54 @@ class GameModes {
                 int chiffreCombiDef5 = random.nextInt(10);
 
                 if (combinaisonLengthDef == 3) {
-                    combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
                             chiffreCombiDef3;
                 }
                 else if (combinaisonLengthDef == 4) {
-                    combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
                             chiffreCombiDef3 + chiffreCombiDef4;
                 }
                 else if (combinaisonLengthDef == 5) {
-                    combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
                             chiffreCombiDef3 + chiffreCombiDef4 + chiffreCombiDef5;
                 }
-                System.out.println(combinaisonDefenseur);
+                System.out.println(combinationDefender);
             }
 
             else if (pIDef > 0) {
 
-                combinationDefenseur2 = "";
+                combinationDefender2 = "";
                 resultatIACombinaison = "";
 
                 for (int indiceDef = 0; indiceDef < combinaisonLengthDef; indiceDef++) {
 
                     if (pIDef == 1) {
 
-                        if (userCombinationDefender.charAt(indiceDef) == combinaisonDefenseur.charAt
+                        if (userCombinationDefender.charAt(indiceDef) == combinationDefender.charAt
                                 (indiceDef)) {
 
-                            combinationDefenseur2 += combinaisonDefenseur.charAt(indiceDef);
+                            combinationDefender2 += combinationDefender.charAt(indiceDef);
                             resultatIACombinaison += "=";
 
                         }
 
-                        else if (userCombinationDefender.charAt(indiceDef) > combinaisonDefenseur.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) > combinationDefender.charAt
                                 (indiceDef)) {
 
-                            int min = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+                            int min = Character.getNumericValue(combinationDefender.charAt(indiceDef));
 
-                            combinationDefenseur2 += Character.forDigit
+                            combinationDefender2 += Character.forDigit
                                     ((random.nextInt(9-min+1)+min),10);
 
                             resultatIACombinaison += "+";
                         }
 
-                        else if (userCombinationDefender.charAt(indiceDef) < combinaisonDefenseur.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) < combinationDefender.charAt
                                 (indiceDef)) {
 
-                            int max = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+                            int max = Character.getNumericValue(combinationDefender.charAt(indiceDef));
 
-                            combinationDefenseur2 += Character.forDigit(random.nextInt(max),10);
+                            combinationDefender2 += Character.forDigit(random.nextInt(max),10);
 
                             resultatIACombinaison += "-";
 
@@ -317,7 +313,7 @@ class GameModes {
                         if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
                                 (indiceDef)) {
 
-                            combinationDefenseur2 += tempValue.charAt(indiceDef);
+                            combinationDefender2 += tempValue.charAt(indiceDef);
                             resultatIACombinaison += "=";
 
                         }
@@ -327,7 +323,7 @@ class GameModes {
 
                             int min = Character.getNumericValue(tempValue.charAt(indiceDef));
 
-                            combinationDefenseur2 += Character.forDigit
+                            combinationDefender2 += Character.forDigit
                                     ((random.nextInt(10-min+1)+min),10);
 
                             resultatIACombinaison += "+";
@@ -338,7 +334,7 @@ class GameModes {
 
                             int max = Character.getNumericValue(tempValue.charAt(indiceDef));
 
-                            combinationDefenseur2 += Character.forDigit(random.nextInt(max),10);
+                            combinationDefender2 += Character.forDigit(random.nextInt(max),10);
 
                             resultatIACombinaison += "-";
 
@@ -346,10 +342,10 @@ class GameModes {
                     }
                 }
 
-                tempValue = combinationDefenseur2;
-                System.out.println(combinationDefenseur2);
+                tempValue = combinationDefender2;
+                System.out.println(combinationDefender2);
 
-                if (combinationDefenseur2.equals(userCombinationDefender)) {
+                if (combinationDefender2.equals(userCombinationDefender)) {
                     System.out.println("L'ordinateur a trouvé la solution !\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                     if (infiniteTries) {
@@ -376,7 +372,7 @@ class GameModes {
                         Main.menuLoop = true;
                     }
                 }
-                else if (pIDef+1 == nbTries){
+                else if (pIDef+1 == Main.nbTries){
                     System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 
@@ -404,10 +400,10 @@ class GameModes {
         Random random = new Random();
 
         int combinaisonLengthDef;
-        nbTries = 1500;
+        Main.nbTries = 1500;
 
-        String combinaisonDefenseur = "";
-        String combinationDefenseur2 = "";
+        String combinationDefender = "";
+        String combinationDefender2 = "";
         String resultatIACombinaison = "";
         String tempValue = "";
 
@@ -429,20 +425,20 @@ class GameModes {
             if (choixDiff == 1){
                 System.out.println("Vous avez choisi le mode facile. (3 chiffres)");
                 PropertiesReader.setEasyDuel();
-                combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-                nbTries = PropertiesReader.getParamConfigNbTries();
+                Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+                Main.nbTries = PropertiesReader.getParamConfigNbTries();
             }
             else if (choixDiff == 2) {
                 System.out.println("Vous avez choisi le mode normal. (4 chiffres)");
                 PropertiesReader.setMediumDuel();
-                combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-                nbTries = PropertiesReader.getParamConfigNbTries();
+                Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+                Main.nbTries = PropertiesReader.getParamConfigNbTries();
             }
             else if (choixDiff == 3) {
                 System.out.println("Vous avez choisi le mode difficile. (5 chiffres)");
                 PropertiesReader.setHardDuel();
-                combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-                nbTries = PropertiesReader.getParamConfigNbTries();
+                Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+                Main.nbTries = PropertiesReader.getParamConfigNbTries();
             }
             else {
                 System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
@@ -452,8 +448,8 @@ class GameModes {
         }
         else if (reponseDiff == 2) {
             PropertiesReader.setMediumDuel();
-            combinaisonLength = PropertiesReader.getParamConfigCombinationLength();
-            nbTries = PropertiesReader.getParamConfigNbTries();
+            Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
+            Main.nbTries = PropertiesReader.getParamConfigNbTries();
         }
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
@@ -461,9 +457,9 @@ class GameModes {
         }
 
         System.out.println("Voulez-vous activer le mode développeur ? 1 - Oui  2 - Non");
-        int reponseDev = sc.nextInt();
-        if (reponseDev == 1) devMode = true;
-        else if (reponseDev == 2) devMode = false;
+        int answerDev = sc.nextInt();
+        if (answerDev == 1) Main.devMode = true;
+        else if (answerDev == 2) Main.devMode = false;
         else {
             System.out.println("Une erreur est survenue. Redémarrage du module Duel...");
             return;
@@ -500,45 +496,45 @@ class GameModes {
         int digitCombi4 = random.nextInt(10);
         int digitCombi5 = random.nextInt(10);
 
-        if (combinaisonLength == 3) {
+        if (Main.combinationLength == 3) {
             combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 + digitCombi3;
         }
-        else if (combinaisonLength == 4) {
+        else if (Main.combinationLength == 4) {
             combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 +
                     digitCombi3 + digitCombi4;
         }
-        else if (combinaisonLength == 5) {
+        else if (Main.combinationLength == 5) {
             combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 +
                     digitCombi3 + digitCombi4 + digitCombi5;
         }
 
 
         //affichage de la solution en mode dev
-        if (devMode) {
+        if (Main.devMode) {
             System.out.println("La combinaison est la suivante : " + combinationChallenger);
         }
 
-        for (int pI = 0; pI < nbTries; pI++) {
+        for (int pI = 0; pI < Main.nbTries; pI++) {
             String resultUserCombinaison = "";
-            System.out.println("Veuillez rentrer " + combinaisonLength + " chiffres :" );
+            System.out.println("Veuillez rentrer " + Main.combinationLength + " chiffres :" );
 
-            String userCombinaison = sc.nextLine();
-            if (userCombinaison.length() != combinaisonLength) {
-                System.out.println("Attention ! Vous avez saisi "+userCombinaison.length()+" chiffre(s) "+
-                        "au lieu de "+combinaisonLength+".");
+            String userCombination = sc.nextLine();
+            if (userCombination.length() != Main.combinationLength) {
+                System.out.println("Attention ! Vous avez saisi "+userCombination.length()+" chiffre(s) "+
+                        "au lieu de "+Main.combinationLength+".");
                 pI--;
                 continue;
             }
 
-            for(int indice = 0; indice < combinaisonLength; indice++) {
+            for(int indice = 0; indice < Main.combinationLength; indice++) {
 
-                if (userCombinaison.charAt(indice) == combinationChallenger.charAt(indice)) {
+                if (userCombination.charAt(indice) == combinationChallenger.charAt(indice)) {
                     resultUserCombinaison += "=";
                 }
-                else if (userCombinaison.charAt(indice) < combinationChallenger.charAt(indice)) {
+                else if (userCombination.charAt(indice) < combinationChallenger.charAt(indice)) {
                     resultUserCombinaison += "+";
                 }
-                else if (userCombinaison.charAt(indice) > combinationChallenger.charAt(indice)) {
+                else if (userCombination.charAt(indice) > combinationChallenger.charAt(indice)) {
                     resultUserCombinaison += "-";
                 }
             }
@@ -552,51 +548,51 @@ class GameModes {
                 int chiffreCombiDef5 = random.nextInt(10);
 
                 if (combinaisonLengthDef == 3) {
-                    combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
                             chiffreCombiDef3;
                 }
                 else if (combinaisonLengthDef == 4) {
-                    combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
                             chiffreCombiDef3 + chiffreCombiDef4;
                 }
                 else if (combinaisonLengthDef == 5) {
-                    combinaisonDefenseur = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
+                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
                             chiffreCombiDef3 + chiffreCombiDef4 + chiffreCombiDef5;
                 }
-                System.out.println(combinaisonDefenseur);
+                System.out.println(combinationDefender);
             }
 
             else if (pI > 0) {
 
-                combinationDefenseur2 = "";
+                combinationDefender2 = "";
                 resultatIACombinaison = "";
 
                 for (int indiceDef = 0; indiceDef < combinaisonLengthDef; indiceDef++) {
 
                     if (pI == 1) {
 
-                        if (userCombinationDefender.charAt(indiceDef) == combinaisonDefenseur.charAt
+                        if (userCombinationDefender.charAt(indiceDef) == combinationDefender.charAt
                                 (indiceDef)) {
 
-                            combinationDefenseur2 += combinaisonDefenseur.charAt(indiceDef);
+                            combinationDefender2 += combinationDefender.charAt(indiceDef);
                             resultatIACombinaison += "=";
                         }
 
-                        else if (userCombinationDefender.charAt(indiceDef) > combinaisonDefenseur.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) > combinationDefender.charAt
                                 (indiceDef)) {
 
-                            int min = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
-                            combinationDefenseur2 += Character.forDigit
+                            int min = Character.getNumericValue(combinationDefender.charAt(indiceDef));
+                            combinationDefender2 += Character.forDigit
                                     ((random.nextInt(9-min+1)+min),10);
                             resultatIACombinaison += "+";
                         }
 
-                        else if (userCombinationDefender.charAt(indiceDef) < combinaisonDefenseur.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) < combinationDefender.charAt
                                 (indiceDef)) {
 
-                            int max = Character.getNumericValue(combinaisonDefenseur.charAt(indiceDef));
+                            int max = Character.getNumericValue(combinationDefender.charAt(indiceDef));
 
-                            combinationDefenseur2 += Character.forDigit(random.nextInt(max),10);
+                            combinationDefender2 += Character.forDigit(random.nextInt(max),10);
 
                             resultatIACombinaison += "-";
 
@@ -606,7 +602,7 @@ class GameModes {
                         if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
                                 (indiceDef)) {
 
-                            combinationDefenseur2 += tempValue.charAt(indiceDef);
+                            combinationDefender2 += tempValue.charAt(indiceDef);
                             resultatIACombinaison += "=";
 
                         }
@@ -616,7 +612,7 @@ class GameModes {
 
                             int min = Character.getNumericValue(tempValue.charAt(indiceDef));
 
-                            combinationDefenseur2 += Character.forDigit
+                            combinationDefender2 += Character.forDigit
                                     ((random.nextInt(10-min+1)+min),10);
 
                             resultatIACombinaison += "+";
@@ -627,7 +623,7 @@ class GameModes {
 
                             int max = Character.getNumericValue(tempValue.charAt(indiceDef));
 
-                            combinationDefenseur2 += Character.forDigit(random.nextInt(max),10);
+                            combinationDefender2 += Character.forDigit(random.nextInt(max),10);
 
                             resultatIACombinaison += "-";
 
@@ -635,8 +631,8 @@ class GameModes {
                     }
                 }
 
-                tempValue = combinationDefenseur2;
-                System.out.println("Proposition de l'IA : " + combinationDefenseur2);
+                tempValue = combinationDefender2;
+                System.out.println("Proposition de l'IA : " + combinationDefender2);
 
                 if (resultUserCombinaison.equals("===") || resultUserCombinaison.equals("====") ||
                         resultUserCombinaison.equals("=====")) {
@@ -663,7 +659,7 @@ class GameModes {
                         Main.menuLoop = true;
                     }
                 }
-                else if (pI+1 == nbTries) {
+                else if (pI+1 == Main.nbTries) {
                     System.out.println("Perdu ! Vous n'avez pas trouvé la combinaison.\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 
@@ -688,7 +684,7 @@ class GameModes {
                     }
                 }
 
-                if (combinationDefenseur2.equals(userCombinationDefender)) {
+                if (combinationDefender2.equals(userCombinationDefender)) {
                     System.out.println("L'ordinateur a trouvé la solution !\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                     if (infiniteTries) {
@@ -715,7 +711,7 @@ class GameModes {
                         Main.menuLoop = true;
                     }
                 }
-                else if (pI+1 == nbTries){
+                else if (pI+1 == Main.nbTries){
                     System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
 

@@ -13,9 +13,9 @@ class PropertiesReader {
         String paramCombinaisonLength = properties.getProperty("paramCombinaisonLength");
         String paramDevMode = properties.getProperty("paramModeDev");
 
-        GameModes.nbTries = Integer.parseInt(paramNbTries);
-        GameModes.combinaisonLength = Integer.parseInt(paramCombinaisonLength);
-        GameModes.devMode = Boolean.parseBoolean(paramDevMode);
+        Main.nbTries = Integer.parseInt(paramNbTries);
+        Main.combinationLength = Integer.parseInt(paramCombinaisonLength);
+        Main.devMode = Boolean.parseBoolean(paramDevMode);
     }
 
     static int getParamConfigNbTries() throws IOException {
@@ -67,7 +67,7 @@ class PropertiesReader {
 
         properties.setProperty("paramNbTries", "10");
         properties.setProperty("paramCombinaisonLength", "3");
-        properties.setProperty("paramModeDev", String.valueOf(GameModes.devMode));
+        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);
     }
@@ -77,7 +77,7 @@ class PropertiesReader {
 
         properties.setProperty("paramNbTries", "1500");
         properties.setProperty("paramCombinaisonLength", "3");
-        properties.setProperty("paramModeDev", String.valueOf(GameModes.devMode));
+        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);
     }
@@ -87,7 +87,7 @@ class PropertiesReader {
 
         properties.setProperty("paramNbTries", "7");
         properties.setProperty("paramCombinaisonLength", "4");
-        properties.setProperty("paramModeDev", String.valueOf(GameModes.devMode));
+        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);
     }
@@ -97,7 +97,7 @@ class PropertiesReader {
 
         properties.setProperty("paramNbTries", "1500");
         properties.setProperty("paramCombinaisonLength", "4");
-        properties.setProperty("paramModeDev", String.valueOf(GameModes.devMode));
+        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);
     }
@@ -107,7 +107,7 @@ class PropertiesReader {
 
         properties.setProperty("paramNbTries", "5");
         properties.setProperty("paramCombinaisonLength", "5");
-        properties.setProperty("paramModeDev", String.valueOf(GameModes.devMode));
+        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);
     }
@@ -117,7 +117,7 @@ class PropertiesReader {
 
         properties.setProperty("paramNbTries", "1500");
         properties.setProperty("paramCombinaisonLength", "5");
-        properties.setProperty("paramModeDev", String.valueOf(GameModes.devMode));
+        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);
     }
@@ -125,8 +125,8 @@ class PropertiesReader {
         FileOutputStream outputStream = new FileOutputStream("Param.properties");
         Properties properties = new Properties();
 
-        properties.setProperty("paramNbTries", String.valueOf(GameModes.nbTries));
-        properties.setProperty("paramCombinaisonLength", String.valueOf(GameModes.combinaisonLength));
+        properties.setProperty("paramNbTries", String.valueOf(Main.nbTries));
+        properties.setProperty("paramCombinaisonLength", String.valueOf(Main.combinationLength));
         properties.setProperty("paramModeDev", "true");
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);
@@ -136,7 +136,7 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "1500");
-        properties.setProperty("paramCombinaisonLength", String.valueOf(GameModes.combinaisonLength));
+        properties.setProperty("paramCombinaisonLength", String.valueOf(Main.combinationLength));
         properties.setProperty("paramModeDev", "false");
         properties.setProperty("paramEssaiesInfinie", "true");
         properties.store(outputStream, null);
@@ -146,7 +146,7 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "10");
-        properties.setProperty("paramCombinaisonLength", String.valueOf(GameModes.combinaisonLength));
+        properties.setProperty("paramCombinaisonLength", String.valueOf(Main.combinationLength));
         properties.setProperty("paramModeDev", "false");
         properties.setProperty("paramEssaiesInfinie", "false");
         properties.store(outputStream, null);

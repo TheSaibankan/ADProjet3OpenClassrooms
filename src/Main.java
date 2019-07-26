@@ -7,6 +7,10 @@ public class Main {
     static boolean duelLoop         = false;
     static boolean menuLoop         = true;
 
+    public static int combinationLength;
+    public static int nbTries;
+    public static boolean devMode;
+
     public static void main(String[] args) throws IOException {
 
         Scanner sc                  = new Scanner(System.in);
