@@ -29,5 +29,40 @@ public class IA {
         }
         return combinationChallenger;
     }
+    void launchChallenger(String combinationChallenger) {
+
+        if (Main.devMode) {
+            System.out.println("La combinaison est la suivante : " + combinationChallenger);
+        }
+
+        for (int pI = 0; pI < Main.nbTries; pI++) {
+            StringBuilder resultUserCombinaison = new StringBuilder();
+            System.out.println("Veuillez rentrer " + Main.combinationLength + " chiffres :" );
+
+            if (pI == 0) sc.nextLine(); // pourquoi première lecture est sautée ?
+
+            String userCombination = sc.nextLine();
+            if (userCombination.length() != Main.combinationLength) {
+                System.out.println("Attention ! Vous avez saisi "+userCombination.length()+" chiffre(s) "+
+                        "au lieu de "+Main.combinationLength+".");
+
+                if (pI == 0) continue;
+                else pI--;
+            }
+            for(int indice = 0; indice < Main.combinationLength; indice++) {
+
+                if (userCombination.charAt(indice) == combinationChallenger.charAt(indice)) {
+                    resultUserCombinaison.append("=");
+                }
+                else if (userCombination.charAt(indice) < combinationChallenger.charAt(indice)) {
+                    resultUserCombinaison.append("+");
+                }
+                else if (userCombination.charAt(indice) > combinationChallenger.charAt(indice)) {
+                    resultUserCombinaison.append("-");
+                }
+            }
+            System.out.println(resultUserCombinaison);
+        }
+    }
 }
 
