@@ -1,3 +1,5 @@
+package com.antoineDomergue.OCProjet3Java;
+
 import java.io.IOException;
 import java.util.Scanner;
 

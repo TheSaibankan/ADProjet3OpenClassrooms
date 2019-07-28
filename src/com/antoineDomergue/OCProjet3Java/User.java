@@ -1,10 +1,12 @@
+package com.antoineDomergue.OCProjet3Java;
+
 import java.io.IOException;
 import java.util.Scanner;
 
-public class User {
+class User {
     static Scanner sc = new Scanner(System.in);
 
-    void settingsChallenger() throws IOException {
+    static void settingsChallenger() throws IOException {
 
         System.out.println("Vous avez sélectionné le mode Challenger !");
         System.out.println("Par défaut, la combinaison contient 4 chiffres. " +
