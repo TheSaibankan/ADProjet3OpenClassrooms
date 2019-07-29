@@ -9,14 +9,16 @@ public class Main {
     static boolean duelLoop         = false;
     static boolean menuLoop         = true;
 
-    public static int combinationLength;
-    public static int nbTries;
-    public static boolean devMode;
+    static int combinationLength;
+    static int nbTries;
+
+
+    static boolean devMode;
+    static boolean infiniteTries = false;
 
     public static void main(String[] args) throws IOException {
 
-        Scanner sc                  = new Scanner(System.in);
-
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("Bienvenue dans le module de recherche d'une combinaison à X chiffres.");
 
@@ -26,25 +28,13 @@ public class Main {
 
             int answerMode = sc.nextInt();
 
-            if (answerMode == 1) {
-                challengerLoop    =  true;
-            }
-            else if (answerMode == 2) {
-                defenderLoop     = true;
-            }
-            else if (answerMode == 3) {
-                duelLoop          = true;
-            }
+            if (answerMode == 1) challengerLoop = true;
+            else if (answerMode == 2) defenderLoop = true;
+            else if (answerMode == 3) duelLoop = true;
 
-            while (challengerLoop) {
-                GameModes.challengerMode();
-            }
-            while (defenderLoop) {
-                GameModes.defenderMode();
-            }
-            while (duelLoop) {
-                GameModes.duelMode();
-            }
+            while (challengerLoop) GameModes.challengerMode();
+            while (defenderLoop) GameModes.defenderMode();
+            while (duelLoop) GameModes.duelMode();
         }
     }
 }

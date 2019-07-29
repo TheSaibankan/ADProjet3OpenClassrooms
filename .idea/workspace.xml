@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="modification des noms en anglais COMPLET">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Orion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Param.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/PropertiesReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameModes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,26 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="-1104">
+              <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,10 +46,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="24">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2808">
+              <caret line="117" column="35" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-211">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="836">
+              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -87,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
+            <state relative-caret-position="144">
+              <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,6 +113,12 @@
     <findStrings>
       <find>int pI</find>
       <find>GameModes</find>
+      <find>combinationLengthDef</find>
+      <find>userCombinationDefender</find>
+      <find>combinationDefender</find>
+      <find>combinationDefender2</find>
+      <find>pIDef</find>
+      <find>resultatIACombinaison</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,8 +148,12 @@
         <option value="$PROJECT_DIR$/src/IA.java" />
         <option value="$PROJECT_DIR$/src/User.java" />
         <option value="$PROJECT_DIR$/src/GameModes.java" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Menu.java" />
         <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" />
         <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" />
+        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" />
       </list>
     </option>
   </component>
@@ -155,31 +168,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="TestJavaProjet3Recup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Recup" type="462c0819:PsiDirectoryNode" />
+              <item name="TestJavaProjet3ProceduralRecup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJavaProjet3ProceduralRecup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestJavaProjet3Recup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Recup" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestJavaProjet3Recup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Recup" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestJavaProjet3Recup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Recup" type="462c0819:PsiDirectoryNode" />
+              <item name="TestJavaProjet3ProceduralRecup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJavaProjet3ProceduralRecup" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="TestJavaProjet3Recup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Recup" type="462c0819:PsiDirectoryNode" />
+              <item name="TestJavaProjet3ProceduralRecup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestJavaProjet3ProceduralRecup" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="OCProjet3Java" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -187,7 +191,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -200,13 +203,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fr.dic" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -242,7 +245,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="2" Folder0="C:\Users\adome\Desktop\FrançaisIntelliJ" Folder1="C:\Users\adomergue\Desktop" CustomDictionaries="2" CustomDictionary0="C:\Users\adome\Desktop\FrançaisIntelliJ\fr.dic" CustomDictionary1="C:\Users\adomergue\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\Orion\Desktop" CustomDictionaries="1" CustomDictionary0="C:\Users\Orion\Desktop\fr.dic" Dictionaries="1" Dictionary0="C:\Users\adomergue\Desktop\fr.dic" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -277,6 +280,8 @@
       <workItem from="1564312274629" duration="1002000" />
       <workItem from="1564315008980" duration="2312000" />
       <workItem from="1564323704512" duration="2143000" />
+      <workItem from="1564338450219" duration="7047000" />
+      <workItem from="1564355400327" duration="7836000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -471,7 +476,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5457000" />
+    <option name="totallyTimeSpent" value="20340000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -483,10 +488,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16099773" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16337386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,7 +507,41 @@
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32970026" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.3267974" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.33333334" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.19249395" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.24102564" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24871466" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32728648" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" auto_hide="true" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" weight="0.48708206" />
+      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.40729484" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
+      <window_info anchor="right" id="Database" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16337386" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="4" weight="0.3281046" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32970026" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3267974" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.33333334" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.24102564" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -516,40 +555,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" auto_hide="true" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" weight="0.48752835" />
       <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.46712017" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
-      <window_info anchor="right" id="Database" order="11" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15948601" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="4" weight="0.3281046" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32970026" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3267974" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.33333334" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.19249395" />
-      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32941177" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24871466" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32728648" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" auto_hide="true" x="275" y="130" width="809" height="547" id="Run" order="8" sideWeight="0.49867725" weight="0.48752835" />
-      <window_info anchor="right" id="Debug" order="9" sideWeight="0.49867725" weight="0.38" />
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50132275" side_tool="true" weight="0.83554375" />
       <window_info anchor="right" id="Database" order="11" />
     </layout-to-restore>
@@ -645,6 +650,24 @@
     <MESSAGE value="modification des noms en anglais COMPLET" />
     <option name="LAST_COMMIT_MESSAGE" value="modification des noms en anglais COMPLET" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -677,79 +700,49 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/io/BufferedWriter.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/io/Writer.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/io/PrintStream.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Menu.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="3348" selection-start-line="3348" selection-end-line="3348" />
+        <state relative-caret-position="836">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2808">
+          <caret line="117" column="35" selection-start-line="117" selection-start-column="35" selection-end-line="117" selection-end-column="35" />
           <folding>
-            <element signature="e#24839#24840#0" expanded="true" />
-            <element signature="e#24885#24886#0" expanded="true" />
-            <element signature="e#115499#115500#0" expanded="true" />
-            <element signature="e#115526#115527#0" expanded="true" />
-            <element signature="e#121591#121592#0" expanded="true" />
-            <element signature="e#121653#121654#0" expanded="true" />
-            <element signature="e#132711#132712#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/io/BufferedWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="228" selection-start-line="228" selection-end-line="228" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/io/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="248" selection-start-line="248" selection-end-line="248" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="603" selection-start-line="603" selection-end-line="603" />
-          <folding>
-            <element signature="e#26596#26597#0" expanded="true" />
-            <element signature="e#26636#26637#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-211">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="-1104">
+          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="960">
+          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -758,8 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="54" column="107" selection-start-line="54" selection-start-column="107" selection-end-line="54" selection-end-column="107" />
+        <state relative-caret-position="144">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -25,21 +25,18 @@ class User {
                 PropertiesReader.setEasyChallenger();
                 Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
                 Main.nbTries = PropertiesReader.getParamConfigNbTries();
-
             }
             else if (choixDiff == 2) {
                 System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
                 PropertiesReader.setMediumChallenger();
                 Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
                 Main.nbTries = PropertiesReader.getParamConfigNbTries();
-
             }
             else if (choixDiff == 3) {
                 System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
                 PropertiesReader.setHardChallenger();
                 Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
                 Main.nbTries = PropertiesReader.getParamConfigNbTries();
-
             }
             else {
                 System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
@@ -64,12 +61,29 @@ class User {
             Main.devMode = PropertiesReader.getParamConfigDevMode();
         }
         else if (answerDev == 2) Main.devMode = false;
-        else {
-            System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
-        }
-
+        else System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
     }
 
+    static void settingsDefender() throws IOException {
+        System.out.println("Vous avez sélectionné le mode Défenseur !");
 
+        System.out.println("Voulez-vous activer le mode Essaies illimités ? 1 - Oui  2 - Non");
+        int repEssaiesInfinie = sc.nextInt();
+
+        if (repEssaiesInfinie == 1) {
+            PropertiesReader.setInfiniteTriesDefender();
+            Main.nbTries = PropertiesReader.getParamConfigNbTries();
+            Main.infiniteTries = PropertiesReader.getParamInfiniteTries();
+        }
+
+        else if (repEssaiesInfinie == 2) {
+            PropertiesReader.setInfiniteTriesDefenderFalse();
+            Main.nbTries = PropertiesReader.getParamConfigNbTries();
+            Main.infiniteTries = PropertiesReader.getParamInfiniteTries();
+        }
+        else {
+            System.out.println("Une erreur est survenue. Redémarrage du module Défenseur...");
+        }
+    }
 }
 

@@ -7,6 +7,14 @@ import java.util.Scanner;
 class GameModes {
 
     static int pI;
+    static int pIDef;
+    static int indiceDef;
+
+    static int combinationLengthDef;
+    static String combinationDefender = "";
+    static String combinationDefender2 = "";
+    static String resultatIACombinaison = "";
+    static String tempValue = "";
 
     static void challengerMode() throws IOException {
         Scanner sc = new Scanner(System.in);
@@ -28,6 +36,7 @@ class GameModes {
             System.out.println("Veuillez rentrer " + Main.combinationLength + " chiffres :" );
 
             String userCombination = sc.nextLine();
+
             if (userCombination.length() != Main.combinationLength) {
                 System.out.println("Attention ! Vous avez saisi "+userCombination.length()+" chiffre(s) "+
                         "au lieu de "+Main.combinationLength+".");
@@ -67,186 +76,40 @@ class GameModes {
 
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
-
-        int combinaisonLengthDef;
-
-        String combinationDefender = "";
-        String combinationDefender2 = "";
-        String resultatIACombinaison = "";
-        String tempValue = "";
-
-        boolean infiniteTries = false;
-
-        System.out.println("Vous avez sélectionné le mode Défenseur !");
-
-        System.out.println("Voulez-vous activer le mode Essaies illimités ? 1 - Oui  2 - Non");
-        int repEssaiesInfinie = sc.nextInt();
-
-        if (repEssaiesInfinie == 1) {
-            PropertiesReader.setInfiniteTriesDefender();
-            Main.nbTries = PropertiesReader.getParamConfigNbTries();
-            infiniteTries = PropertiesReader.getParamInfiniteTries();
-        }
-
-        else if (repEssaiesInfinie == 2) {
-            PropertiesReader.setInfiniteTriesDefenderFalse();
-            Main.nbTries = PropertiesReader.getParamConfigNbTries();
-            infiniteTries = PropertiesReader.getParamInfiniteTries();
-        }
-        else {
-            System.out.println("Une erreur est survenue. Redémarrage du module Défenseur...");
-            return;
-        }
+        
+        User.settingsDefender();
 
         System.out.println("Veuillez rentrer une combinaison de 3, 4 ou 5 chiffes :");
 
-        sc.nextLine();
         String userCombinationDefender = sc.nextLine();
 
-
-        if (userCombinationDefender.length() == 3) combinaisonLengthDef = 3;
-        else if (userCombinationDefender.length() == 4) combinaisonLengthDef = 4;
-        else if (userCombinationDefender.length() == 5) combinaisonLengthDef = 5;
+        if (userCombinationDefender.length() == 3) combinationLengthDef = 3;
+        else if (userCombinationDefender.length() == 4) combinationLengthDef = 4;
+        else if (userCombinationDefender.length() == 5) combinationLengthDef = 5;
         else {
             System.out.println("Une erreur est survenue. Votre combinaison est de " +
                     userCombinationDefender.length()+" chiffre(s). Redémarrage du module Défenseur...");
             return;
         }
 
-        for (int pIDef = 0; pIDef <= Main.nbTries; pIDef++) {
-            if (pIDef == 0) {
-                int chiffreCombiDef1 = random.nextInt(10);
-                int chiffreCombiDef2 = random.nextInt(10);
-                int chiffreCombiDef3 = random.nextInt(10);
-                int chiffreCombiDef4 = random.nextInt(10);
-                int chiffreCombiDef5 = random.nextInt(10);
+        combinationDefender2 = IA.createTryDefender(userCombinationDefender);
 
-                if (combinaisonLengthDef == 3) {
-                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
-                            chiffreCombiDef3;
-                }
-                else if (combinaisonLengthDef == 4) {
-                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
-                            chiffreCombiDef3 + chiffreCombiDef4;
-                }
-                else if (combinaisonLengthDef == 5) {
-                    combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
-                            chiffreCombiDef3 + chiffreCombiDef4 + chiffreCombiDef5;
-                }
-                System.out.println(combinationDefender);
+        if (combinationDefender2.equals(userCombinationDefender)) {
+            System.out.println("L'ordinateur a trouvé la solution !\n" +
+                    "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+            if (Main.infiniteTries) {
+                System.out.println("L'ordinateur a pris "+(pIDef+1)+" tours pour trouver la combinaison.");
             }
-
-            else if (pIDef > 0) {
-
-                combinationDefender2 = "";
-                resultatIACombinaison = "";
-
-                for (int indiceDef = 0; indiceDef < combinaisonLengthDef; indiceDef++) {
-
-                    if (pIDef == 1) {
-
-                        if (userCombinationDefender.charAt(indiceDef) == combinationDefender.charAt
-                                (indiceDef)) {
-                            combinationDefender2 += combinationDefender.charAt(indiceDef);
-                            resultatIACombinaison += "=";
-                        }
-
-                        else if (userCombinationDefender.charAt(indiceDef) > combinationDefender.charAt
-                                (indiceDef)) {
-                            int min = Character.getNumericValue(combinationDefender.charAt(indiceDef));
-                            combinationDefender2 += Character.forDigit
-                                    ((random.nextInt(9-min+1)+min),10);
-                            resultatIACombinaison += "+";
-                        }
-
-                        else if (userCombinationDefender.charAt(indiceDef) < combinationDefender.charAt
-                                (indiceDef)) {
-                            int max = Character.getNumericValue(combinationDefender.charAt(indiceDef));
-                            combinationDefender2 += Character.forDigit(random.nextInt(max),10);
-                            resultatIACombinaison += "-";
-
-                        }
-                    }
-
-                    else if (pIDef > 1) {
-                        if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
-                                (indiceDef)) {
-                            combinationDefender2 += tempValue.charAt(indiceDef);
-                            resultatIACombinaison += "=";
-                        }
-
-                        else if (userCombinationDefender.charAt(indiceDef) > tempValue.charAt
-                                (indiceDef)) {
-                            int min = Character.getNumericValue(tempValue.charAt(indiceDef));
-                            combinationDefender2 += Character.forDigit
-                                    ((random.nextInt(10-min+1)+min),10);
-                            resultatIACombinaison += "+";
-                        }
-
-                        else if (userCombinationDefender.charAt(indiceDef) < tempValue.charAt
-                                (indiceDef)) {
-                            int max = Character.getNumericValue(tempValue.charAt(indiceDef));
-                            combinationDefender2 += Character.forDigit(random.nextInt(max),10);
-                            resultatIACombinaison += "-";
-
-                        }
-                    }
-                }
-
-                tempValue = combinationDefender2;
-                System.out.println(combinationDefender2);
-
-                if (combinationDefender2.equals(userCombinationDefender)) {
-                    System.out.println("L'ordinateur a trouvé la solution !\n" +
-                            "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                    if (infiniteTries) {
-                        System.out.println("L'ordinateur a pris "+(pIDef+1)+" tours pour trouver la combinaison.");
-                    }
-
-                    int userInputEndGame = sc.nextInt();
-
-                    if (userInputEndGame == 1) {
-                        pIDef = 1501;
-                        Main.defenderLoop = true;
-                    }
-                    else if (userInputEndGame == 2) {
-                        pIDef = 1501;
-                        Main.defenderLoop = false;
-                        Main.menuLoop = true;
-                    }
-                    else if (userInputEndGame == 3) {
-                        System.exit(0);
-                    }
-                    else {
-                        System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        Main.defenderLoop = false;
-                        Main.menuLoop = true;
-                    }
-                }
-                else if (pIDef+1 == Main.nbTries){
-                    System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
-                            "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-
-                    int userInputEndGame = sc.nextInt();
-
-                    if (userInputEndGame == 1) {
-                        Main.defenderLoop = true;
-                    } else if (userInputEndGame == 2) {
-                        Main.defenderLoop = false;
-                        Main.menuLoop = true;
-                    } else if (userInputEndGame == 3) {
-                        System.exit(0);
-                    } else {
-                        System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-                        Main.defenderLoop = false;
-                        Main.menuLoop = true;
-                    }
-                }
-            }
+            EndMenu.askEndMenuDefender();
+        }
+        else if (pIDef+1 == Main.nbTries){
+            System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
+                    "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+            EndMenu.askEndMenuDefender();
         }
     }
 
-    public static void duelMode() throws IOException {
+    static void duelMode() throws IOException {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
