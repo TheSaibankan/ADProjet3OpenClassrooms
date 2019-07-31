@@ -11,6 +11,7 @@ class GameModes {
     static int indiceDef;
 
     static int combinationLengthDef;
+    static String combinationChallenger = "";
     static String combinationDefender = "";
     static String combinationDefender2 = "";
     static String resultatIACombinaison = "";
@@ -18,7 +19,6 @@ class GameModes {
 
     static void challengerMode() throws IOException {
         Scanner sc = new Scanner(System.in);
-        Random random = new Random();
 
         PropertiesReader.setBasicParam();
         PropertiesReader.getParamConfig();

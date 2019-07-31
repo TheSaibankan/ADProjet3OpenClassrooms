@@ -5,31 +5,19 @@ import java.util.Random;
 import static com.antoineDomergue.OCProjet3Java.GameModes.*;
 
 class IA {
+
+    //new Random().ints(Main.combinationLength, 0, 9).forEach(secret::append);
+
+
     private static Random random = new Random();
 
     static String createCombinationChallenger() {
 
-        String combinationChallenger = "";
-
-        //ajout des valeurs dans le string
-        int digitCombi1 = random.nextInt(10);
-        int digitCombi2 = random.nextInt(10);
-        int digitCombi3 = random.nextInt(10);
-        int digitCombi4 = random.nextInt(10);
-        int digitCombi5 = random.nextInt(10);
-
-        if (Main.combinationLength == 3) {
-            combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 + digitCombi3;
+        for(int iCombination = 1; iCombination <= Main.combinationLength; iCombination++) {
+            int digitCombiI = random.nextInt(10);
+            GameModes.combinationChallenger += String.valueOf(digitCombiI);
         }
-        else if (Main.combinationLength == 4) {
-            combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 +
-                    digitCombi3 + digitCombi4;
-        }
-        else if (Main.combinationLength == 5) {
-            combinationChallenger = String.valueOf(digitCombi1) + digitCombi2 +
-                    digitCombi3 + digitCombi4 + digitCombi5;
-        }
-        return combinationChallenger;
+        return GameModes.combinationChallenger;
     }
 
     static String createTryDefender(String userCombinationDefender) {

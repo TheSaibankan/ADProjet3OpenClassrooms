@@ -4,8 +4,25 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
 class PropertiesReader {
+
+    private ResourceBundle resourceBundle = ResourceBundle.getBundle("config");
+    private boolean developer = Boolean.parseBoolean(resourceBundle.getString("developer"));
+    private int combinationSize = Integer.parseInt(resourceBundle.getString("plusOrMinus.combinationSize"));
+    private int maxAttempts = Integer.parseInt(resourceBundle.getString("plusOrMinus.maxAttempts"));
+
+
+
+
+
+
+
+
+
+
+
     static void getParamConfig() throws IOException {
         FileReader reader = new FileReader("Param.properties");
         Properties properties = new Properties();
