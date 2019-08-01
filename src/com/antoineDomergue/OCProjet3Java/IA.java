@@ -23,25 +23,11 @@ class IA {
     static String createTryDefender(String userCombinationDefender) {
         for (pIDef = 0; pIDef <= Main.nbTries; pIDef++) {
             if (pIDef == 0) {
-                int chiffreCombiDef1 = random.nextInt(10);
-                int chiffreCombiDef2 = random.nextInt(10);
-                int chiffreCombiDef3 = random.nextInt(10);
-                int chiffreCombiDef4 = random.nextInt(10);
-                int chiffreCombiDef5 = random.nextInt(10);
-
-                if (combinationLengthDef == 3) {
-                    GameModes.combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
-                            chiffreCombiDef3;
+                for(int iCombination = 1; iCombination <= Main.combinationLength; iCombination++) {
+                    int digitCombiI = random.nextInt(10);
+                    GameModes.combinationChallenger += String.valueOf(digitCombiI);
                 }
-                else if (combinationLengthDef == 4) {
-                    GameModes.combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
-                            chiffreCombiDef3 + chiffreCombiDef4;
-                }
-                else if (combinationLengthDef == 5) {
-                    GameModes.combinationDefender = String.valueOf(chiffreCombiDef1) + chiffreCombiDef2 +
-                            chiffreCombiDef3 + chiffreCombiDef4 + chiffreCombiDef5;
-                }
-                System.out.println(GameModes.combinationDefender);
+                System.out.println(GameModes.combinationChallenger);
             }
 
             else if (pIDef > 0) {
@@ -53,21 +39,21 @@ class IA {
 
                     if (pIDef == 1) {
 
-                        if (userCombinationDefender.charAt(indiceDef) == GameModes.combinationDefender.charAt
+                        if (userCombinationDefender.charAt(indiceDef) == GameModes.combinationChallenger.charAt
                                 (indiceDef)) {
-                            GameModes.combinationDefender2 += GameModes.combinationDefender.charAt(indiceDef);
+                            GameModes.combinationDefender2 += GameModes.combinationChallenger.charAt(indiceDef);
                             GameModes.resultatIACombinaison += "=";
                         }
-                        else if (userCombinationDefender.charAt(indiceDef) > GameModes.combinationDefender.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) > GameModes.combinationChallenger.charAt
                                 (indiceDef)) {
-                            int min = Character.getNumericValue(GameModes.combinationDefender.charAt(indiceDef));
+                            int min = Character.getNumericValue(GameModes.combinationChallenger.charAt(indiceDef));
                             GameModes.combinationDefender2 += Character.forDigit
                                     ((random.nextInt(9-min+1)+min),10);
                             GameModes.resultatIACombinaison += "+";
                         }
-                        else if (userCombinationDefender.charAt(indiceDef) < GameModes.combinationDefender.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) < GameModes.combinationChallenger.charAt
                                 (indiceDef)) {
-                            int max = Character.getNumericValue(GameModes.combinationDefender.charAt(indiceDef));
+                            int max = Character.getNumericValue(GameModes.combinationChallenger.charAt(indiceDef));
                             GameModes.combinationDefender2 += Character.forDigit(random.nextInt(max),10);
                             GameModes.resultatIACombinaison += "-";
                         }
