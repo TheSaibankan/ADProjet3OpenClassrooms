@@ -20,12 +20,13 @@ class GameModes {
     static void challengerMode() throws IOException {
         Scanner sc = new Scanner(System.in);
 
-        PropertiesReader.setBasicParam();
+        //PropertiesReader.setBasicParam();
         PropertiesReader.getParamConfig();
 
         User.settingsChallenger();
 
-        String combinationChallenger = IA.createCombinationChallenger();
+        GameModes.combinationChallenger = "";
+        GameModes.combinationChallenger = IA.createCombinationChallenger();
 
         if (Main.devMode) {
             System.out.println("La combinaison est la suivante : " + combinationChallenger);
@@ -58,8 +59,7 @@ class GameModes {
             }
             System.out.println(resultUserCombinaison);
 
-            if (resultUserCombinaison.toString().equals("===") || resultUserCombinaison.toString().equals("====") ||
-                    resultUserCombinaison.toString().equals("=====")) {
+            if (userCombination.equals(combinationChallenger)) {
                 System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                 EndMenu.askEndMenuChallenger();
@@ -79,22 +79,15 @@ class GameModes {
         
         User.settingsDefender();
 
-        System.out.println("Veuillez rentrer une combinaison de 3, 4 ou 5 chiffes :");
+        System.out.println("Veuillez rentrer une combinaison de x chiffres :");
 
         String userCombinationDefender = sc.nextLine();
-
-        if (userCombinationDefender.length() == 3) combinationLengthDef = 3;
-        else if (userCombinationDefender.length() == 4) combinationLengthDef = 4;
-        else if (userCombinationDefender.length() == 5) combinationLengthDef = 5;
-        else {
-            System.out.println("Une erreur est survenue. Votre combinaison est de " +
-                    userCombinationDefender.length()+" chiffre(s). Redémarrage du module Défenseur...");
-            return;
-        }
+        Main.combinationLength = userCombinationDefender.length();
 
         combinationDefender2 = IA.createTryDefender(userCombinationDefender);
 
         if (combinationDefender2.equals(userCombinationDefender)) {
+            System.out.println(combinationDefender2);
             System.out.println("L'ordinateur a trouvé la solution !\n" +
                     "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
             if (Main.infiniteTries) {

@@ -11,8 +11,6 @@ public class Main {
 
     static int combinationLength;
     static int nbTries;
-
-
     static boolean devMode;
     static boolean infiniteTries = false;
 

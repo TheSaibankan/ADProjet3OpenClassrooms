@@ -9,8 +9,8 @@ class User {
     static void settingsChallenger() throws IOException {
 
         System.out.println("Vous avez sélectionné le mode Challenger !");
-        System.out.println("Par défaut, la combinaison contient 4 chiffres. " +
-                "Voulez-vous modifier la difficulté ?\n 1 - Oui  2 - Non");
+        System.out.println("Voulez-vous choisir un mode de difficulté ?\n 1 - Oui  2 - Non"
+        +"\nNote : Choisissez 'non' pour ne pas réécrire le fichier de configuration.");
 
         int answerDiff = sc.nextInt();
 
@@ -45,7 +45,6 @@ class User {
         }
 
         else if (answerDiff == 2) {
-            PropertiesReader.setMediumChallenger();
             Main.combinationLength = PropertiesReader.getParamConfigCombinationLength();
             Main.nbTries = PropertiesReader.getParamConfigNbTries();
         }

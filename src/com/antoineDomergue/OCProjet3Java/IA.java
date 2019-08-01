@@ -5,10 +5,7 @@ import java.util.Random;
 import static com.antoineDomergue.OCProjet3Java.GameModes.*;
 
 class IA {
-
     //new Random().ints(Main.combinationLength, 0, 9).forEach(secret::append);
-
-
     private static Random random = new Random();
 
     static String createCombinationChallenger() {
@@ -25,9 +22,9 @@ class IA {
             if (pIDef == 0) {
                 for(int iCombination = 1; iCombination <= Main.combinationLength; iCombination++) {
                     int digitCombiI = random.nextInt(10);
-                    GameModes.combinationChallenger += String.valueOf(digitCombiI);
+                    GameModes.combinationDefender += String.valueOf(digitCombiI);
                 }
-                System.out.println(GameModes.combinationChallenger);
+                System.out.println(combinationDefender);
             }
 
             else if (pIDef > 0) {
@@ -35,25 +32,25 @@ class IA {
                 GameModes.combinationDefender2 = "";
                 GameModes.resultatIACombinaison = "";
 
-                for (indiceDef = 0; indiceDef < combinationLengthDef; indiceDef++) {
+                for (indiceDef = 0; indiceDef < Main.combinationLength; indiceDef++) {
 
                     if (pIDef == 1) {
 
-                        if (userCombinationDefender.charAt(indiceDef) == GameModes.combinationChallenger.charAt
+                        if (userCombinationDefender.charAt(indiceDef) == combinationDefender.charAt
                                 (indiceDef)) {
-                            GameModes.combinationDefender2 += GameModes.combinationChallenger.charAt(indiceDef);
+                            GameModes.combinationDefender2 += GameModes.combinationDefender.charAt(indiceDef);
                             GameModes.resultatIACombinaison += "=";
                         }
-                        else if (userCombinationDefender.charAt(indiceDef) > GameModes.combinationChallenger.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) > GameModes.combinationDefender.charAt
                                 (indiceDef)) {
-                            int min = Character.getNumericValue(GameModes.combinationChallenger.charAt(indiceDef));
+                            int min = Character.getNumericValue(GameModes.combinationDefender.charAt(indiceDef));
                             GameModes.combinationDefender2 += Character.forDigit
                                     ((random.nextInt(9-min+1)+min),10);
                             GameModes.resultatIACombinaison += "+";
                         }
-                        else if (userCombinationDefender.charAt(indiceDef) < GameModes.combinationChallenger.charAt
+                        else if (userCombinationDefender.charAt(indiceDef) < GameModes.combinationDefender.charAt
                                 (indiceDef)) {
-                            int max = Character.getNumericValue(GameModes.combinationChallenger.charAt(indiceDef));
+                            int max = Character.getNumericValue(GameModes.combinationDefender.charAt(indiceDef));
                             GameModes.combinationDefender2 += Character.forDigit(random.nextInt(max),10);
                             GameModes.resultatIACombinaison += "-";
                         }
@@ -80,8 +77,8 @@ class IA {
                         }
                     }
                 }
-                if (resultatIACombinaison.equals("===") || resultatIACombinaison.equals("====")
-                        || resultatIACombinaison.equals("=====") ) {
+                if (combinationDefender.equals(userCombinationDefender) ||
+                        combinationDefender2.equals(userCombinationDefender) || tempValue.equals(userCombinationDefender)) {
                     return combinationDefender2;
                 } else {
                     tempValue = GameModes.combinationDefender2;

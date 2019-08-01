@@ -4,23 +4,14 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.ResourceBundle;
 
 class PropertiesReader {
 
-    private ResourceBundle resourceBundle = ResourceBundle.getBundle("config");
-    private boolean developer = Boolean.parseBoolean(resourceBundle.getString("developer"));
+
+    /*private ResourceBundle resourceBundle = ResourceBundle.getBundle("config");
+    private boolean developer = Boolean.parseBoolean(resourceBundle.getString("devMode"));
     private int combinationSize = Integer.parseInt(resourceBundle.getString("plusOrMinus.combinationSize"));
-    private int maxAttempts = Integer.parseInt(resourceBundle.getString("plusOrMinus.maxAttempts"));
-
-
-
-
-
-
-
-
-
+    private int maxAttempts = Integer.parseInt(resourceBundle.getString("plusOrMinus.maxAttempts"));*/
 
 
     static void getParamConfig() throws IOException {
@@ -29,11 +20,11 @@ class PropertiesReader {
         properties.load(reader);
 
         String paramNbTries = properties.getProperty("paramNbTries");
-        String paramCombinaisonLength = properties.getProperty("paramCombinaisonLength");
-        String paramDevMode = properties.getProperty("paramModeDev");
+        String paramCombinationLength = properties.getProperty("paramCombinationLength");
+        String paramDevMode = properties.getProperty("paramDevMode");
 
         Main.nbTries = Integer.parseInt(paramNbTries);
-        Main.combinationLength = Integer.parseInt(paramCombinaisonLength);
+        Main.combinationLength = Integer.parseInt(paramCombinationLength);
         Main.devMode = Boolean.parseBoolean(paramDevMode);
     }
 
@@ -50,7 +41,7 @@ class PropertiesReader {
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Integer.parseInt(properties.getProperty("paramCombinaisonLength"));
+        return Integer.parseInt(properties.getProperty("paramCombinationLength"));
     }
 
     static boolean getParamConfigDevMode() throws IOException {
@@ -58,7 +49,7 @@ class PropertiesReader {
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Boolean.parseBoolean(properties.getProperty("paramModeDev"));
+        return Boolean.parseBoolean(properties.getProperty("paramDevMode"));
     }
 
     static  boolean getParamInfiniteTries() throws IOException {
@@ -66,7 +57,7 @@ class PropertiesReader {
         Properties properties = new Properties();
         properties.load(reader);
 
-        return Boolean.parseBoolean(properties.getProperty("paramEssaiesInfinie"));
+        return Boolean.parseBoolean(properties.getProperty("paramInfiniteTries"));
     }
 
     static void setBasicParam() throws  IOException {
@@ -74,9 +65,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "7");
-        properties.setProperty("paramCombinaisonLength", "4");
-        properties.setProperty("paramModeDev", "false");
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", "4");
+        properties.setProperty("paramDevMode", "false");
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
 
@@ -85,9 +76,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "10");
-        properties.setProperty("paramCombinaisonLength", "3");
-        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", "3");
+        properties.setProperty("paramDevMode", String.valueOf(Main.devMode));
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
     static void setEasyDuel() throws IOException {
@@ -95,9 +86,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "1500");
-        properties.setProperty("paramCombinaisonLength", "3");
-        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", "3");
+        properties.setProperty("paramDevMode", String.valueOf(Main.devMode));
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
     static void setMediumChallenger() throws IOException {
@@ -105,9 +96,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "7");
-        properties.setProperty("paramCombinaisonLength", "4");
-        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", "4");
+        properties.setProperty("paramDevMode", String.valueOf(Main.devMode));
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
     static void setMediumDuel() throws IOException {
@@ -115,9 +106,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "1500");
-        properties.setProperty("paramCombinaisonLength", "4");
-        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", "4");
+        properties.setProperty("paramDevMode", String.valueOf(Main.devMode));
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
     static void setHardChallenger() throws IOException {
@@ -125,9 +116,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "5");
-        properties.setProperty("paramCombinaisonLength", "5");
-        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", "5");
+        properties.setProperty("paramDevMode", String.valueOf(Main.devMode));
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
     static void setHardDuel() throws IOException {
@@ -135,9 +126,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "1500");
-        properties.setProperty("paramCombinaisonLength", "5");
-        properties.setProperty("paramModeDev", String.valueOf(Main.devMode));
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", "5");
+        properties.setProperty("paramDevMode", String.valueOf(Main.devMode));
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
     static void setDevModeChallenger() throws IOException {
@@ -145,9 +136,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", String.valueOf(Main.nbTries));
-        properties.setProperty("paramCombinaisonLength", String.valueOf(Main.combinationLength));
-        properties.setProperty("paramModeDev", "true");
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", String.valueOf(Main.combinationLength));
+        properties.setProperty("paramDevMode", "true");
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
     static void setInfiniteTriesDefender() throws IOException {
@@ -155,9 +146,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "1500");
-        properties.setProperty("paramCombinaisonLength", String.valueOf(Main.combinationLength));
-        properties.setProperty("paramModeDev", "false");
-        properties.setProperty("paramEssaiesInfinie", "true");
+        properties.setProperty("paramCombinationLength", String.valueOf(Main.combinationLength));
+        properties.setProperty("paramDevMode", "false");
+        properties.setProperty("paramInfiniteTries", "true");
         properties.store(outputStream, null);
     }
     static void setInfiniteTriesDefenderFalse() throws IOException {
@@ -165,9 +156,9 @@ class PropertiesReader {
         Properties properties = new Properties();
 
         properties.setProperty("paramNbTries", "10");
-        properties.setProperty("paramCombinaisonLength", String.valueOf(Main.combinationLength));
-        properties.setProperty("paramModeDev", "false");
-        properties.setProperty("paramEssaiesInfinie", "false");
+        properties.setProperty("paramCombinationLength", String.valueOf(Main.combinationLength));
+        properties.setProperty("paramDevMode", "false");
+        properties.setProperty("paramInfiniteTries", "false");
         properties.store(outputStream, null);
     }
 }
