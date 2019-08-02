@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="modification méthode combination">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="les combinaisons ne sont plus limitées en longueur + correction bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Param.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/PropertiesReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/PropertiesReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +71,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fr.dic" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/fr.dic" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adomergue\IdeaProjects\TestJavaProjet3.3" />
+      <recent name="C:\Users\adomergue\IdeaProjects\TestJavaProjet3.3\src" />
+      <recent name="C:\Users\adomergue\IdeaProjects\TestJavaProjet3.3\src\com\antoineDomergue\OCProjet3Java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -117,7 +120,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\Orion\Desktop" CustomDictionaries="1" CustomDictionary0="C:\Users\Orion\Desktop\fr.dic" Dictionaries="1" Dictionary0="C:\Users\adomergue\Desktop\fr.dic" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\adomergue\Desktop" CustomDictionaries="1" CustomDictionary0="C:\Users\adomergue\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -158,7 +161,9 @@
       <workItem from="1564556598714" duration="4980000" />
       <workItem from="1564564281231" duration="708000" />
       <workItem from="1564640183914" duration="156000" />
-      <workItem from="1564642090090" duration="11355000" />
+      <workItem from="1564642090090" duration="12186000" />
+      <workItem from="1564662044408" duration="4988000" />
+      <workItem from="1564726212672" duration="22413000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -356,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564561753694</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="les combinaisons ne sont plus limitées en longueur + correction bug">
+      <created>1564654465742</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1564654465742</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -426,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tableau to string" />
     <MESSAGE value="progress challenger mode + menu victoire" />
     <MESSAGE value="premier jet module Challenger" />
     <MESSAGE value="module challenger complet" />
@@ -451,20 +462,21 @@
     <MESSAGE value="modification des noms en anglais" />
     <MESSAGE value="modification des noms en anglais COMPLET" />
     <MESSAGE value="modification méthode combination" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification méthode combination" />
+    <MESSAGE value="les combinaisons ne sont plus limitées en longueur + correction bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="les combinaisons ne sont plus limitées en longueur + correction bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="5" />
+          <line>34</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="8" />
+          <line>134</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

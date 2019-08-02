@@ -7,12 +7,17 @@ import java.util.Properties;
 
 class PropertiesReader {
 
-
-    /*private ResourceBundle resourceBundle = ResourceBundle.getBundle("config");
-    private boolean developer = Boolean.parseBoolean(resourceBundle.getString("devMode"));
-    private int combinationSize = Integer.parseInt(resourceBundle.getString("plusOrMinus.combinationSize"));
-    private int maxAttempts = Integer.parseInt(resourceBundle.getString("plusOrMinus.maxAttempts"));*/
-
+    /*static void getParamConfig() {
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("Param");
+        boolean devMode = Boolean.parseBoolean(resourceBundle.getString("paramDevMode"));
+        int combinationLength = Integer.parseInt(resourceBundle.getString("paramCombinationLength"));
+        int nbTries = Integer.parseInt(resourceBundle.getString("paramNbTries"));
+        boolean infiniteTries = Boolean.parseBoolean(resourceBundle.getString("paramInfiniteTries"));
+        Main.devMode = devMode;
+        Main.combinationLength = combinationLength;
+        Main.nbTries = nbTries;
+        Main.infiniteTries = infiniteTries;
+    }*/
 
     static void getParamConfig() throws IOException {
         FileReader reader = new FileReader("Param.properties");
