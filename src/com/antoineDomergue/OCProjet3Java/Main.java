@@ -12,7 +12,6 @@ public class Main {
     static int combinationLength;
     static int nbTries;
     static boolean devMode;
-    static boolean infiniteTries = false;
 
     public static void main(String[] args) throws IOException {
 

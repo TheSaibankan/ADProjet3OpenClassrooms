@@ -80,10 +80,19 @@ class IA {
                     tempValue = GameModes.combinationDefender2;
                     System.out.println(GameModes.combinationDefender2);
                     if (userCombinationDefender.equals(combinationDefender2)) {
-
+                        System.out.println(combinationDefender2);
+                        System.out.println("L'ordinateur a trouvé la solution !\n" +
+                                "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+                        System.out.println("L'ordinateur a pris "+(pIDef+1)+" tours pour trouver la combinaison.");
+                        EndMenu.askEndMenuDefender();
                     }
-
+                    else if (pIDef+1 == Main.nbTries){
+                        System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
+                                "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
+                        EndMenu.askEndMenuDefender();
+                    }
                     }
                 } return combinationDefender2;
             }
+
     }
