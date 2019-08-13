@@ -18,14 +18,10 @@ class GameModes {
     static void challengerMode() throws IOException {
         ChallengerMode.challengerModeLaunch();
     }
-
     static void defenderMode() throws IOException {
         DefenderMode.defenderModeLaunch();
     }
-
     static void duelMode() throws IOException {
         DuelMode.duelModeLaunch();
     }
-
-
 }

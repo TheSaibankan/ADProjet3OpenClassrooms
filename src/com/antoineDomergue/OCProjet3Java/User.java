@@ -23,17 +23,17 @@ class User {
             if (choixDiff == 1){
                 System.out.println("Vous avez choisi le mode facile. (3 chiffres, 10 essaies)");
                 Main.combinationLength = 3;
-                Main.nbTries = 10;
+                Main.nbTries = 1500;
             }
             else if (choixDiff == 2) {
                 System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
                 Main.combinationLength = 4;
-                Main.nbTries = 7;
+                Main.nbTries = 1500;
             }
             else if (choixDiff == 3) {
                 System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
                 Main.combinationLength = 5;
-                Main.nbTries = 5;
+                Main.nbTries = 1500;
             }
             else {
                 System.out.println("Une erreur est survenue. Redémarrage du module Challenger...");
