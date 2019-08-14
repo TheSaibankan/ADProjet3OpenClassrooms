@@ -3,6 +3,8 @@ package com.antoineDomergue.OCProjet3Java;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static com.antoineDomergue.OCProjet3Java.Logger.*;
+
 public class Main {
     static boolean challengerLoop   = false;
     static boolean defenderLoop     = false;
@@ -18,6 +20,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Bienvenue dans le module de recherche d'une combinaison à X chiffres.");
+        info("Lancement de l'application.");
 
         while (menuLoop) {
 

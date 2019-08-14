@@ -1,7 +1,5 @@
 package com.antoineDomergue.OCProjet3Java;
 
-import static com.antoineDomergue.OCProjet3Java.GameModes.pI;
-import static com.antoineDomergue.OCProjet3Java.GameModes.pIDef;
 import static com.antoineDomergue.OCProjet3Java.User.sc;
 
 class EndMenu {
@@ -11,11 +9,11 @@ class EndMenu {
         int userInputEndGame = sc.nextInt();
 
         if (userInputEndGame == 1) {
-            pI = 99;
+            GameModes.pI = Main.nbTries + 1;
             Main.challengerLoop = true;
         }
         else if (userInputEndGame == 2) {
-            pI = 99;
+            GameModes.pI = Main.nbTries + 1;
             Main.challengerLoop = false;
             Main.menuLoop = true;
         }
@@ -32,11 +30,11 @@ class EndMenu {
         int userInputEndGame = sc.nextInt();
 
         if (userInputEndGame == 1) {
-            GameModes.pIDef = 1501;
+            GameModes.pIDef = Main.nbTries + 1;
             Main.defenderLoop = true;
         }
         else if (userInputEndGame == 2) {
-            GameModes.pIDef = 1501;
+            GameModes.pIDef = Main.nbTries + 1;
             Main.defenderLoop = false;
             Main.menuLoop = true;
         }
@@ -51,12 +49,12 @@ class EndMenu {
         int userInputEndGame = sc.nextInt();
 
         if (userInputEndGame == 1) {
-            GameModes.pIDef = 1501;
+            GameModes.pIDef = Main.nbTries + 1;
             Main.duelLoop = true;
         }
         else if (userInputEndGame == 2) {
-            GameModes.pIDef = 1501;
-            pI = pIDef + 1;
+            GameModes.pIDef = Main.nbTries + 1;
+            GameModes.pI = GameModes.pIDef + 1;
             Main.duelLoop = false;
             Main.menuLoop = true;
         }
