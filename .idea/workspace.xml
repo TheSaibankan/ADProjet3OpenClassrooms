@@ -4,22 +4,12 @@
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/Param.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/resources/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/resources/Param.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/challengerMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/challengerMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/Param.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,7 +171,7 @@
       <workItem from="1565940179009" duration="685000" />
       <workItem from="1565941695082" duration="716000" />
       <workItem from="1565949542003" duration="2848000" />
-      <workItem from="1565959250885" duration="5351000" />
+      <workItem from="1565959250885" duration="9999000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -400,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565792869257</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="log erreur input + meilleur gestion des bugs">
+      <created>1565964894475</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1565964894475</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -470,7 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="module challenger complet" />
     <MESSAGE value="début module défense" />
     <MESSAGE value="progression module defense" />
     <MESSAGE value="refonte du module defense + prise en compte des égaux et sup" />
@@ -495,7 +491,8 @@
     <MESSAGE value="les combinaisons ne sont plus limitées en longueur + correction bug" />
     <MESSAGE value="séparation des modes + corrections bugs defender + modeDev&#10;mode duel bloqué" />
     <MESSAGE value="ajout log4j correct + devmod mieux intégré" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout log4j correct + devmod mieux intégré" />
+    <MESSAGE value="log erreur input + meilleur gestion des bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="log erreur input + meilleur gestion des bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,11 +501,6 @@
           <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java</url>
           <line>8</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java</url>

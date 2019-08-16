@@ -31,8 +31,8 @@ public class DuelMode {
             if (GameModes.userCombination.length() != Main.combinationLength) {
                 System.out.println("Attention ! Vous avez saisi "+GameModes.userCombination.length()+" chiffre(s) "+
                         "au lieu de "+Main.combinationLength+".");
+                Logger.errorUserInput();
                 GameModes.pI--;
-                continue;
             }
             else if (GameModes.userCombination.equals(GameModes.combinationChallenger)) {
                 System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
