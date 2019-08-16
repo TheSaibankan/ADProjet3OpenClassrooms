@@ -18,6 +18,11 @@ class IA {
     }
 
     static String createTryDefender(String userCombinationDefender) {
+
+        GameModes.combinationDefender2 = "";
+        GameModes.resultatIACombinaison = "";
+        GameModes.combinationDefender = "";
+
             for (pIDef = 0; pIDef <= Main.nbTries; pIDef++) {
                 if (pIDef == 0) {
                     for(int iCombination = 1; iCombination <= Main.combinationLength; iCombination++) {

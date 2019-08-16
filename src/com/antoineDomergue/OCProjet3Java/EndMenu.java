@@ -22,6 +22,7 @@ class EndMenu {
         }
         else {
             System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+            Logger.errorUserInput();
             Main.challengerLoop = false;
             Main.menuLoop = true;
         }
@@ -41,6 +42,7 @@ class EndMenu {
         else if (userInputEndGame == 3) System.exit(0);
         else {
             System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+            Logger.errorUserInput();
             Main.defenderLoop = false;
             Main.menuLoop = true;
         }
@@ -61,6 +63,7 @@ class EndMenu {
         else if (userInputEndGame == 3) System.exit(0);
         else {
             System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+            Logger.errorUserInput();
             Main.duelLoop = false;
             Main.menuLoop = true;
         }

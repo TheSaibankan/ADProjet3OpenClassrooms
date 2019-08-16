@@ -9,8 +9,6 @@ public class DuelMode {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
-        int combinaisonLengthDef;
-
         System.out.println("Paramétrage du système Challenger...");
         User.settingsChallenger();
 

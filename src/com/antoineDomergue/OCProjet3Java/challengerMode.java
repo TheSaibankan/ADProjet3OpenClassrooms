@@ -26,6 +26,7 @@ public class ChallengerMode {
             if (GameModes.userCombination.length() != Main.combinationLength) {
                 System.out.println("Attention ! Vous avez saisi "+GameModes.userCombination.length()+" chiffre(s) "+
                         "au lieu de "+Main.combinationLength+".");
+                Logger.errorUserInput();
                 if (GameModes.pI == 0) continue;
                 else GameModes.pI--;
             }

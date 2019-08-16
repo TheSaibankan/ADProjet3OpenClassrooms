@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="séparation des modes + corrections bugs defender + modeDev&#10;mode duel bloqué">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_api_2_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/log4j2-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_api_2_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Param.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestJavaProjet3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestJavaProjet3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4j.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/META-INF/TestJavaProjet3.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/Param.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/PropertiesReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/PropertiesReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/resources/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/resources/Param.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/challengerMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/challengerMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/Param.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,13 +80,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/apache-log4j-2.12.0-bin/log4j-jcl-2.12.0.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/fr.dic" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -134,7 +131,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\Orion\Desktop" CustomDictionaries="1" CustomDictionary0="C:\Users\Orion\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\adomergue\Desktop" CustomDictionaries="1" CustomDictionary0="C:\Users\adomergue\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -180,7 +177,11 @@
       <workItem from="1564726212672" duration="22413000" />
       <workItem from="1564812298060" duration="3013000" />
       <workItem from="1565685340400" duration="16924000" />
-      <workItem from="1565766745878" duration="16859000" />
+      <workItem from="1565766745878" duration="16925000" />
+      <workItem from="1565940179009" duration="685000" />
+      <workItem from="1565941695082" duration="716000" />
+      <workItem from="1565949542003" duration="2848000" />
+      <workItem from="1565959250885" duration="5351000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -392,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565710672516</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ajout log4j correct + devmod mieux intégré">
+      <created>1565792869257</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1565792869257</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -462,7 +470,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="premier jet module Challenger" />
     <MESSAGE value="module challenger complet" />
     <MESSAGE value="début module défense" />
     <MESSAGE value="progression module defense" />
@@ -487,16 +494,12 @@
     <MESSAGE value="modification méthode combination" />
     <MESSAGE value="les combinaisons ne sont plus limitées en longueur + correction bug" />
     <MESSAGE value="séparation des modes + corrections bugs defender + modeDev&#10;mode duel bloqué" />
-    <option name="LAST_COMMIT_MESSAGE" value="séparation des modes + corrections bugs defender + modeDev&#10;mode duel bloqué" />
+    <MESSAGE value="ajout log4j correct + devmod mieux intégré" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout log4j correct + devmod mieux intégré" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java</url>
           <line>8</line>
@@ -509,11 +512,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java</url>
-          <line>46</line>
+          <line>47</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java</url>
           <line>21</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
