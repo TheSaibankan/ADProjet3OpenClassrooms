@@ -19,27 +19,32 @@ class IA {
 
     static String createTryDefender(String userCombinationDefender) {
 
-        GameModes.combinationDefender2 = "";
-        GameModes.resultatIACombinaison = "";
-        GameModes.combinationDefender = "";
+        if (!Main.duelLoop) {
+            GameModes.combinationDefender2 = "";
+            GameModes.resultatIACombinaison = "";
+            GameModes.combinationDefender = "";
+        }
 
-            for (pIDef = 0; pIDef <= Main.nbTries; pIDef++) {
-                if (pIDef == 0) {
+            for (; GameModes.pIDef <= Main.nbTries; GameModes.pIDef++) {
+                if (GameModes.pIDef == 0) {
                     for(int iCombination = 1; iCombination <= Main.combinationLength; iCombination++) {
                         int digitCombiI = random.nextInt(10);
                         GameModes.combinationDefender += String.valueOf(digitCombiI);
                     }
                     System.out.println(combinationDefender);
+                    if (Main.duelLoop) {
+                        GameModes.pIDef++;
+                        break;}
                 }
 
-                else if (pIDef > 0) {
+                else if (GameModes.pIDef > 0) {
 
                     GameModes.combinationDefender2 = "";
                     GameModes.resultatIACombinaison = "";
 
                     for (indiceDef = 0; indiceDef < Main.combinationLength; indiceDef++) {
 
-                        if (pIDef == 1) {
+                        if (GameModes.pIDef == 1) {
 
                             if (userCombinationDefender.charAt(indiceDef) == combinationDefender.charAt
                                     (indiceDef)) {
@@ -61,7 +66,7 @@ class IA {
                             }
                         }
 
-                        else if (pIDef > 1) {
+                        else if (GameModes.pIDef > 1) {
                             if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
                                     (indiceDef)) {
                                 GameModes.combinationDefender2 += tempValue.charAt(indiceDef);
@@ -88,16 +93,18 @@ class IA {
                         System.out.println(combinationDefender2);
                         System.out.println("L'ordinateur a trouvé la solution !\n" +
                                 "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                        System.out.println("L'ordinateur a pris "+(pIDef+1)+" tours pour trouver la combinaison.");
+                        System.out.println("L'ordinateur a pris "+(GameModes.pIDef+1)+" tours pour trouver la combinaison.");
                         EndMenu.askEndMenuDefender();
                     }
-                    else if (pIDef+1 == Main.nbTries){
+                    else if (GameModes.pIDef+1 == Main.nbTries){
                         System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
                                 "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                         EndMenu.askEndMenuDefender();
                     }
+                    if (Main.duelLoop) {
+                        indiceDef++;
+                        break;}
                     }
                 } return combinationDefender2;
             }
-
     }

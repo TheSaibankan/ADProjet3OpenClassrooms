@@ -5,7 +5,7 @@ import java.io.IOException;
 class GameModes {
 
     static int pI;
-    static int pIDef;
+    static int pIDef = 0;
     static int indiceDef;
 
     static String combinationChallenger = "";

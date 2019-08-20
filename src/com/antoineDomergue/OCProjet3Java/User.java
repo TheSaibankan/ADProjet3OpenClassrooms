@@ -35,7 +35,7 @@ class User {
                 }
                 else if (choixDiff == 2) {
                     if (Main.duelLoop) {
-                        System.out.println("Vous avez choisi le mode facile. (4 chiffres)");
+                        System.out.println("Vous avez choisi le mode normal. (4 chiffres)");
                         Main.nbTries = 1500;
                     } else {
                         System.out.println("Vous avez choisi le mode normal. (4 chiffres, 7 essaies)");
@@ -46,7 +46,7 @@ class User {
                 }
                 else if (choixDiff == 3) {
                     if (Main.duelLoop) {
-                        System.out.println("Vous avez choisi le mode facile. (5 chiffres)");
+                        System.out.println("Vous avez choisi le mode difficile. (5 chiffres)");
                         Main.nbTries = 1500;
                     } else {
                         System.out.println("Vous avez choisi le mode difficile. (5 chiffres, 5 essaies)");
