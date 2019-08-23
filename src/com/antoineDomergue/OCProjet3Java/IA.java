@@ -1,7 +1,6 @@
 package com.antoineDomergue.OCProjet3Java;
 
 import java.util.Random;
-
 import static com.antoineDomergue.OCProjet3Java.GameModes.*;
 
 class IA {
@@ -18,9 +17,10 @@ class IA {
     }
 
     static String createTryDefender(String userCombinationDefender) {
-
+        GameModes.pIDef = 0;
+        
         if (!Main.duelLoop) {
-            GameModes.combinationDefender2 = "";
+            GameModes.combinationDefenderSecondTurn = "";
             GameModes.resultatIACombinaison = "";
             GameModes.combinationDefender = "";
         }
@@ -39,7 +39,7 @@ class IA {
 
                 else if (GameModes.pIDef > 0) {
 
-                    GameModes.combinationDefender2 = "";
+                    GameModes.combinationDefenderSecondTurn = "";
                     GameModes.resultatIACombinaison = "";
 
                     for (indiceDef = 0; indiceDef < Main.combinationLength; indiceDef++) {
@@ -48,20 +48,20 @@ class IA {
 
                             if (userCombinationDefender.charAt(indiceDef) == combinationDefender.charAt
                                     (indiceDef)) {
-                                GameModes.combinationDefender2 += GameModes.combinationDefender.charAt(indiceDef);
+                                GameModes.combinationDefenderSecondTurn += GameModes.combinationDefender.charAt(indiceDef);
                                 GameModes.resultatIACombinaison += "=";
                             }
                             else if (userCombinationDefender.charAt(indiceDef) > GameModes.combinationDefender.charAt
                                     (indiceDef)) {
                                 int min = Character.getNumericValue(GameModes.combinationDefender.charAt(indiceDef));
-                                GameModes.combinationDefender2 += Character.forDigit
+                                GameModes.combinationDefenderSecondTurn += Character.forDigit
                                         ((random.nextInt(9-min+1)+min),10);
                                 GameModes.resultatIACombinaison += "+";
                             }
                             else if (userCombinationDefender.charAt(indiceDef) < GameModes.combinationDefender.charAt
                                     (indiceDef)) {
                                 int max = Character.getNumericValue(GameModes.combinationDefender.charAt(indiceDef));
-                                GameModes.combinationDefender2 += Character.forDigit(random.nextInt(max),10);
+                                GameModes.combinationDefenderSecondTurn += Character.forDigit(random.nextInt(max),10);
                                 GameModes.resultatIACombinaison += "-";
                             }
                         }
@@ -69,28 +69,28 @@ class IA {
                         else if (GameModes.pIDef > 1) {
                             if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
                                     (indiceDef)) {
-                                GameModes.combinationDefender2 += tempValue.charAt(indiceDef);
+                                GameModes.combinationDefenderSecondTurn += tempValue.charAt(indiceDef);
                                 GameModes.resultatIACombinaison += "=";
                             }
                             else if (userCombinationDefender.charAt(indiceDef) > tempValue.charAt
                                     (indiceDef)) {
                                 int min = Character.getNumericValue(tempValue.charAt(indiceDef));
-                                GameModes.combinationDefender2 += Character.forDigit
+                                GameModes.combinationDefenderSecondTurn += Character.forDigit
                                         ((random.nextInt(10-min+1)+min),10);
                                 GameModes.resultatIACombinaison += "+";
                             }
                             else if (userCombinationDefender.charAt(indiceDef) < tempValue.charAt
                                     (indiceDef)) {
                                 int max = Character.getNumericValue(tempValue.charAt(indiceDef));
-                                GameModes.combinationDefender2 += Character.forDigit(random.nextInt(max),10);
+                                GameModes.combinationDefenderSecondTurn += Character.forDigit(random.nextInt(max),10);
                                 GameModes.resultatIACombinaison += "-";
                             }
                         }
                     }
-                    tempValue = GameModes.combinationDefender2;
-                    System.out.println(GameModes.combinationDefender2);
-                    if (userCombinationDefender.equals(combinationDefender2)) {
-                        System.out.println(combinationDefender2);
+                    tempValue = GameModes.combinationDefenderSecondTurn;
+                    System.out.println(GameModes.combinationDefenderSecondTurn);
+                    if (userCombinationDefender.equals(combinationDefenderSecondTurn)) {
+                        System.out.println(combinationDefenderSecondTurn);
                         System.out.println("L'ordinateur a trouvé la solution !\n" +
                                 "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                         System.out.println("L'ordinateur a pris "+(GameModes.pIDef+1)+" tours pour trouver la combinaison.");
@@ -105,6 +105,6 @@ class IA {
                         indiceDef++;
                         break;}
                     }
-                } return combinationDefender2;
+                } return combinationDefenderSecondTurn;
             }
     }

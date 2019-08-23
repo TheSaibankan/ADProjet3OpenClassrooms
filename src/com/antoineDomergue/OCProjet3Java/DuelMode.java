@@ -52,9 +52,9 @@ public class DuelMode {
                     }
                 }
                 System.out.println(resultUserCombinaison);
-                GameModes.combinationDefender2 = IA.createTryDefender(userCombinationDefender);
+                GameModes.combinationDefenderSecondTurn = IA.createTryDefender(userCombinationDefender);
 
-                if (GameModes.combinationDefender2.equals(userCombinationDefender)) {
+                if (GameModes.combinationDefenderSecondTurn.equals(userCombinationDefender)) {
                     System.out.println("Perdu ! L'IA a trouvé la combinaison avant vous !\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                     EndMenu.askEndMenuDuel();

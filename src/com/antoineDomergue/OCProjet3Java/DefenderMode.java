@@ -14,6 +14,6 @@ class DefenderMode {
 
         PropertiesReader.getParamConfigNbTries();
 
-        GameModes.combinationDefender2 = IA.createTryDefender(userCombinationDefender);
+        GameModes.combinationDefenderSecondTurn = IA.createTryDefender(userCombinationDefender);
     }
 }

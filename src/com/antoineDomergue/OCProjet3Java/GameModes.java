@@ -10,7 +10,7 @@ class GameModes {
 
     static String combinationChallenger = "";
     static String combinationDefender = "";
-    static String combinationDefender2 = "";
+    static String combinationDefenderSecondTurn = "";
     static String resultatIACombinaison = "";
     static String tempValue = "";
     static String userCombination = "";

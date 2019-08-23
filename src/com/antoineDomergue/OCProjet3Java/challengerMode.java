@@ -3,7 +3,7 @@ package com.antoineDomergue.OCProjet3Java;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ChallengerMode {
+class ChallengerMode {
     static void challengerModeLaunch() throws IOException {
         Scanner sc = new Scanner(System.in);
 

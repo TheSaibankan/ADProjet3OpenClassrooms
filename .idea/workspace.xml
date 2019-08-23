@@ -2,17 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_api_2_12_0.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_api_2_12_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_12.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestJavaProjet3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestJavaProjet3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/Param.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/resources/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/resources/Param.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/challengerMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/challengerMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/Param.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,49 +40,6 @@
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-61">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-817">
-              <caret line="48" column="78" selection-start-line="48" selection-start-column="78" selection-end-line="48" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,54 +70,7 @@
       </branch-storage>
     </favorite-branches>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" />
-        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" />
-        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" />
-        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="584" />
-    <option name="y" value="115" />
-    <option name="width" value="814" />
-    <option name="height" value="735" />
-  </component>
   <component name="ProjectId" id="1OXWe34SC6cuLP4VSxvpO1eKmIz" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="TestJavaProjet3Procedural3.8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Procedural3.8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestJavaProjet3Procedural3.8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Procedural3.8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TestJavaProjet3Procedural3.8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJavaProjet3Procedural3.8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="OCProjet3Java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -161,8 +79,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fr.dic" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/apache-log4j-2.12.1-bin/log4j-slf4j-impl-2.12.1.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -213,7 +131,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\Orion\Desktop" CustomDictionaries="1" CustomDictionary0="C:\Users\Orion\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="1" Folder0="C:\Users\adomergue\Desktop" CustomDictionaries="1" CustomDictionary0="C:\Users\adomergue\Desktop\fr.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -265,6 +183,8 @@
       <workItem from="1565949542003" duration="2848000" />
       <workItem from="1565959250885" duration="9999000" />
       <workItem from="1566299231736" duration="6149000" />
+      <workItem from="1566547046613" duration="4864000" />
+      <workItem from="1566556339703" duration="3318000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -493,9 +413,6 @@
     <option name="localTasksCounter" value="33" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6149000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -504,41 +421,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2735043" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47521368" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -559,12 +441,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -636,21 +512,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java</url>
-          <line>8</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java</url>
-          <line>44</line>
-          <properties />
-          <option name="timeStamp" value="32" />
+          <line>36</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -661,162 +524,5 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestJavaProjet3$main.ic" NAME="main Coverage Results" MODIFIED="1562162619781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>combinaisonChallenger</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>userCombinaison</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>sc</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>sc.skipped</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/lang/StringLatin1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-817">
-          <caret line="48" column="78" selection-start-line="48" selection-start-column="78" selection-end-line="48" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>apache-log4j-2.12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
