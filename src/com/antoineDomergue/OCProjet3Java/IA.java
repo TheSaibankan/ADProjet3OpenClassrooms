@@ -17,12 +17,13 @@ class IA {
     }
 
     static String createTryDefender(String userCombinationDefender) {
-        GameModes.pIDef = 0;
+
         
-        if (!Main.duelLoop) {
+        if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef > 0)) {
             GameModes.combinationDefenderSecondTurn = "";
             GameModes.resultatIACombinaison = "";
             GameModes.combinationDefender = "";
+            GameModes.pIDef = 0;
         }
 
             for (; GameModes.pIDef <= Main.nbTries; GameModes.pIDef++) {
@@ -39,8 +40,10 @@ class IA {
 
                 else if (GameModes.pIDef > 0) {
 
-                    GameModes.combinationDefenderSecondTurn = "";
-                    GameModes.resultatIACombinaison = "";
+                    if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef > 0)) {
+                        GameModes.combinationDefenderSecondTurn = "";
+                        GameModes.resultatIACombinaison = "";
+                    }
 
                     for (indiceDef = 0; indiceDef < Main.combinationLength; indiceDef++) {
 
@@ -102,7 +105,7 @@ class IA {
                         EndMenu.askEndMenuDefender();
                     }
                     if (Main.duelLoop) {
-                        indiceDef++;
+                        GameModes.pIDef++;
                         break;}
                     }
                 } return combinationDefenderSecondTurn;
