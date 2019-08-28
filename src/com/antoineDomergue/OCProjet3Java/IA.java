@@ -19,7 +19,7 @@ class IA {
     static String createTryDefender(String userCombinationDefender) {
 
         
-        if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef > 0)) {
+        if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef < 0)) {
             GameModes.combinationDefenderSecondTurn = "";
             GameModes.resultatIACombinaison = "";
             GameModes.combinationDefender = "";
@@ -28,7 +28,7 @@ class IA {
 
             for (; GameModes.pIDef <= Main.nbTries; GameModes.pIDef++) {
                 if (GameModes.pIDef == 0) {
-                    for(int iCombination = 1; iCombination <= Main.combinationLength; iCombination++) {
+                    for(int iCombination = 0; iCombination < Main.combinationLength; iCombination++) {
                         int digitCombiI = random.nextInt(10);
                         GameModes.combinationDefender += String.valueOf(digitCombiI);
                     }
@@ -40,12 +40,17 @@ class IA {
 
                 else if (GameModes.pIDef > 0) {
 
-                    if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef > 0)) {
+                    /*
+                        if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef > 0)) {
                         GameModes.combinationDefenderSecondTurn = "";
                         GameModes.resultatIACombinaison = "";
-                    }
+                        }
+                        */
+
+                    if(Main.duelLoop && indiceDef > 1) {GameModes.combinationDefenderSecondTurn = "";}
 
                     for (indiceDef = 0; indiceDef < Main.combinationLength; indiceDef++) {
+
 
                         if (GameModes.pIDef == 1) {
 
@@ -70,6 +75,9 @@ class IA {
                         }
 
                         else if (GameModes.pIDef > 1) {
+
+
+
                             if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
                                     (indiceDef)) {
                                 GameModes.combinationDefenderSecondTurn += tempValue.charAt(indiceDef);
