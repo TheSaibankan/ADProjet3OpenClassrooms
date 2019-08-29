@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class DuelMode {
     static void duelModeLaunch() throws IOException {
+        GameModes.pIDef = 0;
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
@@ -13,8 +14,13 @@ public class DuelMode {
         User.settingsChallenger();
 
         System.out.println("Paramétrage du système Défenseur...");
-        System.out.println("Veuillez rentrer une combinaison de x chiffres :");
+        System.out.println("Veuillez rentrer une combinaison de " + Main.combinationLength + " chiffres :");
         String userCombinationDefender = sc.nextLine();
+
+        if (userCombinationDefender.length() > Main.combinationLength) {
+            System.out.println("Votre combinaison dépasse la longueur prévue, l'IA ne retiendra que les "
+            + Main.combinationLength + " premiers chiffres.");
+        }
 
         GameModes.combinationChallenger = "";
         GameModes.combinationChallenger = IA.createCombinationChallenger();

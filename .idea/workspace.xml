@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="Mode Duel OP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/PropertiesReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/PropertiesReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -183,7 +175,8 @@
       <workItem from="1566976414478" duration="621000" />
       <workItem from="1566977346136" duration="1787000" />
       <workItem from="1566979183823" duration="1003000" />
-      <workItem from="1566982841803" duration="2712000" />
+      <workItem from="1566982841803" duration="12083000" />
+      <workItem from="1567061855535" duration="2262000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -416,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566574700980</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Mode Duel OP">
+      <created>1566985805924</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1566985805924</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="progression module defense" />
     <MESSAGE value="refonte du module defense + prise en compte des égaux et sup" />
     <MESSAGE value="premier jet module defense" />
     <MESSAGE value="menu de sorti module défense" />
@@ -500,18 +499,8 @@
     <MESSAGE value="ajout log4j correct + devmod mieux intégré" />
     <MESSAGE value="log erreur input + meilleur gestion des bugs" />
     <MESSAGE value="correction bug defender" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction bug defender" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Mode Duel OP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mode Duel OP" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

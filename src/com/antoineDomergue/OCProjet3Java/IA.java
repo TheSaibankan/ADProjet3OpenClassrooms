@@ -19,7 +19,7 @@ class IA {
     static String createTryDefender(String userCombinationDefender) {
 
         
-        if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef < 0)) {
+        if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef == 0)) {
             GameModes.combinationDefenderSecondTurn = "";
             GameModes.resultatIACombinaison = "";
             GameModes.combinationDefender = "";
@@ -40,12 +40,10 @@ class IA {
 
                 else if (GameModes.pIDef > 0) {
 
-                    /*
-                        if (Main.defenderLoop || (Main.duelLoop && GameModes.pIDef > 0)) {
+                    if (Main.defenderLoop) {
                         GameModes.combinationDefenderSecondTurn = "";
                         GameModes.resultatIACombinaison = "";
-                        }
-                        */
+                    }
 
                     if(Main.duelLoop && indiceDef > 1) {GameModes.combinationDefenderSecondTurn = "";}
 
@@ -76,8 +74,6 @@ class IA {
 
                         else if (GameModes.pIDef > 1) {
 
-
-
                             if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
                                     (indiceDef)) {
                                 GameModes.combinationDefenderSecondTurn += tempValue.charAt(indiceDef);
@@ -100,6 +96,7 @@ class IA {
                     }
                     tempValue = GameModes.combinationDefenderSecondTurn;
                     System.out.println(GameModes.combinationDefenderSecondTurn);
+
                     if (userCombinationDefender.equals(combinationDefenderSecondTurn)) {
                         System.out.println(combinationDefenderSecondTurn);
                         System.out.println("L'ordinateur a trouvé la solution !\n" +
