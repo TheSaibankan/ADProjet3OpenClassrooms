@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TestJavaProjet3:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestJavaProjet3_jar</output-path>
+    <root id="archive" name="TestJavaProjet3.jar">
+      <element id="module-output" name="TestJavaProjet3" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/apache-log4j-2.12.1-bin/log4j-1.2-api-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/apache-log4j-2.12.1-bin/log4j-api-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/apache-log4j-2.12.1-bin/log4j-core-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/apache-log4j-2.12.1-bin/log4j-jcl-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/apache-log4j-2.12.1-bin/log4j-jdbc-dbcp2-2.12.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/apache-log4j-2.12.1-bin/log4j-slf4j-impl-2.12.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

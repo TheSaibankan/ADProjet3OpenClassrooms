@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class DuelMode {
+class DuelMode {
     static void duelModeLaunch() throws IOException {
         GameModes.pIDef = 0;
         Scanner sc = new Scanner(System.in);
