@@ -1,12 +1,16 @@
 package com.antoineDomergue.OCProjet3Java;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 
 class PropertiesReader {
 
-    static void getParamConfig() {
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("Param");
+    static void getParamConfig() throws IOException {
+        //ResourceBundle resourceBundle = ResourceBundle.getBundle("Param");
+        ResourceBundle resourceBundle = new PropertyResourceBundle(Files.newInputStream(Paths.get("Param.properties")));
         boolean devMode = Boolean.parseBoolean(resourceBundle.getString("paramDevMode"));
         int combinationLength = Integer.parseInt(resourceBundle.getString("paramCombinationLength"));
         int nbTries = Integer.parseInt(resourceBundle.getString("paramNbTries"));

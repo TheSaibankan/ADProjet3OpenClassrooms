@@ -7,4 +7,4 @@
  
 **Notez aussi :**
  - Pour activer le mode développeur, donnez la valeur *true* à "**paramDevMode**" dans le fichier de configuration.
- - Le fichier de configuration "**Param.properties**" se situe dans le dossier "**resources**" du dossier "**src**".
+ -  Vous pouvez également modifier la longueur de la combinaison générée et le nombre d'essais.
