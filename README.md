@@ -1,5 +1,5 @@
 # Projet 3 Java OpenClassrooms | Antoine D.
-*Application en Java 11 proposant 3 modes de jeu basés sur la génération et l'analyse de combinaison numériques.*
+*Application en Java 11 proposant 3 modes de jeu basés sur la génération et l'analyse de combinaisons numériques.*
 
  - **Challenger** : Le joueur doit deviner une combinaison générée aléatoirement avec un nombre limité d'essaies. Le programme donne des indices à chaque proposition.
  - **Défenseur** : Le joueur crée une combinaison que le programme doit deviner avec un nombre limité d'essaies.
