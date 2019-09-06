@@ -9,10 +9,6 @@ public class Main {
     static boolean duelLoop         = false;
     static boolean menuLoop         = true;
 
-    static int combinationLength;
-    static int nbTries;
-    static boolean devMode;
-
     public static void main(String[] args) throws IOException {
 
         Scanner sc = new Scanner(System.in);
@@ -33,9 +29,33 @@ public class Main {
                 continue;
             }
 
-            while (challengerLoop) GameModes.challengerMode();
-            while (defenderLoop) GameModes.defenderMode();
-            while (duelLoop) GameModes.duelMode();
+            while (challengerLoop) {
+                ChallengerMode challengerMode = new ChallengerMode();
+                challengerMode.getParamConfig();
+                challengerMode.challengerModeLaunch (
+                        challengerMode.getCombinationLength(),
+                        challengerMode.getNbTries(),
+                        challengerMode.isDevMode() );
+
+            }
+            while (defenderLoop) {
+                DefenderMode defenderMode = new DefenderMode();
+                defenderMode.getParamConfig();
+                defenderMode.defenderModeLaunch (
+                        defenderMode.getCombinationLength(),
+                        defenderMode.getNbTries(),
+                        defenderMode.isDevMode() );
+            }
+
+            while (duelLoop) {
+                DuelMode duelMode = new DuelMode();
+                duelMode.getParamConfig();
+                duelMode.duelModeLaunch(
+                        duelMode.getCombinationLength(),
+                        duelMode.getNbTries(),
+                        duelMode.isDevMode()
+                );
+            }
         }
     }
 }

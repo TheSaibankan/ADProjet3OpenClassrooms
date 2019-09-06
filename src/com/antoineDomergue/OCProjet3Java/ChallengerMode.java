@@ -3,57 +3,58 @@ package com.antoineDomergue.OCProjet3Java;
 import java.io.IOException;
 import java.util.Scanner;
 
-class ChallengerMode {
-    static void challengerModeLaunch() throws IOException {
+class ChallengerMode extends GameModes {
+
+    void challengerModeLaunch(int combinationLength, int nbTries, boolean devMode) throws IOException {
         Scanner sc = new Scanner(System.in);
 
-        PropertiesReader.getParamConfig();
-        User.settingsChallenger();
+        getParamConfig();
+        settingsChallenger();
 
-        GameModes.combinationChallenger = "";
-        GameModes.combinationChallenger = IA.createCombinationChallenger();
+        String combinationChallenger = "";
+        combinationChallenger = createCombinationChallenger();
 
-        if (Main.devMode) {
-            System.out.println("La combinaison est la suivante : " + GameModes.combinationChallenger);
+        if (devMode) {
+            System.out.println("La combinaison est la suivante : " + combinationChallenger);
         }
 
-        for (GameModes.pI = 0; GameModes.pI < Main.nbTries; GameModes.pI++) {
+        for (int pI = 0; pI < nbTries; pI++) {
             StringBuilder resultUserCombinaison = new StringBuilder();
-            System.out.println("Veuillez rentrer " + Main.combinationLength + " chiffres :" );
+            System.out.println("Veuillez rentrer " + combinationLength + " chiffres :" );
 
-            GameModes.userCombination = sc.nextLine();
+            String userCombination = sc.nextLine();
 
-            if (GameModes.userCombination.length() != Main.combinationLength) {
-                System.out.println("Attention ! Vous avez saisi "+GameModes.userCombination.length()+" chiffre(s) "+
-                        "au lieu de "+Main.combinationLength+".");
+            if (userCombination.length() != combinationLength) {
+                System.out.println("Attention ! Vous avez saisi "+userCombination.length()+" chiffre(s) "+
+                        "au lieu de "+combinationLength+".");
                 Logger.errorUserInput();
-                if (GameModes.pI == 0) continue;
-                else GameModes.pI--;
+                if (pI == 0) continue;
+                else pI--;
             }
 
-            for(int indice = 0; indice < Main.combinationLength; indice++) {
+            for(int indice = 0; indice < combinationLength; indice++) {
 
-                if (GameModes.userCombination.charAt(indice) == GameModes.combinationChallenger.charAt(indice)) {
+                if (userCombination.charAt(indice) == combinationChallenger.charAt(indice)) {
                     resultUserCombinaison.append("=");
                 }
-                else if (GameModes.userCombination.charAt(indice) < GameModes.combinationChallenger.charAt(indice)) {
+                else if (userCombination.charAt(indice) < combinationChallenger.charAt(indice)) {
                     resultUserCombinaison.append("+");
                 }
-                else if (GameModes.userCombination.charAt(indice) > GameModes.combinationChallenger.charAt(indice)) {
+                else if (userCombination.charAt(indice) > combinationChallenger.charAt(indice)) {
                     resultUserCombinaison.append("-");
                 }
             }
             System.out.println(resultUserCombinaison);
 
-            if (GameModes.userCombination.equals(GameModes.combinationChallenger)) {
+            if (userCombination.equals(combinationChallenger)) {
                 System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                EndMenu.askEndMenuChallenger();
+                askEndMenuChallenger();
             }
-            else if (GameModes.pI+1 == Main.nbTries) {
+            else if (pI+1 == nbTries) {
                 System.out.println("Perdu ! Vous n'avez pas trouvé la combinaison.\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                EndMenu.askEndMenuChallenger();
+                askEndMenuChallenger();
             }
         }
     }

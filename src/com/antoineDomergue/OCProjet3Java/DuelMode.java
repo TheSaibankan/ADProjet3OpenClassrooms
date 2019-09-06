@@ -4,66 +4,70 @@ import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
-class DuelMode {
-    static void duelModeLaunch() throws IOException {
-        GameModes.pIDef = 0;
+class DuelMode extends DefenderMode {
+
+    void duelModeLaunch(int combinationLength, int nbTries, boolean devMode) throws IOException {
+
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
+        int pI;
+        int pIDef = 0;
 
         System.out.println("Paramétrage du système Challenger...");
-        User.settingsChallenger();
+        settingsChallenger();
 
         System.out.println("Paramétrage du système Défenseur...");
-        System.out.println("Veuillez rentrer une combinaison de " + Main.combinationLength + " chiffres :");
+        System.out.println("Veuillez rentrer une combinaison de " + combinationLength + " chiffres :");
         String userCombinationDefender = sc.nextLine();
 
-        if (userCombinationDefender.length() > Main.combinationLength) {
+        if (userCombinationDefender.length() > combinationLength) {
             System.out.println("Votre combinaison dépasse la longueur prévue, l'IA ne retiendra que les "
-            + Main.combinationLength + " premiers chiffres.");
+            + combinationLength + " premiers chiffres.");
         }
 
-        GameModes.combinationChallenger = "";
-        GameModes.combinationChallenger = IA.createCombinationChallenger();
 
-        if (Main.devMode) {
-            System.out.println("La combinaison est la suivante : " + GameModes.combinationChallenger);
+        String combinationChallenger = createCombinationChallenger();
+
+        if (devMode) {
+            System.out.println("La combinaison est la suivante : " + combinationChallenger);
         }
 
-        for (GameModes.pI = 0; GameModes.pI < Main.nbTries; GameModes.pI++) {
+
+        for (pI = 0; pI < nbTries; pI++) {
             StringBuilder resultUserCombinaison = new StringBuilder();
-            System.out.println("Veuillez rentrer " + Main.combinationLength + " chiffres :" );
+            System.out.println("Veuillez rentrer " + combinationLength + " chiffres :" );
 
-            GameModes.userCombination = sc.nextLine();
-            if (GameModes.userCombination.length() != Main.combinationLength) {
-                System.out.println("Attention ! Vous avez saisi "+GameModes.userCombination.length()+" chiffre(s) "+
-                        "au lieu de "+Main.combinationLength+".");
+            String userCombination = sc.nextLine();
+            if (userCombination.length() != combinationLength) {
+                System.out.println("Attention ! Vous avez saisi "+userCombination.length()+" chiffre(s) "+
+                        "au lieu de "+combinationLength+".");
                 Logger.errorUserInput();
-                GameModes.pI--;
+                pI--;
             }
-            else if (GameModes.userCombination.equals(GameModes.combinationChallenger)) {
+            else if (userCombination.equals(combinationChallenger)) {
                 System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                EndMenu.askEndMenuDuel();
+                askEndMenuDuel();
             }
             else {
-                for(int indice = 0; indice < Main.combinationLength; indice++) {
-                    if (GameModes.userCombination.charAt(indice) == GameModes.combinationChallenger.charAt(indice)) {
+                for(int indice = 0; indice < combinationLength; indice++) {
+                    if (userCombination.charAt(indice) == combinationChallenger.charAt(indice)) {
                         resultUserCombinaison.append("=");
                     }
-                    else if (GameModes.userCombination.charAt(indice) < GameModes.combinationChallenger.charAt(indice)) {
+                    else if (userCombination.charAt(indice) < combinationChallenger.charAt(indice)) {
                         resultUserCombinaison.append("+");
                     }
-                    else if (GameModes.userCombination.charAt(indice) > GameModes.combinationChallenger.charAt(indice)) {
+                    else if (userCombination.charAt(indice) > combinationChallenger.charAt(indice)) {
                         resultUserCombinaison.append("-");
                     }
                 }
                 System.out.println(resultUserCombinaison);
-                GameModes.combinationDefenderSecondTurn = IA.createTryDefender(userCombinationDefender);
+                String combinationDefenderSecondTurn = defenderModeLaunch(combinationLength, nbTries, devMode);
 
-                if (GameModes.combinationDefenderSecondTurn.equals(userCombinationDefender)) {
+                if (combinationDefenderSecondTurn.equals(userCombinationDefender)) {
                     System.out.println("Perdu ! L'IA a trouvé la combinaison avant vous !\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                    EndMenu.askEndMenuDuel();
+                    askEndMenuDuel();
                 }
             }
         }

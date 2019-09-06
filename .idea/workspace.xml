@@ -9,9 +9,26 @@
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="Mode Duel OP">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/EndMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/IA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/PropertiesReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/EndMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/IA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/Param.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/Param.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/User.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,19 +48,6 @@
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,82 +78,7 @@
       </branch-storage>
     </favorite-branches>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="672" />
-    <option name="y" value="-8" />
-    <option name="width" value="696" />
-    <option name="height" value="744" />
-  </component>
   <component name="ProjectId" id="1OXWe34SC6cuLP4VSxvpO1eKmIz" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="TestJavaProjet3_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="TestJavaProjet3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADProjet3OpenClassrooms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ADProjet3OpenClassrooms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="OCProjet3Java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -159,7 +88,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apache-log4j-2.12.1-bin/log4j-slf4j-impl-2.12.1.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -273,6 +202,11 @@
       <workItem from="1567153145061" duration="2541000" />
       <workItem from="1567235778354" duration="417000" />
       <workItem from="1567255129456" duration="1546000" />
+      <workItem from="1567675908158" duration="1721000" />
+      <workItem from="1567679558720" duration="622000" />
+      <workItem from="1567684810107" duration="66000" />
+      <workItem from="1567684907872" duration="24000" />
+      <workItem from="1567684969624" duration="20016000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -515,9 +449,6 @@
     <option name="localTasksCounter" value="35" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1963000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -526,41 +457,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25379938" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -581,12 +477,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -648,14 +538,5 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestJavaProjet3$main.ic" NAME="main Coverage Results" MODIFIED="1562162619781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/PropertiesReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
