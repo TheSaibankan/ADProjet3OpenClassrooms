@@ -1,17 +1,34 @@
 package com.antoineDomergue.OCProjet3Java;
 
-import java.io.IOException;
 import java.util.Scanner;
+
+import static com.antoineDomergue.OCProjet3Java.Main.*;
 
 class ChallengerMode extends GameModes {
 
-    void challengerModeLaunch(int combinationLength, int nbTries, boolean devMode) throws IOException {
-        Scanner sc = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
 
-        getParamConfig();
-        settingsChallenger();
+    private void askMenuEndChallenger() {
+        int userInputEndGame = sc.nextInt();
 
-        String combinationChallenger = "";
+        if (userInputEndGame == 1) {
+            challengerLoop = true;
+        } else if (userInputEndGame == 2) {
+            challengerLoop = false;
+        } else if (userInputEndGame == 3) {
+            challengerLoop = false;
+            menuLoop = false;
+        } else {
+            System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+            Logger.errorUserInput();
+            challengerLoop = false;
+            menuLoop = true;
+        }
+    }
+
+    void challengerModeLaunch() {
+
+        String combinationChallenger;
         combinationChallenger = createCombinationChallenger();
 
         if (devMode) {
@@ -49,12 +66,14 @@ class ChallengerMode extends GameModes {
             if (userCombination.equals(combinationChallenger)) {
                 System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                askEndMenuChallenger();
+                askMenuEndChallenger();
+                break;
             }
-            else if (pI+1 == nbTries) {
+            else if (pI +1 == nbTries) {
                 System.out.println("Perdu ! Vous n'avez pas trouvé la combinaison.\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
-                askEndMenuChallenger();
+                askMenuEndChallenger();
+                break;
             }
         }
     }

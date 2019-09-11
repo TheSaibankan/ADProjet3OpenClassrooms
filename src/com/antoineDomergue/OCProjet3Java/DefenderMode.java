@@ -3,26 +3,30 @@ package com.antoineDomergue.OCProjet3Java;
 import java.util.Random;
 import java.util.Scanner;
 
+import static com.antoineDomergue.OCProjet3Java.Main.*;
+
 class DefenderMode extends GameModes {
     private Random random = new Random();
+    private Scanner sc = new Scanner(System.in);
 
-    String defenderModeLaunch(int combinationLength, int nbTries, boolean devMode) {
-        Scanner sc = new Scanner(System.in);
-        
-        int pIDef = 0;
-        int indiceDef = 0;
-        String combinationDefenderSecondTurn = "";
-        String resultIACombinaison = "";
-        String combinationDefender = "";
-        String tempValue = "";
-        
-        System.out.println("Veuillez rentrer une combinaison de x chiffres :");
-        String userCombinationDefender = sc.nextLine();
-        combinationLength = userCombinationDefender.length();
-        
+    private int pIDef = 0;
+    private int indiceDef = 0;
+
+    private String combinationDefenderSecondTurn = "";
+    private String combinationDefender = "";
+    private String tempValue = "";
+
+    String defenderModeLaunch(String userCombinationDefender) {
+
+
+        if (defenderLoop) {
+            System.out.println("Veuillez rentrer une combinaison de x chiffres :");
+            userCombinationDefender = sc.nextLine();
+            combinationLength = userCombinationDefender.length();
+        }
+
         if (Main.defenderLoop || (Main.duelLoop && pIDef == 0)) {
             combinationDefenderSecondTurn = "";
-            resultIACombinaison = "";
             combinationDefender = "";
             pIDef = 0;
         }
@@ -43,7 +47,6 @@ class DefenderMode extends GameModes {
 
                 if (Main.defenderLoop) {
                     combinationDefenderSecondTurn = "";
-                    resultIACombinaison = "";
                 }
                 
                 if(Main.duelLoop && indiceDef > 1) {combinationDefenderSecondTurn = "";}
@@ -54,20 +57,17 @@ class DefenderMode extends GameModes {
                         if (userCombinationDefender.charAt(indiceDef) == combinationDefender.charAt
                                 (indiceDef)) {
                             combinationDefenderSecondTurn += combinationDefender.charAt(indiceDef);
-                            resultIACombinaison += "=";
                         }
                         else if (userCombinationDefender.charAt(indiceDef) > combinationDefender.charAt
                                 (indiceDef)) {
                             int min = Character.getNumericValue(combinationDefender.charAt(indiceDef));
                             combinationDefenderSecondTurn += Character.forDigit
                                     ((random.nextInt(9-min+1)+min),10);
-                            resultIACombinaison += "+";
                         }
                         else if (userCombinationDefender.charAt(indiceDef) < combinationDefender.charAt
                                 (indiceDef)) {
                             int max = Character.getNumericValue(combinationDefender.charAt(indiceDef));
                             combinationDefenderSecondTurn += Character.forDigit(random.nextInt(max),10);
-                            resultIACombinaison += "-";
                         }
                     }
 
@@ -75,20 +75,17 @@ class DefenderMode extends GameModes {
                         if (userCombinationDefender.charAt(indiceDef) == tempValue.charAt
                                 (indiceDef)) {
                             combinationDefenderSecondTurn += tempValue.charAt(indiceDef);
-                            resultIACombinaison += "=";
                         }
                         else if (userCombinationDefender.charAt(indiceDef) > tempValue.charAt
                                 (indiceDef)) {
                             int min = Character.getNumericValue(tempValue.charAt(indiceDef));
                             combinationDefenderSecondTurn += Character.forDigit
                                     ((random.nextInt(10-min+1)+min),10);
-                            resultIACombinaison += "+";
                         }
                         else if (userCombinationDefender.charAt(indiceDef) < tempValue.charAt
                                 (indiceDef)) {
                             int max = Character.getNumericValue(tempValue.charAt(indiceDef));
                             combinationDefenderSecondTurn += Character.forDigit(random.nextInt(max),10);
-                            resultIACombinaison += "-";
                         }
                     }
                 }
@@ -101,16 +98,39 @@ class DefenderMode extends GameModes {
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                     System.out.println("L'ordinateur a pris "+(pIDef+1)+" tours pour trouver la combinaison.");
                     askEndMenuDefender();
+                    break;
                 }
                 else if (pIDef+1 == nbTries){
                     System.out.println("L'ordinateur n'a pas trouvé la combinaison.\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                     askEndMenuDefender();
+                    break;
                 }
                 if (Main.duelLoop) {
                     pIDef++;
                     break;}
             }
         } return combinationDefenderSecondTurn;
+    }
+    private void askEndMenuDefender() {
+        int userInputEndGame = sc.nextInt();
+
+        if (userInputEndGame == 1) {
+            defenderLoop = true;
+        }
+        else if (userInputEndGame == 2) {
+            defenderLoop = false;
+            menuLoop = true;
+        }
+        else if (userInputEndGame == 3) {
+            defenderLoop = false;
+            menuLoop = false;
+        }
+        else {
+            System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+            Logger.errorUserInput();
+            defenderLoop = false;
+            menuLoop = true;
+        }
     }
 }

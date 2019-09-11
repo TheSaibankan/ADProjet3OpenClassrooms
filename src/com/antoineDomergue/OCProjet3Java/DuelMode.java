@@ -1,30 +1,25 @@
 package com.antoineDomergue.OCProjet3Java;
 
-import java.io.IOException;
-import java.util.Random;
 import java.util.Scanner;
+
+import static com.antoineDomergue.OCProjet3Java.Main.duelLoop;
+import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
 class DuelMode extends DefenderMode {
 
-    void duelModeLaunch(int combinationLength, int nbTries, boolean devMode) throws IOException {
+    private Scanner sc = new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
-        Random random = new Random();
-        int pI;
-        int pIDef = 0;
+    void duelModeLaunch() {
+        getParamConfig();
+        nbTries = 1500;
 
-        System.out.println("Paramétrage du système Challenger...");
-        settingsChallenger();
-
-        System.out.println("Paramétrage du système Défenseur...");
-        System.out.println("Veuillez rentrer une combinaison de " + combinationLength + " chiffres :");
+        System.out.println("Veuillez rentrer une combinaison de " + combinationLength + " chiffres que l'IA devra deviner :");
         String userCombinationDefender = sc.nextLine();
 
         if (userCombinationDefender.length() > combinationLength) {
             System.out.println("Votre combinaison dépasse la longueur prévue, l'IA ne retiendra que les "
             + combinationLength + " premiers chiffres.");
         }
-
 
         String combinationChallenger = createCombinationChallenger();
 
@@ -33,9 +28,9 @@ class DuelMode extends DefenderMode {
         }
 
 
-        for (pI = 0; pI < nbTries; pI++) {
+        for (int pI = 0; pI < nbTries; pI++) {
             StringBuilder resultUserCombinaison = new StringBuilder();
-            System.out.println("Veuillez rentrer " + combinationLength + " chiffres :" );
+            System.out.println("Faites une proposition de " + combinationLength + " chiffres :" );
 
             String userCombination = sc.nextLine();
             if (userCombination.length() != combinationLength) {
@@ -48,6 +43,7 @@ class DuelMode extends DefenderMode {
                 System.out.println("Félicitation ! Vous avez trouvé la combinaison !\n" +
                         "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                 askEndMenuDuel();
+                break;
             }
             else {
                 for(int indice = 0; indice < combinationLength; indice++) {
@@ -62,14 +58,36 @@ class DuelMode extends DefenderMode {
                     }
                 }
                 System.out.println(resultUserCombinaison);
-                String combinationDefenderSecondTurn = defenderModeLaunch(combinationLength, nbTries, devMode);
+                String combinationDefenderSecondTurn = defenderModeLaunch(userCombinationDefender);
 
                 if (combinationDefenderSecondTurn.equals(userCombinationDefender)) {
                     System.out.println("Perdu ! L'IA a trouvé la combinaison avant vous !\n" +
                             "Vous pouvez recommencer (1), retourner au menu (2), ou fermer le programme (3).");
                     askEndMenuDuel();
+                    break;
                 }
             }
+        }
+    }
+    private void askEndMenuDuel() {
+        int userInputEndGame = sc.nextInt();
+
+        if (userInputEndGame == 1) {
+            duelLoop = true;
+        }
+        else if (userInputEndGame == 2) {
+            duelLoop = false;
+            menuLoop = true;
+        }
+        else if (userInputEndGame == 3) {
+            duelLoop = false;
+            menuLoop = false;
+        }
+        else {
+            System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+            Logger.errorUserInput();
+            duelLoop = false;
+            menuLoop = true;
         }
     }
 }

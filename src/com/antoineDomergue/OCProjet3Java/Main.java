@@ -1,15 +1,14 @@
 package com.antoineDomergue.OCProjet3Java;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    static boolean challengerLoop   = false;
-    static boolean defenderLoop     = false;
-    static boolean duelLoop         = false;
-    static boolean menuLoop         = true;
+    static boolean  challengerLoop   = false;
+    static boolean  defenderLoop     = false;
+    static boolean  duelLoop         = false;
+    static boolean  menuLoop         = true;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
@@ -31,30 +30,16 @@ public class Main {
 
             while (challengerLoop) {
                 ChallengerMode challengerMode = new ChallengerMode();
-                challengerMode.getParamConfig();
-                challengerMode.challengerModeLaunch (
-                        challengerMode.getCombinationLength(),
-                        challengerMode.getNbTries(),
-                        challengerMode.isDevMode() );
-
+                challengerMode.challengerModeLaunch();
             }
             while (defenderLoop) {
                 DefenderMode defenderMode = new DefenderMode();
-                defenderMode.getParamConfig();
-                defenderMode.defenderModeLaunch (
-                        defenderMode.getCombinationLength(),
-                        defenderMode.getNbTries(),
-                        defenderMode.isDevMode() );
+                defenderMode.defenderModeLaunch("");
             }
 
             while (duelLoop) {
                 DuelMode duelMode = new DuelMode();
-                duelMode.getParamConfig();
-                duelMode.duelModeLaunch(
-                        duelMode.getCombinationLength(),
-                        duelMode.getNbTries(),
-                        duelMode.isDevMode()
-                );
+                duelMode.duelModeLaunch();
             }
         }
     }
