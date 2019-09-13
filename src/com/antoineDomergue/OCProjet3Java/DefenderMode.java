@@ -1,14 +1,12 @@
 package com.antoineDomergue.OCProjet3Java;
 
-import java.util.Random;
-import java.util.Scanner;
+import static com.antoineDomergue.OCProjet3Java.Main.defenderLoop;
+import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
-import static com.antoineDomergue.OCProjet3Java.Main.*;
-
+/***
+ * Contient le code nécessaire au traitement du mode Defender et Duel.
+ */
 class DefenderMode extends GameModes {
-    private Random random = new Random();
-    private Scanner sc = new Scanner(System.in);
-
     private int pIDef = 0;
     private int indiceDef = 0;
 
@@ -16,8 +14,16 @@ class DefenderMode extends GameModes {
     private String combinationDefender = "";
     private String tempValue = "";
 
+    /***
+     * Génère une proposition quand le joueur fournis une combinaison.
+     * La proposition est d'abord générée aléatoirement, puis l'IA se base sur les indices fournis.
+     *
+     * @param userCombinationDefender
+     * @return La proposition de l'IA
+     */
     String defenderModeLaunch(String userCombinationDefender) {
 
+        getParamConfig();
 
         if (defenderLoop) {
             System.out.println("Veuillez rentrer une combinaison de x chiffres :");

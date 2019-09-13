@@ -1,32 +1,21 @@
 package com.antoineDomergue.OCProjet3Java;
 
-import java.util.Scanner;
+import static com.antoineDomergue.OCProjet3Java.Main.challengerLoop;
+import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
-import static com.antoineDomergue.OCProjet3Java.Main.*;
-
+/***
+ * Contient le code nécessaire au traitement du mode Challenger.
+ */
 class ChallengerMode extends GameModes {
 
-    private Scanner sc = new Scanner(System.in);
-
-    private void askMenuEndChallenger() {
-        int userInputEndGame = sc.nextInt();
-
-        if (userInputEndGame == 1) {
-            challengerLoop = true;
-        } else if (userInputEndGame == 2) {
-            challengerLoop = false;
-        } else if (userInputEndGame == 3) {
-            challengerLoop = false;
-            menuLoop = false;
-        } else {
-            System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
-            Logger.errorUserInput();
-            challengerLoop = false;
-            menuLoop = true;
-        }
-    }
-
+    /***
+     * Contient le code spécifique au mode Challenger.
+     * La proposition de l'utilisateur est analysée pour envoyer un indice.
+     * L'indice est envoyé sous la forme de "+", "-" et "=".
+     */
     void challengerModeLaunch() {
+
+        getParamConfig();
 
         String combinationChallenger;
         combinationChallenger = createCombinationChallenger();
@@ -75,6 +64,27 @@ class ChallengerMode extends GameModes {
                 askMenuEndChallenger();
                 break;
             }
+        }
+    }
+
+    /***
+     * Gère le menu de fin de partie du mode Challenger.
+     */
+    private void askMenuEndChallenger() {
+        int userInputEndGame = sc.nextInt();
+
+        if (userInputEndGame == 1) {
+            challengerLoop = true;
+        } else if (userInputEndGame == 2) {
+            challengerLoop = false;
+        } else if (userInputEndGame == 3) {
+            challengerLoop = false;
+            menuLoop = false;
+        } else {
+            System.out.println("Vous n'avez pas saisi une commande valide. Retour au menu...");
+            Logger.errorUserInput();
+            challengerLoop = false;
+            menuLoop = true;
         }
     }
 }

@@ -1,13 +1,9 @@
 package com.antoineDomergue.OCProjet3Java;
 
-import java.util.Scanner;
-
 import static com.antoineDomergue.OCProjet3Java.Main.duelLoop;
 import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
 class DuelMode extends DefenderMode {
-
-    private Scanner sc = new Scanner(System.in);
 
     void duelModeLaunch() {
         getParamConfig();
@@ -69,6 +65,7 @@ class DuelMode extends DefenderMode {
             }
         }
     }
+
     private void askEndMenuDuel() {
         int userInputEndGame = sc.nextInt();
 
