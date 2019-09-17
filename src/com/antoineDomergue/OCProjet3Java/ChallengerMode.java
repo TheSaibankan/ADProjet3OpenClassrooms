@@ -4,14 +4,14 @@ import static com.antoineDomergue.OCProjet3Java.Main.challengerLoop;
 import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
 /***
- * Contient le code nécessaire au traitement du mode Challenger.
+ * Contains the code needed to process Challenger mode.
  */
 class ChallengerMode extends GameModes {
 
     /***
-     * Contient le code spécifique au mode Challenger.
-     * La proposition de l'utilisateur est analysée pour envoyer un indice.
-     * L'indice est envoyé sous la forme de "+", "-" et "=".
+     * Contains the code specific to the Challenger mode.
+     * The user's proposal is analyzed to send a hint.
+     * The hint is sent with the following characters : "+", "-" and "=".
      */
     void challengerModeLaunch() {
 
@@ -68,7 +68,7 @@ class ChallengerMode extends GameModes {
     }
 
     /***
-     * Gère le menu de fin de partie du mode Challenger.
+     * Manages the end-of-game menu of the Challenger mode.
      */
     private void askMenuEndChallenger() {
         int userInputEndGame = sc.nextInt();

@@ -3,8 +3,15 @@ package com.antoineDomergue.OCProjet3Java;
 import static com.antoineDomergue.OCProjet3Java.Main.duelLoop;
 import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
+/***
+ * Contains the code needed to process Duel mode.
+ */
 class DuelMode extends DefenderMode {
-
+    /***
+     * Contains the code specific to the Duel mode.
+     * The computer and the user offer a combination.
+     * The first to find the combination of the other wins.
+     */
     void duelModeLaunch() {
         getParamConfig();
         nbTries = 1500;
@@ -66,6 +73,9 @@ class DuelMode extends DefenderMode {
         }
     }
 
+    /***
+     * Manages the end-of-game menu of the Duel mode.
+     */
     private void askEndMenuDuel() {
         int userInputEndGame = sc.nextInt();
 

@@ -5,27 +5,27 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 /***
- * Classe mère des différents modes de jeu.
- * Contient les variables communes à tous les modes ainsi que des méthodes indispensables.
+ * Mother class of all game modes.
+ * Contains variables common to all modes as well as essential methods.
  */
 class GameModes {
     Random random = new Random();
     Scanner sc    = new Scanner(System.in);
     /***
-     * Correspond à la longueur de la combinaison pendant le jeu.
+     * Corresponds to the length of the combination during the game
      */
     int combinationLength;
     /***
-     * Correspond au nombre d'essaies autorisés pendant le jeu.
+     * Corresponds to the number of trials allowed during the game.
      */
     int nbTries;
     /***
-     * Correspond au mode Dev, qui permet de voir la combinaison générée.
+     * Corresponds to the Dev mode, which allows you to see the generated combination.
      */
     boolean devMode;
 
     /***
-     * Permet de récupérer les données du fichier Param.properties
+     * Retrieves data from the Param.properties file
      */
     void getParamConfig() {
         ResourceBundle resourceBundle = ResourceBundle.getBundle("Param");
@@ -36,8 +36,8 @@ class GameModes {
     }
 
     /***
-     * Génère une combinaison de chiffres aléatoire.
-     * @return La combinaison générée
+     * Generate a combination of random numbers.
+     * @return generated combination
      */
     String createCombinationChallenger() {
         StringBuilder combinationChallenger = new StringBuilder();

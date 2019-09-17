@@ -4,7 +4,7 @@ import static com.antoineDomergue.OCProjet3Java.Main.defenderLoop;
 import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
 /***
- * Contient le code nécessaire au traitement du mode Defender et Duel.
+ * Contains the code needed to process Defender mode and Duel mode.
  */
 class DefenderMode extends GameModes {
     private int pIDef = 0;
@@ -15,11 +15,11 @@ class DefenderMode extends GameModes {
     private String tempValue = "";
 
     /***
-     * Génère une proposition quand le joueur fournis une combinaison.
-     * La proposition est d'abord générée aléatoirement, puis l'IA se base sur les indices fournis.
+     * Generate a proposition when the player provides a combination.
+     * The proposal is first generated randomly, then the AI uses the indices provided.
      *
      * @param userCombinationDefender
-     * @return La proposition de l'IA
+     * @return AI's proposal
      */
     String defenderModeLaunch(String userCombinationDefender) {
 
@@ -118,6 +118,9 @@ class DefenderMode extends GameModes {
             }
         } return combinationDefenderSecondTurn;
     }
+    /***
+     * Manages the end-of-game menu of the Defender mode.
+     */
     private void askEndMenuDefender() {
         int userInputEndGame = sc.nextInt();
 
