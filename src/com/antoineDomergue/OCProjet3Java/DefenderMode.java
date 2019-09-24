@@ -16,7 +16,7 @@ class DefenderMode extends GameModes {
 
     /***
      * Generate a proposition when the player provides a combination.
-     * The proposal is first generated randomly, then the AI uses the indices provided.
+     * The proposal is first generated randomly, then the AI uses the hints provided.
      *
      * @param userCombinationDefender
      * @return AI's proposal

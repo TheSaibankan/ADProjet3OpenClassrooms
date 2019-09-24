@@ -7,74 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="JAVADOC added">
-      <change afterPath="$PROJECT_DIR$/JAVADOC/allclasses-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/allpackages-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/ChallengerMode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/DefenderMode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/DuelMode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/GameModes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/Logger.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/element-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/member-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/member-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/package-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/package-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/resources/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/type-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JAVADOC/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -262,6 +196,7 @@
       <workItem from="1568377360741" duration="5026000" />
       <workItem from="1568713520851" duration="744000" />
       <workItem from="1568716975403" duration="5988000" />
+      <workItem from="1569330123522" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
