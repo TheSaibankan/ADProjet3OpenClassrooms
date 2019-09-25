@@ -1,5 +1,7 @@
 package com.antoineDomergue.OCProjet3Java;
 
+import java.io.IOException;
+
 import static com.antoineDomergue.OCProjet3Java.Main.challengerLoop;
 import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
@@ -13,7 +15,7 @@ class ChallengerMode extends GameModes {
      * The user's proposal is analyzed to send a hint.
      * The hint is sent with the following characters : "+", "-" and "=".
      */
-    void challengerModeLaunch() {
+    void challengerModeLaunch() throws IOException {
 
         getParamConfig();
 

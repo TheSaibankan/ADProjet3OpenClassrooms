@@ -1,5 +1,9 @@
 package com.antoineDomergue.OCProjet3Java;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.PropertyResourceBundle;
 import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -27,9 +31,9 @@ class GameModes {
     /***
      * Retrieves data from the Param.properties file
      */
-    void getParamConfig() {
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("Param");
-        //ResourceBundle resourceBundle = new PropertyResourceBundle(Files.newInputStream(Paths.get("Param.properties")));
+    void getParamConfig() throws IOException {
+        //ResourceBundle resourceBundle = ResourceBundle.getBundle("Param");
+        ResourceBundle resourceBundle = new PropertyResourceBundle(Files.newInputStream(Paths.get("Param.properties")));
         devMode = Boolean.parseBoolean(resourceBundle.getString("paramDevMode"));
         combinationLength = Integer.parseInt(resourceBundle.getString("paramCombinationLength"));
         nbTries = Integer.parseInt(resourceBundle.getString("paramNbTries"));

@@ -1,5 +1,7 @@
 package com.antoineDomergue.OCProjet3Java;
 
+import java.io.IOException;
+
 import static com.antoineDomergue.OCProjet3Java.Main.duelLoop;
 import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
@@ -12,7 +14,7 @@ class DuelMode extends DefenderMode {
      * The computer and the user offer a combination.
      * The first to find the combination of the other wins.
      */
-    void duelModeLaunch() {
+    void duelModeLaunch() throws IOException {
         getParamConfig();
         nbTries = 1500;
 

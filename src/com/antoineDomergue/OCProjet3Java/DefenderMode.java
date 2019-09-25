@@ -1,5 +1,7 @@
 package com.antoineDomergue.OCProjet3Java;
 
+import java.io.IOException;
+
 import static com.antoineDomergue.OCProjet3Java.Main.defenderLoop;
 import static com.antoineDomergue.OCProjet3Java.Main.menuLoop;
 
@@ -21,7 +23,7 @@ class DefenderMode extends GameModes {
      * @param userCombinationDefender
      * @return AI's proposal
      */
-    String defenderModeLaunch(String userCombinationDefender) {
+    String defenderModeLaunch(String userCombinationDefender) throws IOException {
 
         getParamConfig();
 

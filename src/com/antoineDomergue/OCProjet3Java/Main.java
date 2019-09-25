@@ -1,14 +1,19 @@
 package com.antoineDomergue.OCProjet3Java;
 
+import java.io.IOException;
 import java.util.Scanner;
 
+/***
+ * Application in Java 11 based on the generation and analysis of numerical combinations.
+ *
+ */
 public class Main {
     static boolean  challengerLoop   = false;
     static boolean  defenderLoop     = false;
     static boolean  duelLoop         = false;
     static boolean  menuLoop         = true;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner sc = new Scanner(System.in);
 
