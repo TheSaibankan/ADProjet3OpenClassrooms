@@ -8,18 +8,52 @@
   <component name="ChangeListManager">
     <list default="true" id="1c748241-ecd3-4fd3-82af-c162096c22f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/TestJavaProjet3_jar/TestJavaProjet3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TestJavaProjet3_jar/TestJavaProjet3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/ChallengerMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DefenderMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/DuelMode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/GameModes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TestJavaProjet3/com/antoineDomergue/OCProjet3Java/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/ChallengerMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DefenderMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/DuelMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/GameModes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/antoineDomergue/OCProjet3Java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/ChallengerMode.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/ChallengerMode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/DefenderMode.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/DefenderMode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/DuelMode.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/DuelMode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/GameModes.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/GameModes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/Logger.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/Logger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/com/antoineDomergue/OCProjet3Java/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-3.3.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-migrate-3.0.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVADOC/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/type-search-index.zip" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +242,8 @@
       <workItem from="1568713520851" duration="744000" />
       <workItem from="1568716975403" duration="5988000" />
       <workItem from="1569330123522" duration="1195000" />
-      <workItem from="1569398051845" duration="1435000" />
+      <workItem from="1569398051845" duration="1553000" />
+      <workItem from="1569417993923" duration="237000" />
     </task>
     <task id="LOCAL-00001" summary="Menu + Début Challenger">
       <created>1561713030296</created>
@@ -469,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569331472642</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Jar prêt">
+      <created>1569404779281</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1569404779281</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -529,7 +571,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="class modesDeJeu créée" />
     <MESSAGE value="modeChallenger premier jet" />
     <MESSAGE value="Premier jet Class Lecteur" />
     <MESSAGE value="Mode challenger Class Lecteur partiellement intégrée" />
@@ -554,7 +595,8 @@
     <MESSAGE value="Documentation en anglais" />
     <MESSAGE value="JAVADOC added" />
     <MESSAGE value="Corrections mineures DOC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrections mineures DOC" />
+    <MESSAGE value="Jar prêt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jar prêt" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
