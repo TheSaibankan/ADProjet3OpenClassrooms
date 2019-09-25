@@ -11,4 +11,4 @@
  
 **Notez aussi :**
  - Pour activer le mode développeur, donnez la valeur *true* à "**paramDevMode**" dans le fichier de configuration.
- - Le fichier de configuration "**Param.properties**" se situe dans le dossier "**resources**" du dossier "**src**".
+ - Pour changer la longueur de la combinaison ou le nombre d'essaies autorisés, il suffit de modifier les valeurs **paramCombinationLength** et **paramNbTries**.
